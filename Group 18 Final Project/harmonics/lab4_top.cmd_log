@@ -1,0 +1,222 @@
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf lab4_top.ucf 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf lab4_top.ucf 
+bitgen -intstyle ise -f lab4_top.ut lab4_top.ncd 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf lab4_top.ucf 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf lab4_top.ucf 
+bitgen -intstyle ise -f lab4_top.ut lab4_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf lab4_top.ucf 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf lab4_top.ucf 
+bitgen -intstyle ise -f lab4_top.ut lab4_top.ncd 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf lab4_top.ucf 
+bitgen -intstyle ise -f lab4_top.ut lab4_top.ncd 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf lab4_top.ucf 
+bitgen -intstyle ise -f lab4_top.ut lab4_top.ncd 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+bitgen -intstyle ise -f lab4_top.ut lab4_top.ncd 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf lab4_top.ucf 
+bitgen -intstyle ise -f lab4_top.ut lab4_top.ncd 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf lab4_top.ucf 
+bitgen -intstyle ise -f lab4_top.ut lab4_top.ncd 
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf lab4_top.ucf 
+bitgen -intstyle ise -f lab4_top.ut lab4_top.ncd 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf lab4_top.ucf 
+bitgen -intstyle ise -f lab4_top.ut lab4_top.ncd 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf lab4_top.ucf 
+bitgen -intstyle ise -f lab4_top.ut lab4_top.ncd 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf lab4_top.ucf 
+bitgen -intstyle ise -f lab4_top.ut lab4_top.ncd 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf lab4_top.ucf 
+bitgen -intstyle ise -f lab4_top.ut lab4_top.ncd 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf lab4_top.ucf 
+bitgen -intstyle ise -f lab4_top.ut lab4_top.ncd 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf lab4_top.ucf 
+bitgen -intstyle ise -f lab4_top.ut lab4_top.ncd 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim lab4_top.ngc lab4_top_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf lab4_top.ucf 
+bitgen -intstyle ise -f lab4_top.ut lab4_top.ncd 
+bitgen -intstyle ise -f lab4_top.ut lab4_top.ncd 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim lab4_top.ngc lab4_top_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf lab4_top.ucf 
+bitgen -intstyle ise -f lab4_top.ut lab4_top.ncd 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf lab4_top.ucf 
+bitgen -intstyle ise -f lab4_top.ut lab4_top.ncd 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf lab4_top.ucf 
+bitgen -intstyle ise -f lab4_top.ut lab4_top.ncd 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf lab4_top.ucf 
+bitgen -intstyle ise -f lab4_top.ut lab4_top.ncd 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf lab4_top.ucf 
+bitgen -intstyle ise -f lab4_top.ut lab4_top.ncd 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf lab4_top.ucf 
+bitgen -intstyle ise -f lab4_top.ut lab4_top.ncd 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf lab4_top.ucf 
+bitgen -intstyle ise -f lab4_top.ut lab4_top.ncd 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf lab4_top.ucf 
+bitgen -intstyle ise -f lab4_top.ut lab4_top.ncd 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf lab4_top.ucf 
+bitgen -intstyle ise -f lab4_top.ut lab4_top.ncd 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf lab4_top.ucf 
+bitgen -intstyle ise -f lab4_top.ut lab4_top.ncd 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf lab4_top.ucf 
+bitgen -intstyle ise -f lab4_top.ut lab4_top.ncd 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf lab4_top.ucf 
+bitgen -intstyle ise -f lab4_top.ut lab4_top.ncd 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/lab4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 lab4_top.ngc lab4_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+par -w -intstyle ise -ol high -mt off lab4_top_map.ncd lab4_top.ncd lab4_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf lab4_top.ucf 
+bitgen -intstyle ise -f lab4_top.ut lab4_top.ncd 

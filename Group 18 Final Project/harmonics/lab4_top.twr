@@ -1,0 +1,708 @@
+--------------------------------------------------------------------------------
+Release 12.2 Trace  (lin)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+/opt/xilinx/ISE_DS/ISE/bin/lin/unwrapped/trce -intstyle ise -v 3 -s 1 -n 3
+-fastpaths -xml lab4_top.twx lab4_top.ncd -o lab4_top.twr lab4_top.pcf -ucf
+lab4_top.ucf
+
+Design file:              lab4_top.ncd
+Physical constraint file: lab4_top.pcf
+Device,package,speed:     xc5vlx110t,ff1136,-1 (PRODUCTION 1.70 2010-06-22, STEPPING level 0)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_clock = PERIOD TIMEGRP "clk" 10 ns HIGH 50%;
+
+ 111441639 paths analyzed, 29709 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   9.958ns.
+--------------------------------------------------------------------------------
+
+Paths for end point music_player/chord/player1/tv/sin8/pipe/q_12 (SLICE_X46Y119.A1), 220931 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     0.042ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               music_player/mcu/playFlipFlop/q_0_2 (FF)
+  Destination:          music_player/chord/player1/tv/sin8/pipe/q_12 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      10.020ns (Levels of Logic = 10)
+  Clock Path Skew:      0.097ns (1.310 - 1.213)
+  Source Clock:         clk_IBUF rising at 0.000ns
+  Destination Clock:    clk_IBUF rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: music_player/mcu/playFlipFlop/q_0_2 to music_player/chord/player1/tv/sin8/pipe/q_12
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X48Y86.BQ      Tcko                  0.471   music_player/mcu/playFlipFlop/q_0_4
+                                                       music_player/mcu/playFlipFlop/q_0_2
+    SLICE_X49Y103.D2     net (fanout=16)       1.708   music_player/mcu/playFlipFlop/q_0_2
+    SLICE_X49Y103.COUT   Topcyd                0.392   music_player/chord/player1/tv/Madd_s5_cy<4>
+                                                       music_player/chord/player1/tv/Madd_s5_lut<4>
+                                                       music_player/chord/player1/tv/Madd_s5_cy<4>
+    SLICE_X49Y104.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/Madd_s5_cy<4>
+    SLICE_X49Y104.BMUX   Tcinb                 0.335   music_player/chord/player1/tv/Madd_s5_cy<8>
+                                                       music_player/chord/player1/tv/Madd_s5_cy<8>
+    SLICE_X48Y108.CX     net (fanout=3)        1.132   music_player/chord/player1/tv/s5<6>
+    SLICE_X48Y108.COUT   Tcxcy                 0.259   music_player/chord/player3/tv/music_dynamics/calc/scaler/sample_in/q<3>
+                                                       music_player/chord/player1/tv/Madd_s6_cy<7>
+    SLICE_X48Y109.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/Madd_s6_cy<7>
+    SLICE_X48Y109.CMUX   Tcinc                 0.337   music_player/chord/player3/tv/music_dynamics/calc/scaler/sample_in/q<15>
+                                                       music_player/chord/player1/tv/Madd_s6_cy<11>
+    SLICE_X49Y111.C1     net (fanout=3)        1.159   music_player/chord/player1/tv/s6<10>
+    SLICE_X49Y111.COUT   Topcyc                0.423   music_player/chord/player1/tv/Madd_s7_cy<11>
+                                                       music_player/chord/player1/tv/Madd_s7_lut<10>
+                                                       music_player/chord/player1/tv/Madd_s7_cy<11>
+    SLICE_X49Y112.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/Madd_s7_cy<11>
+    SLICE_X49Y112.CMUX   Tcinc                 0.334   music_player/chord/player1/tv/Madd_s7_cy<15>
+                                                       music_player/chord/player1/tv/Madd_s7_cy<15>
+    SLICE_X46Y116.C1     net (fanout=3)        1.477   music_player/chord/player1/tv/s7<14>
+    SLICE_X46Y116.COUT   Topcyc                0.423   music_player/chord/player1/tv/Madd_s8_cy<15>
+                                                       music_player/chord/player1/tv/Madd_s8_lut<14>
+                                                       music_player/chord/player1/tv/Madd_s8_cy<15>
+    SLICE_X46Y117.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/Madd_s8_cy<15>
+    SLICE_X46Y117.COUT   Tbyp                  0.104   music_player/chord/player1/tv/Madd_s8_cy<19>
+                                                       music_player/chord/player1/tv/Madd_s8_cy<19>
+    SLICE_X46Y118.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/Madd_s8_cy<19>
+    SLICE_X46Y118.AMUX   Tcina                 0.271   music_player/chord/player1/tv/s8<22>
+                                                       music_player/chord/player1/tv/Madd_s8_xor<22>
+    SLICE_X46Y119.A1     net (fanout=20)       1.169   music_player/chord/player1/tv/s8<20>
+    SLICE_X46Y119.CLK    Tas                   0.026   music_player/chord/player1/tv/sin8/pipe/q<15>
+                                                       music_player/chord/player1/tv/step8<12>1
+                                                       music_player/chord/player1/tv/sin8/pipe/q_12
+    -------------------------------------------------  ---------------------------
+    Total                                     10.020ns (3.375ns logic, 6.645ns route)
+                                                       (33.7% logic, 66.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.078ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               music_player/mcu/playFlipFlop/q_0_1 (FF)
+  Destination:          music_player/chord/player1/tv/sin8/pipe/q_12 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.984ns (Levels of Logic = 9)
+  Clock Path Skew:      0.097ns (1.310 - 1.213)
+  Source Clock:         clk_IBUF rising at 0.000ns
+  Destination Clock:    clk_IBUF rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: music_player/mcu/playFlipFlop/q_0_1 to music_player/chord/player1/tv/sin8/pipe/q_12
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X48Y86.AQ      Tcko                  0.471   music_player/mcu/playFlipFlop/q_0_4
+                                                       music_player/mcu/playFlipFlop/q_0_1
+    SLICE_X49Y103.A4     net (fanout=16)       1.473   music_player/mcu/playFlipFlop/q_0_1
+    SLICE_X49Y103.DMUX   Topad                 0.743   music_player/chord/player1/tv/Madd_s5_cy<4>
+                                                       music_player/chord/player1/tv/Madd_s5_lut<1>
+                                                       music_player/chord/player1/tv/Madd_s5_cy<4>
+    SLICE_X48Y108.A1     net (fanout=3)        1.075   music_player/chord/player1/tv/s5<4>
+    SLICE_X48Y108.COUT   Topcya                0.499   music_player/chord/player3/tv/music_dynamics/calc/scaler/sample_in/q<3>
+                                                       music_player/chord/player1/tv/Madd_s6_lut<4>
+                                                       music_player/chord/player1/tv/Madd_s6_cy<7>
+    SLICE_X48Y109.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/Madd_s6_cy<7>
+    SLICE_X48Y109.CMUX   Tcinc                 0.337   music_player/chord/player3/tv/music_dynamics/calc/scaler/sample_in/q<15>
+                                                       music_player/chord/player1/tv/Madd_s6_cy<11>
+    SLICE_X49Y111.C1     net (fanout=3)        1.159   music_player/chord/player1/tv/s6<10>
+    SLICE_X49Y111.COUT   Topcyc                0.423   music_player/chord/player1/tv/Madd_s7_cy<11>
+                                                       music_player/chord/player1/tv/Madd_s7_lut<10>
+                                                       music_player/chord/player1/tv/Madd_s7_cy<11>
+    SLICE_X49Y112.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/Madd_s7_cy<11>
+    SLICE_X49Y112.CMUX   Tcinc                 0.334   music_player/chord/player1/tv/Madd_s7_cy<15>
+                                                       music_player/chord/player1/tv/Madd_s7_cy<15>
+    SLICE_X46Y116.C1     net (fanout=3)        1.477   music_player/chord/player1/tv/s7<14>
+    SLICE_X46Y116.COUT   Topcyc                0.423   music_player/chord/player1/tv/Madd_s8_cy<15>
+                                                       music_player/chord/player1/tv/Madd_s8_lut<14>
+                                                       music_player/chord/player1/tv/Madd_s8_cy<15>
+    SLICE_X46Y117.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/Madd_s8_cy<15>
+    SLICE_X46Y117.COUT   Tbyp                  0.104   music_player/chord/player1/tv/Madd_s8_cy<19>
+                                                       music_player/chord/player1/tv/Madd_s8_cy<19>
+    SLICE_X46Y118.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/Madd_s8_cy<19>
+    SLICE_X46Y118.AMUX   Tcina                 0.271   music_player/chord/player1/tv/s8<22>
+                                                       music_player/chord/player1/tv/Madd_s8_xor<22>
+    SLICE_X46Y119.A1     net (fanout=20)       1.169   music_player/chord/player1/tv/s8<20>
+    SLICE_X46Y119.CLK    Tas                   0.026   music_player/chord/player1/tv/sin8/pipe/q<15>
+                                                       music_player/chord/player1/tv/step8<12>1
+                                                       music_player/chord/player1/tv/sin8/pipe/q_12
+    -------------------------------------------------  ---------------------------
+    Total                                      9.984ns (3.631ns logic, 6.353ns route)
+                                                       (36.4% logic, 63.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.103ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               music_player/mcu/playFlipFlop/q_0_2 (FF)
+  Destination:          music_player/chord/player1/tv/sin8/pipe/q_12 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.959ns (Levels of Logic = 10)
+  Clock Path Skew:      0.097ns (1.310 - 1.213)
+  Source Clock:         clk_IBUF rising at 0.000ns
+  Destination Clock:    clk_IBUF rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: music_player/mcu/playFlipFlop/q_0_2 to music_player/chord/player1/tv/sin8/pipe/q_12
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X48Y86.BQ      Tcko                  0.471   music_player/mcu/playFlipFlop/q_0_4
+                                                       music_player/mcu/playFlipFlop/q_0_2
+    SLICE_X49Y103.D2     net (fanout=16)       1.708   music_player/mcu/playFlipFlop/q_0_2
+    SLICE_X49Y103.COUT   Topcyd                0.392   music_player/chord/player1/tv/Madd_s5_cy<4>
+                                                       music_player/chord/player1/tv/Madd_s5_lut<4>
+                                                       music_player/chord/player1/tv/Madd_s5_cy<4>
+    SLICE_X49Y104.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/Madd_s5_cy<4>
+    SLICE_X49Y104.BMUX   Tcinb                 0.335   music_player/chord/player1/tv/Madd_s5_cy<8>
+                                                       music_player/chord/player1/tv/Madd_s5_cy<8>
+    SLICE_X48Y108.C3     net (fanout=3)        0.921   music_player/chord/player1/tv/s5<6>
+    SLICE_X48Y108.COUT   Topcyc                0.409   music_player/chord/player3/tv/music_dynamics/calc/scaler/sample_in/q<3>
+                                                       music_player/chord/player1/tv/Madd_s6_lut<6>
+                                                       music_player/chord/player1/tv/Madd_s6_cy<7>
+    SLICE_X48Y109.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/Madd_s6_cy<7>
+    SLICE_X48Y109.CMUX   Tcinc                 0.337   music_player/chord/player3/tv/music_dynamics/calc/scaler/sample_in/q<15>
+                                                       music_player/chord/player1/tv/Madd_s6_cy<11>
+    SLICE_X49Y111.C1     net (fanout=3)        1.159   music_player/chord/player1/tv/s6<10>
+    SLICE_X49Y111.COUT   Topcyc                0.423   music_player/chord/player1/tv/Madd_s7_cy<11>
+                                                       music_player/chord/player1/tv/Madd_s7_lut<10>
+                                                       music_player/chord/player1/tv/Madd_s7_cy<11>
+    SLICE_X49Y112.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/Madd_s7_cy<11>
+    SLICE_X49Y112.CMUX   Tcinc                 0.334   music_player/chord/player1/tv/Madd_s7_cy<15>
+                                                       music_player/chord/player1/tv/Madd_s7_cy<15>
+    SLICE_X46Y116.C1     net (fanout=3)        1.477   music_player/chord/player1/tv/s7<14>
+    SLICE_X46Y116.COUT   Topcyc                0.423   music_player/chord/player1/tv/Madd_s8_cy<15>
+                                                       music_player/chord/player1/tv/Madd_s8_lut<14>
+                                                       music_player/chord/player1/tv/Madd_s8_cy<15>
+    SLICE_X46Y117.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/Madd_s8_cy<15>
+    SLICE_X46Y117.COUT   Tbyp                  0.104   music_player/chord/player1/tv/Madd_s8_cy<19>
+                                                       music_player/chord/player1/tv/Madd_s8_cy<19>
+    SLICE_X46Y118.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/Madd_s8_cy<19>
+    SLICE_X46Y118.AMUX   Tcina                 0.271   music_player/chord/player1/tv/s8<22>
+                                                       music_player/chord/player1/tv/Madd_s8_xor<22>
+    SLICE_X46Y119.A1     net (fanout=20)       1.169   music_player/chord/player1/tv/s8<20>
+    SLICE_X46Y119.CLK    Tas                   0.026   music_player/chord/player1/tv/sin8/pipe/q<15>
+                                                       music_player/chord/player1/tv/step8<12>1
+                                                       music_player/chord/player1/tv/sin8/pipe/q_12
+    -------------------------------------------------  ---------------------------
+    Total                                      9.959ns (3.525ns logic, 6.434ns route)
+                                                       (35.4% logic, 64.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point music_player/chord/player1/tv/sin8/pipe/q_13 (SLICE_X46Y119.B1), 220931 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     0.047ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               music_player/mcu/playFlipFlop/q_0_2 (FF)
+  Destination:          music_player/chord/player1/tv/sin8/pipe/q_13 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      10.015ns (Levels of Logic = 10)
+  Clock Path Skew:      0.097ns (1.310 - 1.213)
+  Source Clock:         clk_IBUF rising at 0.000ns
+  Destination Clock:    clk_IBUF rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: music_player/mcu/playFlipFlop/q_0_2 to music_player/chord/player1/tv/sin8/pipe/q_13
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X48Y86.BQ      Tcko                  0.471   music_player/mcu/playFlipFlop/q_0_4
+                                                       music_player/mcu/playFlipFlop/q_0_2
+    SLICE_X49Y103.D2     net (fanout=16)       1.708   music_player/mcu/playFlipFlop/q_0_2
+    SLICE_X49Y103.COUT   Topcyd                0.392   music_player/chord/player1/tv/Madd_s5_cy<4>
+                                                       music_player/chord/player1/tv/Madd_s5_lut<4>
+                                                       music_player/chord/player1/tv/Madd_s5_cy<4>
+    SLICE_X49Y104.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/Madd_s5_cy<4>
+    SLICE_X49Y104.BMUX   Tcinb                 0.335   music_player/chord/player1/tv/Madd_s5_cy<8>
+                                                       music_player/chord/player1/tv/Madd_s5_cy<8>
+    SLICE_X48Y108.CX     net (fanout=3)        1.132   music_player/chord/player1/tv/s5<6>
+    SLICE_X48Y108.COUT   Tcxcy                 0.259   music_player/chord/player3/tv/music_dynamics/calc/scaler/sample_in/q<3>
+                                                       music_player/chord/player1/tv/Madd_s6_cy<7>
+    SLICE_X48Y109.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/Madd_s6_cy<7>
+    SLICE_X48Y109.CMUX   Tcinc                 0.337   music_player/chord/player3/tv/music_dynamics/calc/scaler/sample_in/q<15>
+                                                       music_player/chord/player1/tv/Madd_s6_cy<11>
+    SLICE_X49Y111.C1     net (fanout=3)        1.159   music_player/chord/player1/tv/s6<10>
+    SLICE_X49Y111.COUT   Topcyc                0.423   music_player/chord/player1/tv/Madd_s7_cy<11>
+                                                       music_player/chord/player1/tv/Madd_s7_lut<10>
+                                                       music_player/chord/player1/tv/Madd_s7_cy<11>
+    SLICE_X49Y112.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/Madd_s7_cy<11>
+    SLICE_X49Y112.CMUX   Tcinc                 0.334   music_player/chord/player1/tv/Madd_s7_cy<15>
+                                                       music_player/chord/player1/tv/Madd_s7_cy<15>
+    SLICE_X46Y116.C1     net (fanout=3)        1.477   music_player/chord/player1/tv/s7<14>
+    SLICE_X46Y116.COUT   Topcyc                0.423   music_player/chord/player1/tv/Madd_s8_cy<15>
+                                                       music_player/chord/player1/tv/Madd_s8_lut<14>
+                                                       music_player/chord/player1/tv/Madd_s8_cy<15>
+    SLICE_X46Y117.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/Madd_s8_cy<15>
+    SLICE_X46Y117.COUT   Tbyp                  0.104   music_player/chord/player1/tv/Madd_s8_cy<19>
+                                                       music_player/chord/player1/tv/Madd_s8_cy<19>
+    SLICE_X46Y118.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/Madd_s8_cy<19>
+    SLICE_X46Y118.AMUX   Tcina                 0.271   music_player/chord/player1/tv/s8<22>
+                                                       music_player/chord/player1/tv/Madd_s8_xor<22>
+    SLICE_X46Y119.B1     net (fanout=20)       1.163   music_player/chord/player1/tv/s8<20>
+    SLICE_X46Y119.CLK    Tas                   0.027   music_player/chord/player1/tv/sin8/pipe/q<15>
+                                                       music_player/chord/player1/tv/step8<13>1
+                                                       music_player/chord/player1/tv/sin8/pipe/q_13
+    -------------------------------------------------  ---------------------------
+    Total                                     10.015ns (3.376ns logic, 6.639ns route)
+                                                       (33.7% logic, 66.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.083ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               music_player/mcu/playFlipFlop/q_0_1 (FF)
+  Destination:          music_player/chord/player1/tv/sin8/pipe/q_13 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.979ns (Levels of Logic = 9)
+  Clock Path Skew:      0.097ns (1.310 - 1.213)
+  Source Clock:         clk_IBUF rising at 0.000ns
+  Destination Clock:    clk_IBUF rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: music_player/mcu/playFlipFlop/q_0_1 to music_player/chord/player1/tv/sin8/pipe/q_13
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X48Y86.AQ      Tcko                  0.471   music_player/mcu/playFlipFlop/q_0_4
+                                                       music_player/mcu/playFlipFlop/q_0_1
+    SLICE_X49Y103.A4     net (fanout=16)       1.473   music_player/mcu/playFlipFlop/q_0_1
+    SLICE_X49Y103.DMUX   Topad                 0.743   music_player/chord/player1/tv/Madd_s5_cy<4>
+                                                       music_player/chord/player1/tv/Madd_s5_lut<1>
+                                                       music_player/chord/player1/tv/Madd_s5_cy<4>
+    SLICE_X48Y108.A1     net (fanout=3)        1.075   music_player/chord/player1/tv/s5<4>
+    SLICE_X48Y108.COUT   Topcya                0.499   music_player/chord/player3/tv/music_dynamics/calc/scaler/sample_in/q<3>
+                                                       music_player/chord/player1/tv/Madd_s6_lut<4>
+                                                       music_player/chord/player1/tv/Madd_s6_cy<7>
+    SLICE_X48Y109.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/Madd_s6_cy<7>
+    SLICE_X48Y109.CMUX   Tcinc                 0.337   music_player/chord/player3/tv/music_dynamics/calc/scaler/sample_in/q<15>
+                                                       music_player/chord/player1/tv/Madd_s6_cy<11>
+    SLICE_X49Y111.C1     net (fanout=3)        1.159   music_player/chord/player1/tv/s6<10>
+    SLICE_X49Y111.COUT   Topcyc                0.423   music_player/chord/player1/tv/Madd_s7_cy<11>
+                                                       music_player/chord/player1/tv/Madd_s7_lut<10>
+                                                       music_player/chord/player1/tv/Madd_s7_cy<11>
+    SLICE_X49Y112.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/Madd_s7_cy<11>
+    SLICE_X49Y112.CMUX   Tcinc                 0.334   music_player/chord/player1/tv/Madd_s7_cy<15>
+                                                       music_player/chord/player1/tv/Madd_s7_cy<15>
+    SLICE_X46Y116.C1     net (fanout=3)        1.477   music_player/chord/player1/tv/s7<14>
+    SLICE_X46Y116.COUT   Topcyc                0.423   music_player/chord/player1/tv/Madd_s8_cy<15>
+                                                       music_player/chord/player1/tv/Madd_s8_lut<14>
+                                                       music_player/chord/player1/tv/Madd_s8_cy<15>
+    SLICE_X46Y117.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/Madd_s8_cy<15>
+    SLICE_X46Y117.COUT   Tbyp                  0.104   music_player/chord/player1/tv/Madd_s8_cy<19>
+                                                       music_player/chord/player1/tv/Madd_s8_cy<19>
+    SLICE_X46Y118.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/Madd_s8_cy<19>
+    SLICE_X46Y118.AMUX   Tcina                 0.271   music_player/chord/player1/tv/s8<22>
+                                                       music_player/chord/player1/tv/Madd_s8_xor<22>
+    SLICE_X46Y119.B1     net (fanout=20)       1.163   music_player/chord/player1/tv/s8<20>
+    SLICE_X46Y119.CLK    Tas                   0.027   music_player/chord/player1/tv/sin8/pipe/q<15>
+                                                       music_player/chord/player1/tv/step8<13>1
+                                                       music_player/chord/player1/tv/sin8/pipe/q_13
+    -------------------------------------------------  ---------------------------
+    Total                                      9.979ns (3.632ns logic, 6.347ns route)
+                                                       (36.4% logic, 63.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.108ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               music_player/mcu/playFlipFlop/q_0_2 (FF)
+  Destination:          music_player/chord/player1/tv/sin8/pipe/q_13 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.954ns (Levels of Logic = 10)
+  Clock Path Skew:      0.097ns (1.310 - 1.213)
+  Source Clock:         clk_IBUF rising at 0.000ns
+  Destination Clock:    clk_IBUF rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: music_player/mcu/playFlipFlop/q_0_2 to music_player/chord/player1/tv/sin8/pipe/q_13
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X48Y86.BQ      Tcko                  0.471   music_player/mcu/playFlipFlop/q_0_4
+                                                       music_player/mcu/playFlipFlop/q_0_2
+    SLICE_X49Y103.D2     net (fanout=16)       1.708   music_player/mcu/playFlipFlop/q_0_2
+    SLICE_X49Y103.COUT   Topcyd                0.392   music_player/chord/player1/tv/Madd_s5_cy<4>
+                                                       music_player/chord/player1/tv/Madd_s5_lut<4>
+                                                       music_player/chord/player1/tv/Madd_s5_cy<4>
+    SLICE_X49Y104.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/Madd_s5_cy<4>
+    SLICE_X49Y104.BMUX   Tcinb                 0.335   music_player/chord/player1/tv/Madd_s5_cy<8>
+                                                       music_player/chord/player1/tv/Madd_s5_cy<8>
+    SLICE_X48Y108.C3     net (fanout=3)        0.921   music_player/chord/player1/tv/s5<6>
+    SLICE_X48Y108.COUT   Topcyc                0.409   music_player/chord/player3/tv/music_dynamics/calc/scaler/sample_in/q<3>
+                                                       music_player/chord/player1/tv/Madd_s6_lut<6>
+                                                       music_player/chord/player1/tv/Madd_s6_cy<7>
+    SLICE_X48Y109.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/Madd_s6_cy<7>
+    SLICE_X48Y109.CMUX   Tcinc                 0.337   music_player/chord/player3/tv/music_dynamics/calc/scaler/sample_in/q<15>
+                                                       music_player/chord/player1/tv/Madd_s6_cy<11>
+    SLICE_X49Y111.C1     net (fanout=3)        1.159   music_player/chord/player1/tv/s6<10>
+    SLICE_X49Y111.COUT   Topcyc                0.423   music_player/chord/player1/tv/Madd_s7_cy<11>
+                                                       music_player/chord/player1/tv/Madd_s7_lut<10>
+                                                       music_player/chord/player1/tv/Madd_s7_cy<11>
+    SLICE_X49Y112.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/Madd_s7_cy<11>
+    SLICE_X49Y112.CMUX   Tcinc                 0.334   music_player/chord/player1/tv/Madd_s7_cy<15>
+                                                       music_player/chord/player1/tv/Madd_s7_cy<15>
+    SLICE_X46Y116.C1     net (fanout=3)        1.477   music_player/chord/player1/tv/s7<14>
+    SLICE_X46Y116.COUT   Topcyc                0.423   music_player/chord/player1/tv/Madd_s8_cy<15>
+                                                       music_player/chord/player1/tv/Madd_s8_lut<14>
+                                                       music_player/chord/player1/tv/Madd_s8_cy<15>
+    SLICE_X46Y117.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/Madd_s8_cy<15>
+    SLICE_X46Y117.COUT   Tbyp                  0.104   music_player/chord/player1/tv/Madd_s8_cy<19>
+                                                       music_player/chord/player1/tv/Madd_s8_cy<19>
+    SLICE_X46Y118.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/Madd_s8_cy<19>
+    SLICE_X46Y118.AMUX   Tcina                 0.271   music_player/chord/player1/tv/s8<22>
+                                                       music_player/chord/player1/tv/Madd_s8_xor<22>
+    SLICE_X46Y119.B1     net (fanout=20)       1.163   music_player/chord/player1/tv/s8<20>
+    SLICE_X46Y119.CLK    Tas                   0.027   music_player/chord/player1/tv/sin8/pipe/q<15>
+                                                       music_player/chord/player1/tv/step8<13>1
+                                                       music_player/chord/player1/tv/sin8/pipe/q_13
+    -------------------------------------------------  ---------------------------
+    Total                                      9.954ns (3.526ns logic, 6.428ns route)
+                                                       (35.4% logic, 64.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point music_player/chord/player1/tv/music_dynamics/h4/gain_ff/q_2 (SLICE_X30Y96.B1), 158 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     0.048ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               music_player/chord/player1/tv/sin4/srom/Mrom__varindex0000 (RAM)
+  Destination:          music_player/chord/player1/tv/music_dynamics/h4/gain_ff/q_2 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.481ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.436ns (1.263 - 1.699)
+  Source Clock:         clk_IBUF rising at 0.000ns
+  Destination Clock:    clk_IBUF rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: music_player/chord/player1/tv/sin4/srom/Mrom__varindex0000 to music_player/chord/player1/tv/music_dynamics/h4/gain_ff/q_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB36_X1Y26.DOADOU9 Trcko_DOWA            2.180   music_player/chord/player1/tv/sin8/srom/Mrom__varindex0000
+                                                       music_player/chord/player1/tv/sin4/srom/Mrom__varindex0000
+    SLICE_X26Y130.B2     net (fanout=2)        1.361   music_player/chord/player1/tv/sin4/sine_out<9>
+    SLICE_X26Y130.COUT   Topcyb                0.501   music_player/chord/player1/tv/sin4/Madd_sample_addsub0000_cy<11>
+                                                       music_player/chord/player1/tv/sin4/Madd_sample_not0000<9>1_INV_0
+                                                       music_player/chord/player1/tv/sin4/Madd_sample_addsub0000_cy<11>
+    SLICE_X26Y131.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/sin4/Madd_sample_addsub0000_cy<11>
+    SLICE_X26Y131.DMUX   Tcind                 0.402   music_player/chord/player1/tv/sin4/sample_addsub0000<15>
+                                                       music_player/chord/player1/tv/sin4/Madd_sample_addsub0000_xor<15>
+    SLICE_X36Y100.C2     net (fanout=4)        2.498   music_player/chord/player1/tv/sin4/sample_addsub0000<15>
+    SLICE_X36Y100.C      Tilo                  0.094   music_player/chord/player1/tv/music_dynamics/h4/next_state_and0000
+                                                       music_player/chord/player1/tv/music_dynamics/h4/next_state_and000050
+    SLICE_X28Y97.B2      net (fanout=10)       1.155   music_player/chord/player1/tv/music_dynamics/h4/next_state_and0000
+    SLICE_X28Y97.AMUX    Topba                 0.354   N2960
+                                                       music_player/chord/player1/tv/music_dynamics/h4/gain1<1>4_F
+                                                       music_player/chord/player1/tv/music_dynamics/h4/gain1<1>4
+    SLICE_X30Y96.B1      net (fanout=8)        0.933   music_player/chord/player1/tv/music_dynamics/h4/N21
+    SLICE_X30Y96.CLK     Tas                   0.003   music_player/chord/player1/tv/music_dynamics/h4/gain_ff/q<3>
+                                                       music_player/chord/player1/tv/music_dynamics/h4/gain1<2>1
+                                                       music_player/chord/player1/tv/music_dynamics/h4/gain_ff/q_2
+    -------------------------------------------------  ---------------------------
+    Total                                      9.481ns (3.534ns logic, 5.947ns route)
+                                                       (37.3% logic, 62.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.109ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               music_player/chord/player1/tv/sin4/srom/Mrom__varindex0000 (RAM)
+  Destination:          music_player/chord/player1/tv/music_dynamics/h4/gain_ff/q_2 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.420ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.436ns (1.263 - 1.699)
+  Source Clock:         clk_IBUF rising at 0.000ns
+  Destination Clock:    clk_IBUF rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: music_player/chord/player1/tv/sin4/srom/Mrom__varindex0000 to music_player/chord/player1/tv/music_dynamics/h4/gain_ff/q_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB36_X1Y26.DOADOU2 Trcko_DOWA            2.180   music_player/chord/player1/tv/sin8/srom/Mrom__varindex0000
+                                                       music_player/chord/player1/tv/sin4/srom/Mrom__varindex0000
+    SLICE_X26Y128.C1     net (fanout=2)        1.160   music_player/chord/player1/tv/sin4/sine_out<2>
+    SLICE_X26Y128.COUT   Topcyc                0.423   music_player/chord/player1/tv/sin4/Madd_sample_addsub0000_cy<3>
+                                                       music_player/chord/player1/tv/sin4/Madd_sample_not0000<2>1_INV_0
+                                                       music_player/chord/player1/tv/sin4/Madd_sample_addsub0000_cy<3>
+    SLICE_X26Y129.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/sin4/Madd_sample_addsub0000_cy<3>
+    SLICE_X26Y129.COUT   Tbyp                  0.104   music_player/chord/player1/tv/sin4/Madd_sample_addsub0000_cy<7>
+                                                       music_player/chord/player1/tv/sin4/Madd_sample_addsub0000_cy<7>
+    SLICE_X26Y130.CIN    net (fanout=1)        0.010   music_player/chord/player1/tv/sin4/Madd_sample_addsub0000_cy<7>
+    SLICE_X26Y130.COUT   Tbyp                  0.104   music_player/chord/player1/tv/sin4/Madd_sample_addsub0000_cy<11>
+                                                       music_player/chord/player1/tv/sin4/Madd_sample_addsub0000_cy<11>
+    SLICE_X26Y131.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/sin4/Madd_sample_addsub0000_cy<11>
+    SLICE_X26Y131.DMUX   Tcind                 0.402   music_player/chord/player1/tv/sin4/sample_addsub0000<15>
+                                                       music_player/chord/player1/tv/sin4/Madd_sample_addsub0000_xor<15>
+    SLICE_X36Y100.C2     net (fanout=4)        2.498   music_player/chord/player1/tv/sin4/sample_addsub0000<15>
+    SLICE_X36Y100.C      Tilo                  0.094   music_player/chord/player1/tv/music_dynamics/h4/next_state_and0000
+                                                       music_player/chord/player1/tv/music_dynamics/h4/next_state_and000050
+    SLICE_X28Y97.B2      net (fanout=10)       1.155   music_player/chord/player1/tv/music_dynamics/h4/next_state_and0000
+    SLICE_X28Y97.AMUX    Topba                 0.354   N2960
+                                                       music_player/chord/player1/tv/music_dynamics/h4/gain1<1>4_F
+                                                       music_player/chord/player1/tv/music_dynamics/h4/gain1<1>4
+    SLICE_X30Y96.B1      net (fanout=8)        0.933   music_player/chord/player1/tv/music_dynamics/h4/N21
+    SLICE_X30Y96.CLK     Tas                   0.003   music_player/chord/player1/tv/music_dynamics/h4/gain_ff/q<3>
+                                                       music_player/chord/player1/tv/music_dynamics/h4/gain1<2>1
+                                                       music_player/chord/player1/tv/music_dynamics/h4/gain_ff/q_2
+    -------------------------------------------------  ---------------------------
+    Total                                      9.420ns (3.664ns logic, 5.756ns route)
+                                                       (38.9% logic, 61.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.187ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               music_player/chord/player1/tv/sin4/srom/Mrom__varindex0000 (RAM)
+  Destination:          music_player/chord/player1/tv/music_dynamics/h4/gain_ff/q_2 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.342ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.436ns (1.263 - 1.699)
+  Source Clock:         clk_IBUF rising at 0.000ns
+  Destination Clock:    clk_IBUF rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: music_player/chord/player1/tv/sin4/srom/Mrom__varindex0000 to music_player/chord/player1/tv/music_dynamics/h4/gain_ff/q_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB36_X1Y26.DOADOU0 Trcko_DOWA            2.180   music_player/chord/player1/tv/sin8/srom/Mrom__varindex0000
+                                                       music_player/chord/player1/tv/sin4/srom/Mrom__varindex0000
+    SLICE_X26Y128.A5     net (fanout=2)        0.996   music_player/chord/player1/tv/sin4/sine_out<0>
+    SLICE_X26Y128.COUT   Topcya                0.509   music_player/chord/player1/tv/sin4/Madd_sample_addsub0000_cy<3>
+                                                       music_player/chord/player1/tv/sin4/sine_out<0>_rt
+                                                       music_player/chord/player1/tv/sin4/Madd_sample_addsub0000_cy<3>
+    SLICE_X26Y129.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/sin4/Madd_sample_addsub0000_cy<3>
+    SLICE_X26Y129.COUT   Tbyp                  0.104   music_player/chord/player1/tv/sin4/Madd_sample_addsub0000_cy<7>
+                                                       music_player/chord/player1/tv/sin4/Madd_sample_addsub0000_cy<7>
+    SLICE_X26Y130.CIN    net (fanout=1)        0.010   music_player/chord/player1/tv/sin4/Madd_sample_addsub0000_cy<7>
+    SLICE_X26Y130.COUT   Tbyp                  0.104   music_player/chord/player1/tv/sin4/Madd_sample_addsub0000_cy<11>
+                                                       music_player/chord/player1/tv/sin4/Madd_sample_addsub0000_cy<11>
+    SLICE_X26Y131.CIN    net (fanout=1)        0.000   music_player/chord/player1/tv/sin4/Madd_sample_addsub0000_cy<11>
+    SLICE_X26Y131.DMUX   Tcind                 0.402   music_player/chord/player1/tv/sin4/sample_addsub0000<15>
+                                                       music_player/chord/player1/tv/sin4/Madd_sample_addsub0000_xor<15>
+    SLICE_X36Y100.C2     net (fanout=4)        2.498   music_player/chord/player1/tv/sin4/sample_addsub0000<15>
+    SLICE_X36Y100.C      Tilo                  0.094   music_player/chord/player1/tv/music_dynamics/h4/next_state_and0000
+                                                       music_player/chord/player1/tv/music_dynamics/h4/next_state_and000050
+    SLICE_X28Y97.B2      net (fanout=10)       1.155   music_player/chord/player1/tv/music_dynamics/h4/next_state_and0000
+    SLICE_X28Y97.AMUX    Topba                 0.354   N2960
+                                                       music_player/chord/player1/tv/music_dynamics/h4/gain1<1>4_F
+                                                       music_player/chord/player1/tv/music_dynamics/h4/gain1<1>4
+    SLICE_X30Y96.B1      net (fanout=8)        0.933   music_player/chord/player1/tv/music_dynamics/h4/N21
+    SLICE_X30Y96.CLK     Tas                   0.003   music_player/chord/player1/tv/music_dynamics/h4/gain_ff/q<3>
+                                                       music_player/chord/player1/tv/music_dynamics/h4/gain1<2>1
+                                                       music_player/chord/player1/tv/music_dynamics/h4/gain_ff/q_2
+    -------------------------------------------------  ---------------------------
+    Total                                      9.342ns (3.750ns logic, 5.592ns route)
+                                                       (40.1% logic, 59.9% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_clock = PERIOD TIMEGRP "clk" 10 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point music_player/song_reader/songs/Mrom__varindex0000 (RAMB36_X1Y16.ADDRAL11), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.276ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               music_player/song_reader/address_value/q_6 (FF)
+  Destination:          music_player/song_reader/songs/Mrom__varindex0000 (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.434ns (Levels of Logic = 0)
+  Clock Path Skew:      0.158ns (0.783 - 0.625)
+  Source Clock:         clk_IBUF rising at 10.000ns
+  Destination Clock:    clk_IBUF rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: music_player/song_reader/address_value/q_6 to music_player/song_reader/songs/Mrom__varindex0000
+    Location                Delay type         Delay(ns)  Physical Resource
+                                                          Logical Resource(s)
+    ----------------------------------------------------  -------------------
+    SLICE_X25Y82.DQ         Tcko                  0.414   music_player/song_reader/address_value/q<6>
+                                                          music_player/song_reader/address_value/q_6
+    RAMB36_X1Y16.ADDRAL11   net (fanout=3)        0.314   music_player/song_reader/address_value/q<6>
+    RAMB36_X1Y16.CLKARDCLKL Trckc_ADDRA (-Th)     0.294   music_player/song_reader/songs/Mrom__varindex0000
+                                                          music_player/song_reader/songs/Mrom__varindex0000
+    ----------------------------------------------------  ---------------------------
+    Total                                         0.434ns (0.120ns logic, 0.314ns route)
+                                                          (27.6% logic, 72.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point music_player/song_reader/songs/Mrom__varindex0000 (RAMB36_X1Y16.ADDRAL9), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.285ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               music_player/song_reader/address_value/q_4 (FF)
+  Destination:          music_player/song_reader/songs/Mrom__varindex0000 (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.443ns (Levels of Logic = 0)
+  Clock Path Skew:      0.158ns (0.783 - 0.625)
+  Source Clock:         clk_IBUF rising at 10.000ns
+  Destination Clock:    clk_IBUF rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: music_player/song_reader/address_value/q_4 to music_player/song_reader/songs/Mrom__varindex0000
+    Location                Delay type         Delay(ns)  Physical Resource
+                                                          Logical Resource(s)
+    ----------------------------------------------------  -------------------
+    SLICE_X25Y82.BQ         Tcko                  0.414   music_player/song_reader/address_value/q<6>
+                                                          music_player/song_reader/address_value/q_4
+    RAMB36_X1Y16.ADDRAL9    net (fanout=5)        0.323   music_player/song_reader/address_value/q<4>
+    RAMB36_X1Y16.CLKARDCLKL Trckc_ADDRA (-Th)     0.294   music_player/song_reader/songs/Mrom__varindex0000
+                                                          music_player/song_reader/songs/Mrom__varindex0000
+    ----------------------------------------------------  ---------------------------
+    Total                                         0.443ns (0.120ns logic, 0.323ns route)
+                                                          (27.1% logic, 72.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point music_player/chord/player3/freq/dout_18 (SLICE_X47Y100.C6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.312ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               music_player/chord/player3/note_ff/q_5 (FF)
+  Destination:          music_player/chord/player3/freq/dout_18 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.487ns (Levels of Logic = 1)
+  Clock Path Skew:      0.175ns (1.383 - 1.208)
+  Source Clock:         clk_IBUF rising at 10.000ns
+  Destination Clock:    clk_IBUF rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: music_player/chord/player3/note_ff/q_5 to music_player/chord/player3/freq/dout_18
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X47Y99.DQ      Tcko                  0.414   music_player/chord/player3/note_ff/q<5>
+                                                       music_player/chord/player3/note_ff/q_5
+    SLICE_X47Y100.C6     net (fanout=19)       0.268   music_player/chord/player3/note_ff/q<5>
+    SLICE_X47Y100.CLK    Tah         (-Th)     0.195   music_player/chord/player3/freq/dout<18>
+                                                       music_player/chord/player3/freq_Mrom__varindex0000181
+                                                       music_player/chord/player3/freq/dout_18
+    -------------------------------------------------  ---------------------------
+    Total                                      0.487ns (0.219ns logic, 0.268ns route)
+                                                       (45.0% logic, 55.0% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clock = PERIOD TIMEGRP "clk" 10 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 7.778ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.222ns (450.045MHz) (Tdspper_P)
+  Physical resource: music_player/chord/player1/pv/music_dynamics/calc/scaler/Mmult_product1_mult0001/CLK
+  Logical resource: music_player/chord/player1/pv/music_dynamics/calc/scaler/Mmult_product1_mult0001/CLK
+  Location pin: DSP48_X0Y28.CLK
+  Clock network: clk_IBUF
+--------------------------------------------------------------------------------
+Slack: 7.778ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.222ns (450.045MHz) (Tdspper_P)
+  Physical resource: music_player/chord/player2/pv/music_dynamics/calc/scaler/Mmult_product1_mult0001/CLK
+  Logical resource: music_player/chord/player2/pv/music_dynamics/calc/scaler/Mmult_product1_mult0001/CLK
+  Location pin: DSP48_X0Y27.CLK
+  Clock network: clk_IBUF
+--------------------------------------------------------------------------------
+Slack: 7.778ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.222ns (450.045MHz) (Tdspper_P)
+  Physical resource: music_player/chord/player3/pv/music_dynamics/calc/scaler/Mmult_product1_mult0001/CLK
+  Logical resource: music_player/chord/player3/pv/music_dynamics/calc/scaler/Mmult_product1_mult0001/CLK
+  Location pin: DSP48_X0Y38.CLK
+  Clock network: clk_IBUF
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    9.958|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 111441639 paths, 0 nets, and 66785 connections
+
+Design statistics:
+   Minimum period:   9.958ns{1}   (Maximum frequency: 100.422MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Mon Dec 10 02:49:03 2012 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 439 MB
+
+
+

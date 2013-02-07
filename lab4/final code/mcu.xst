@@ -1,0 +1,5 @@
+set -tmpdir "/afs/ir.stanford.edu/class/ee108a/groups/18/lab4/xst/projnav.tmp"
+set -xsthdpdir "/afs/ir.stanford.edu/class/ee108a/groups/18/lab4/xst"
+elaborate
+-ifn mcu.prj
+-ifmt mixed

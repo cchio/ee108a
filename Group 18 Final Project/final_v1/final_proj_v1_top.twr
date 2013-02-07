@@ -1,0 +1,717 @@
+--------------------------------------------------------------------------------
+Release 12.2 Trace  (lin)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+/opt/xilinx/ISE_DS/ISE/bin/lin/unwrapped/trce -intstyle ise -v 3 -s 1 -n 3
+-fastpaths -xml final_proj_v1_top.twx final_proj_v1_top.ncd -o
+final_proj_v1_top.twr final_proj_v1_top.pcf -ucf final_proj_v1_top.ucf
+
+Design file:              final_proj_v1_top.ncd
+Physical constraint file: final_proj_v1_top.pcf
+Device,package,speed:     xc5vlx110t,ff1136,-1 (PRODUCTION 1.70 2010-06-22, STEPPING level 0)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_clock = PERIOD TIMEGRP "clock" 10 ns HIGH 50%;
+
+ 2916390258 paths analyzed, 23707 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   9.970ns.
+--------------------------------------------------------------------------------
+
+Paths for end point midi_synth/note1/st8/q_9 (SLICE_X43Y132.B4), 8571640 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     0.030ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               midi_synth/note1/freq_rom/dout_1 (FF)
+  Destination:          midi_synth/note1/st8/q_9 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.890ns (Levels of Logic = 12)
+  Clock Path Skew:      -0.045ns (1.333 - 1.378)
+  Source Clock:         clk_IBUF rising at 0.000ns
+  Destination Clock:    clk_IBUF rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: midi_synth/note1/freq_rom/dout_1 to midi_synth/note1/st8/q_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X41Y117.AQ     Tcko                  0.450   midi_synth/note1/freq_rom/dout<2>
+                                                       midi_synth/note1/freq_rom/dout_1
+    SLICE_X40Y119.A5     net (fanout=9)        0.550   midi_synth/note1/freq_rom/dout<1>
+    SLICE_X40Y119.COUT   Topcya                0.499   midi_synth/note1/Madd_s3_cy<4>
+                                                       midi_synth/note1/Madd_s3_lut<1>
+                                                       midi_synth/note1/Madd_s3_cy<4>
+    SLICE_X40Y120.CIN    net (fanout=1)        0.000   midi_synth/note1/Madd_s3_cy<4>
+    SLICE_X40Y120.COUT   Tbyp                  0.104   midi_synth/note1/Madd_s3_cy<8>
+                                                       midi_synth/note1/Madd_s3_cy<8>
+    SLICE_X40Y121.CIN    net (fanout=1)        0.000   midi_synth/note1/Madd_s3_cy<8>
+    SLICE_X40Y121.AMUX   Tcina                 0.274   midi_synth/note1/Madd_s3_cy<12>
+                                                       midi_synth/note1/Madd_s3_cy<12>
+    SLICE_X41Y123.B6     net (fanout=3)        0.771   midi_synth/note1/s3<9>
+    SLICE_X41Y123.CMUX   Topbc                 0.673   midi_synth/note1/Madd_s4_cy<11>
+                                                       midi_synth/note1/Madd_s4_lut<9>
+                                                       midi_synth/note1/Madd_s4_cy<11>
+    SLICE_X40Y126.BX     net (fanout=3)        1.011   midi_synth/note1/s4<10>
+    SLICE_X40Y126.COUT   Tbxcy                 0.361   midi_synth/note1/Madd_s5_cy<12>
+                                                       midi_synth/note1/Madd_s5_cy<12>
+    SLICE_X40Y127.CIN    net (fanout=1)        0.000   midi_synth/note1/Madd_s5_cy<12>
+    SLICE_X40Y127.AMUX   Tcina                 0.274   midi_synth/note1/Madd_s5_cy<16>
+                                                       midi_synth/note1/Madd_s5_cy<16>
+    SLICE_X39Y129.BX     net (fanout=3)        0.791   midi_synth/note1/s5<13>
+    SLICE_X39Y129.CMUX   Taxd                  0.528   midi_synth/note1/Madd_s6_cy<15>
+                                                       midi_synth/note1/Madd_s6_cy<15>
+    SLICE_X38Y130.CX     net (fanout=3)        0.841   midi_synth/note1/s6<14>
+    SLICE_X38Y130.COUT   Tcxcy                 0.253   midi_synth/note1/Madd_s7_cy<15>
+                                                       midi_synth/note1/Madd_s7_cy<15>
+    SLICE_X38Y131.CIN    net (fanout=1)        0.000   midi_synth/note1/Madd_s7_cy<15>
+    SLICE_X38Y131.AMUX   Tcina                 0.271   midi_synth/note1/Madd_s7_cy<19>
+                                                       midi_synth/note1/Madd_s7_cy<19>
+    SLICE_X44Y132.A6     net (fanout=3)        0.657   midi_synth/note1/s7<16>
+    SLICE_X44Y132.COUT   Topcya                0.499   midi_synth/note1/Madd_s8_cy<19>
+                                                       midi_synth/note1/Madd_s8_lut<16>
+                                                       midi_synth/note1/Madd_s8_cy<19>
+    SLICE_X44Y133.CIN    net (fanout=1)        0.000   midi_synth/note1/Madd_s8_cy<19>
+    SLICE_X44Y133.AMUX   Tcina                 0.274   midi_synth/note1/s8<22>
+                                                       midi_synth/note1/Madd_s8_xor<22>
+    SLICE_X43Y132.B4     net (fanout=20)       0.782   midi_synth/note1/s8<20>
+    SLICE_X43Y132.CLK    Tas                   0.027   midi_synth/note1/st8/q<11>
+                                                       midi_synth/note1/step8<9>1
+                                                       midi_synth/note1/st8/q_9
+    -------------------------------------------------  ---------------------------
+    Total                                      9.890ns (4.487ns logic, 5.403ns route)
+                                                       (45.4% logic, 54.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.030ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               midi_synth/note1/freq_rom/dout_1 (FF)
+  Destination:          midi_synth/note1/st8/q_9 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.890ns (Levels of Logic = 12)
+  Clock Path Skew:      -0.045ns (1.333 - 1.378)
+  Source Clock:         clk_IBUF rising at 0.000ns
+  Destination Clock:    clk_IBUF rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: midi_synth/note1/freq_rom/dout_1 to midi_synth/note1/st8/q_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X41Y117.AQ     Tcko                  0.450   midi_synth/note1/freq_rom/dout<2>
+                                                       midi_synth/note1/freq_rom/dout_1
+    SLICE_X40Y119.A5     net (fanout=9)        0.550   midi_synth/note1/freq_rom/dout<1>
+    SLICE_X40Y119.COUT   Topcya                0.499   midi_synth/note1/Madd_s3_cy<4>
+                                                       midi_synth/note1/Madd_s3_lut<1>
+                                                       midi_synth/note1/Madd_s3_cy<4>
+    SLICE_X40Y120.CIN    net (fanout=1)        0.000   midi_synth/note1/Madd_s3_cy<4>
+    SLICE_X40Y120.COUT   Tbyp                  0.104   midi_synth/note1/Madd_s3_cy<8>
+                                                       midi_synth/note1/Madd_s3_cy<8>
+    SLICE_X40Y121.CIN    net (fanout=1)        0.000   midi_synth/note1/Madd_s3_cy<8>
+    SLICE_X40Y121.AMUX   Tcina                 0.274   midi_synth/note1/Madd_s3_cy<12>
+                                                       midi_synth/note1/Madd_s3_cy<12>
+    SLICE_X41Y123.B6     net (fanout=3)        0.771   midi_synth/note1/s3<9>
+    SLICE_X41Y123.CMUX   Topbc                 0.673   midi_synth/note1/Madd_s4_cy<11>
+                                                       midi_synth/note1/Madd_s4_lut<9>
+                                                       midi_synth/note1/Madd_s4_cy<11>
+    SLICE_X40Y126.BX     net (fanout=3)        1.011   midi_synth/note1/s4<10>
+    SLICE_X40Y126.COUT   Tbxcy                 0.361   midi_synth/note1/Madd_s5_cy<12>
+                                                       midi_synth/note1/Madd_s5_cy<12>
+    SLICE_X40Y127.CIN    net (fanout=1)        0.000   midi_synth/note1/Madd_s5_cy<12>
+    SLICE_X40Y127.AMUX   Tcina                 0.274   midi_synth/note1/Madd_s5_cy<16>
+                                                       midi_synth/note1/Madd_s5_cy<16>
+    SLICE_X39Y129.BX     net (fanout=3)        0.791   midi_synth/note1/s5<13>
+    SLICE_X39Y129.DMUX   Tbxd                  0.569   midi_synth/note1/Madd_s6_cy<15>
+                                                       midi_synth/note1/Madd_s6_cy<15>
+    SLICE_X38Y130.DX     net (fanout=3)        0.811   midi_synth/note1/s6<15>
+    SLICE_X38Y130.COUT   Tdxcy                 0.242   midi_synth/note1/Madd_s7_cy<15>
+                                                       midi_synth/note1/Madd_s7_cy<15>
+    SLICE_X38Y131.CIN    net (fanout=1)        0.000   midi_synth/note1/Madd_s7_cy<15>
+    SLICE_X38Y131.AMUX   Tcina                 0.271   midi_synth/note1/Madd_s7_cy<19>
+                                                       midi_synth/note1/Madd_s7_cy<19>
+    SLICE_X44Y132.A6     net (fanout=3)        0.657   midi_synth/note1/s7<16>
+    SLICE_X44Y132.COUT   Topcya                0.499   midi_synth/note1/Madd_s8_cy<19>
+                                                       midi_synth/note1/Madd_s8_lut<16>
+                                                       midi_synth/note1/Madd_s8_cy<19>
+    SLICE_X44Y133.CIN    net (fanout=1)        0.000   midi_synth/note1/Madd_s8_cy<19>
+    SLICE_X44Y133.AMUX   Tcina                 0.274   midi_synth/note1/s8<22>
+                                                       midi_synth/note1/Madd_s8_xor<22>
+    SLICE_X43Y132.B4     net (fanout=20)       0.782   midi_synth/note1/s8<20>
+    SLICE_X43Y132.CLK    Tas                   0.027   midi_synth/note1/st8/q<11>
+                                                       midi_synth/note1/step8<9>1
+                                                       midi_synth/note1/st8/q_9
+    -------------------------------------------------  ---------------------------
+    Total                                      9.890ns (4.517ns logic, 5.373ns route)
+                                                       (45.7% logic, 54.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.034ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               midi_synth/note1/freq_rom/dout_1 (FF)
+  Destination:          midi_synth/note1/st8/q_9 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.886ns (Levels of Logic = 12)
+  Clock Path Skew:      -0.045ns (1.333 - 1.378)
+  Source Clock:         clk_IBUF rising at 0.000ns
+  Destination Clock:    clk_IBUF rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: midi_synth/note1/freq_rom/dout_1 to midi_synth/note1/st8/q_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X41Y117.AQ     Tcko                  0.450   midi_synth/note1/freq_rom/dout<2>
+                                                       midi_synth/note1/freq_rom/dout_1
+    SLICE_X40Y119.A5     net (fanout=9)        0.550   midi_synth/note1/freq_rom/dout<1>
+    SLICE_X40Y119.COUT   Topcya                0.499   midi_synth/note1/Madd_s3_cy<4>
+                                                       midi_synth/note1/Madd_s3_lut<1>
+                                                       midi_synth/note1/Madd_s3_cy<4>
+    SLICE_X40Y120.CIN    net (fanout=1)        0.000   midi_synth/note1/Madd_s3_cy<4>
+    SLICE_X40Y120.COUT   Tbyp                  0.104   midi_synth/note1/Madd_s3_cy<8>
+                                                       midi_synth/note1/Madd_s3_cy<8>
+    SLICE_X40Y121.CIN    net (fanout=1)        0.000   midi_synth/note1/Madd_s3_cy<8>
+    SLICE_X40Y121.AMUX   Tcina                 0.274   midi_synth/note1/Madd_s3_cy<12>
+                                                       midi_synth/note1/Madd_s3_cy<12>
+    SLICE_X41Y123.B6     net (fanout=3)        0.771   midi_synth/note1/s3<9>
+    SLICE_X41Y123.CMUX   Topbc                 0.673   midi_synth/note1/Madd_s4_cy<11>
+                                                       midi_synth/note1/Madd_s4_lut<9>
+                                                       midi_synth/note1/Madd_s4_cy<11>
+    SLICE_X40Y126.BX     net (fanout=3)        1.011   midi_synth/note1/s4<10>
+    SLICE_X40Y126.COUT   Tbxcy                 0.361   midi_synth/note1/Madd_s5_cy<12>
+                                                       midi_synth/note1/Madd_s5_cy<12>
+    SLICE_X40Y127.CIN    net (fanout=1)        0.000   midi_synth/note1/Madd_s5_cy<12>
+    SLICE_X40Y127.AMUX   Tcina                 0.274   midi_synth/note1/Madd_s5_cy<16>
+                                                       midi_synth/note1/Madd_s5_cy<16>
+    SLICE_X39Y129.BX     net (fanout=3)        0.791   midi_synth/note1/s5<13>
+    SLICE_X39Y129.DMUX   Tbxd                  0.569   midi_synth/note1/Madd_s6_cy<15>
+                                                       midi_synth/note1/Madd_s6_cy<15>
+    SLICE_X38Y130.DX     net (fanout=3)        0.811   midi_synth/note1/s6<15>
+    SLICE_X38Y130.COUT   Tdxcy                 0.242   midi_synth/note1/Madd_s7_cy<15>
+                                                       midi_synth/note1/Madd_s7_cy<15>
+    SLICE_X38Y131.CIN    net (fanout=1)        0.000   midi_synth/note1/Madd_s7_cy<15>
+    SLICE_X38Y131.DMUX   Tcind                 0.402   midi_synth/note1/Madd_s7_cy<19>
+                                                       midi_synth/note1/Madd_s7_cy<19>
+    SLICE_X44Y132.D6     net (fanout=3)        0.637   midi_synth/note1/Madd_s8_lut<19>
+    SLICE_X44Y132.COUT   Topcyd                0.384   midi_synth/note1/Madd_s8_cy<19>
+                                                       midi_synth/note1/Madd_s8_lut<19>_rt
+                                                       midi_synth/note1/Madd_s8_cy<19>
+    SLICE_X44Y133.CIN    net (fanout=1)        0.000   midi_synth/note1/Madd_s8_cy<19>
+    SLICE_X44Y133.AMUX   Tcina                 0.274   midi_synth/note1/s8<22>
+                                                       midi_synth/note1/Madd_s8_xor<22>
+    SLICE_X43Y132.B4     net (fanout=20)       0.782   midi_synth/note1/s8<20>
+    SLICE_X43Y132.CLK    Tas                   0.027   midi_synth/note1/st8/q<11>
+                                                       midi_synth/note1/step8<9>1
+                                                       midi_synth/note1/st8/q_9
+    -------------------------------------------------  ---------------------------
+    Total                                      9.886ns (4.533ns logic, 5.353ns route)
+                                                       (45.9% logic, 54.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point midi_synth/note1/st8/q_8 (SLICE_X43Y132.A4), 8571640 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     0.032ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               midi_synth/note1/freq_rom/dout_1 (FF)
+  Destination:          midi_synth/note1/st8/q_8 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.888ns (Levels of Logic = 12)
+  Clock Path Skew:      -0.045ns (1.333 - 1.378)
+  Source Clock:         clk_IBUF rising at 0.000ns
+  Destination Clock:    clk_IBUF rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: midi_synth/note1/freq_rom/dout_1 to midi_synth/note1/st8/q_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X41Y117.AQ     Tcko                  0.450   midi_synth/note1/freq_rom/dout<2>
+                                                       midi_synth/note1/freq_rom/dout_1
+    SLICE_X40Y119.A5     net (fanout=9)        0.550   midi_synth/note1/freq_rom/dout<1>
+    SLICE_X40Y119.COUT   Topcya                0.499   midi_synth/note1/Madd_s3_cy<4>
+                                                       midi_synth/note1/Madd_s3_lut<1>
+                                                       midi_synth/note1/Madd_s3_cy<4>
+    SLICE_X40Y120.CIN    net (fanout=1)        0.000   midi_synth/note1/Madd_s3_cy<4>
+    SLICE_X40Y120.COUT   Tbyp                  0.104   midi_synth/note1/Madd_s3_cy<8>
+                                                       midi_synth/note1/Madd_s3_cy<8>
+    SLICE_X40Y121.CIN    net (fanout=1)        0.000   midi_synth/note1/Madd_s3_cy<8>
+    SLICE_X40Y121.AMUX   Tcina                 0.274   midi_synth/note1/Madd_s3_cy<12>
+                                                       midi_synth/note1/Madd_s3_cy<12>
+    SLICE_X41Y123.B6     net (fanout=3)        0.771   midi_synth/note1/s3<9>
+    SLICE_X41Y123.CMUX   Topbc                 0.673   midi_synth/note1/Madd_s4_cy<11>
+                                                       midi_synth/note1/Madd_s4_lut<9>
+                                                       midi_synth/note1/Madd_s4_cy<11>
+    SLICE_X40Y126.BX     net (fanout=3)        1.011   midi_synth/note1/s4<10>
+    SLICE_X40Y126.COUT   Tbxcy                 0.361   midi_synth/note1/Madd_s5_cy<12>
+                                                       midi_synth/note1/Madd_s5_cy<12>
+    SLICE_X40Y127.CIN    net (fanout=1)        0.000   midi_synth/note1/Madd_s5_cy<12>
+    SLICE_X40Y127.AMUX   Tcina                 0.274   midi_synth/note1/Madd_s5_cy<16>
+                                                       midi_synth/note1/Madd_s5_cy<16>
+    SLICE_X39Y129.BX     net (fanout=3)        0.791   midi_synth/note1/s5<13>
+    SLICE_X39Y129.CMUX   Taxd                  0.528   midi_synth/note1/Madd_s6_cy<15>
+                                                       midi_synth/note1/Madd_s6_cy<15>
+    SLICE_X38Y130.CX     net (fanout=3)        0.841   midi_synth/note1/s6<14>
+    SLICE_X38Y130.COUT   Tcxcy                 0.253   midi_synth/note1/Madd_s7_cy<15>
+                                                       midi_synth/note1/Madd_s7_cy<15>
+    SLICE_X38Y131.CIN    net (fanout=1)        0.000   midi_synth/note1/Madd_s7_cy<15>
+    SLICE_X38Y131.AMUX   Tcina                 0.271   midi_synth/note1/Madd_s7_cy<19>
+                                                       midi_synth/note1/Madd_s7_cy<19>
+    SLICE_X44Y132.A6     net (fanout=3)        0.657   midi_synth/note1/s7<16>
+    SLICE_X44Y132.COUT   Topcya                0.499   midi_synth/note1/Madd_s8_cy<19>
+                                                       midi_synth/note1/Madd_s8_lut<16>
+                                                       midi_synth/note1/Madd_s8_cy<19>
+    SLICE_X44Y133.CIN    net (fanout=1)        0.000   midi_synth/note1/Madd_s8_cy<19>
+    SLICE_X44Y133.AMUX   Tcina                 0.274   midi_synth/note1/s8<22>
+                                                       midi_synth/note1/Madd_s8_xor<22>
+    SLICE_X43Y132.A4     net (fanout=20)       0.781   midi_synth/note1/s8<20>
+    SLICE_X43Y132.CLK    Tas                   0.026   midi_synth/note1/st8/q<11>
+                                                       midi_synth/note1/step8<8>1
+                                                       midi_synth/note1/st8/q_8
+    -------------------------------------------------  ---------------------------
+    Total                                      9.888ns (4.486ns logic, 5.402ns route)
+                                                       (45.4% logic, 54.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.032ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               midi_synth/note1/freq_rom/dout_1 (FF)
+  Destination:          midi_synth/note1/st8/q_8 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.888ns (Levels of Logic = 12)
+  Clock Path Skew:      -0.045ns (1.333 - 1.378)
+  Source Clock:         clk_IBUF rising at 0.000ns
+  Destination Clock:    clk_IBUF rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: midi_synth/note1/freq_rom/dout_1 to midi_synth/note1/st8/q_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X41Y117.AQ     Tcko                  0.450   midi_synth/note1/freq_rom/dout<2>
+                                                       midi_synth/note1/freq_rom/dout_1
+    SLICE_X40Y119.A5     net (fanout=9)        0.550   midi_synth/note1/freq_rom/dout<1>
+    SLICE_X40Y119.COUT   Topcya                0.499   midi_synth/note1/Madd_s3_cy<4>
+                                                       midi_synth/note1/Madd_s3_lut<1>
+                                                       midi_synth/note1/Madd_s3_cy<4>
+    SLICE_X40Y120.CIN    net (fanout=1)        0.000   midi_synth/note1/Madd_s3_cy<4>
+    SLICE_X40Y120.COUT   Tbyp                  0.104   midi_synth/note1/Madd_s3_cy<8>
+                                                       midi_synth/note1/Madd_s3_cy<8>
+    SLICE_X40Y121.CIN    net (fanout=1)        0.000   midi_synth/note1/Madd_s3_cy<8>
+    SLICE_X40Y121.AMUX   Tcina                 0.274   midi_synth/note1/Madd_s3_cy<12>
+                                                       midi_synth/note1/Madd_s3_cy<12>
+    SLICE_X41Y123.B6     net (fanout=3)        0.771   midi_synth/note1/s3<9>
+    SLICE_X41Y123.CMUX   Topbc                 0.673   midi_synth/note1/Madd_s4_cy<11>
+                                                       midi_synth/note1/Madd_s4_lut<9>
+                                                       midi_synth/note1/Madd_s4_cy<11>
+    SLICE_X40Y126.BX     net (fanout=3)        1.011   midi_synth/note1/s4<10>
+    SLICE_X40Y126.COUT   Tbxcy                 0.361   midi_synth/note1/Madd_s5_cy<12>
+                                                       midi_synth/note1/Madd_s5_cy<12>
+    SLICE_X40Y127.CIN    net (fanout=1)        0.000   midi_synth/note1/Madd_s5_cy<12>
+    SLICE_X40Y127.AMUX   Tcina                 0.274   midi_synth/note1/Madd_s5_cy<16>
+                                                       midi_synth/note1/Madd_s5_cy<16>
+    SLICE_X39Y129.BX     net (fanout=3)        0.791   midi_synth/note1/s5<13>
+    SLICE_X39Y129.DMUX   Tbxd                  0.569   midi_synth/note1/Madd_s6_cy<15>
+                                                       midi_synth/note1/Madd_s6_cy<15>
+    SLICE_X38Y130.DX     net (fanout=3)        0.811   midi_synth/note1/s6<15>
+    SLICE_X38Y130.COUT   Tdxcy                 0.242   midi_synth/note1/Madd_s7_cy<15>
+                                                       midi_synth/note1/Madd_s7_cy<15>
+    SLICE_X38Y131.CIN    net (fanout=1)        0.000   midi_synth/note1/Madd_s7_cy<15>
+    SLICE_X38Y131.AMUX   Tcina                 0.271   midi_synth/note1/Madd_s7_cy<19>
+                                                       midi_synth/note1/Madd_s7_cy<19>
+    SLICE_X44Y132.A6     net (fanout=3)        0.657   midi_synth/note1/s7<16>
+    SLICE_X44Y132.COUT   Topcya                0.499   midi_synth/note1/Madd_s8_cy<19>
+                                                       midi_synth/note1/Madd_s8_lut<16>
+                                                       midi_synth/note1/Madd_s8_cy<19>
+    SLICE_X44Y133.CIN    net (fanout=1)        0.000   midi_synth/note1/Madd_s8_cy<19>
+    SLICE_X44Y133.AMUX   Tcina                 0.274   midi_synth/note1/s8<22>
+                                                       midi_synth/note1/Madd_s8_xor<22>
+    SLICE_X43Y132.A4     net (fanout=20)       0.781   midi_synth/note1/s8<20>
+    SLICE_X43Y132.CLK    Tas                   0.026   midi_synth/note1/st8/q<11>
+                                                       midi_synth/note1/step8<8>1
+                                                       midi_synth/note1/st8/q_8
+    -------------------------------------------------  ---------------------------
+    Total                                      9.888ns (4.516ns logic, 5.372ns route)
+                                                       (45.7% logic, 54.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.036ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               midi_synth/note1/freq_rom/dout_1 (FF)
+  Destination:          midi_synth/note1/st8/q_8 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.884ns (Levels of Logic = 12)
+  Clock Path Skew:      -0.045ns (1.333 - 1.378)
+  Source Clock:         clk_IBUF rising at 0.000ns
+  Destination Clock:    clk_IBUF rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: midi_synth/note1/freq_rom/dout_1 to midi_synth/note1/st8/q_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X41Y117.AQ     Tcko                  0.450   midi_synth/note1/freq_rom/dout<2>
+                                                       midi_synth/note1/freq_rom/dout_1
+    SLICE_X40Y119.A5     net (fanout=9)        0.550   midi_synth/note1/freq_rom/dout<1>
+    SLICE_X40Y119.COUT   Topcya                0.499   midi_synth/note1/Madd_s3_cy<4>
+                                                       midi_synth/note1/Madd_s3_lut<1>
+                                                       midi_synth/note1/Madd_s3_cy<4>
+    SLICE_X40Y120.CIN    net (fanout=1)        0.000   midi_synth/note1/Madd_s3_cy<4>
+    SLICE_X40Y120.COUT   Tbyp                  0.104   midi_synth/note1/Madd_s3_cy<8>
+                                                       midi_synth/note1/Madd_s3_cy<8>
+    SLICE_X40Y121.CIN    net (fanout=1)        0.000   midi_synth/note1/Madd_s3_cy<8>
+    SLICE_X40Y121.AMUX   Tcina                 0.274   midi_synth/note1/Madd_s3_cy<12>
+                                                       midi_synth/note1/Madd_s3_cy<12>
+    SLICE_X41Y123.B6     net (fanout=3)        0.771   midi_synth/note1/s3<9>
+    SLICE_X41Y123.CMUX   Topbc                 0.673   midi_synth/note1/Madd_s4_cy<11>
+                                                       midi_synth/note1/Madd_s4_lut<9>
+                                                       midi_synth/note1/Madd_s4_cy<11>
+    SLICE_X40Y126.BX     net (fanout=3)        1.011   midi_synth/note1/s4<10>
+    SLICE_X40Y126.COUT   Tbxcy                 0.361   midi_synth/note1/Madd_s5_cy<12>
+                                                       midi_synth/note1/Madd_s5_cy<12>
+    SLICE_X40Y127.CIN    net (fanout=1)        0.000   midi_synth/note1/Madd_s5_cy<12>
+    SLICE_X40Y127.AMUX   Tcina                 0.274   midi_synth/note1/Madd_s5_cy<16>
+                                                       midi_synth/note1/Madd_s5_cy<16>
+    SLICE_X39Y129.BX     net (fanout=3)        0.791   midi_synth/note1/s5<13>
+    SLICE_X39Y129.DMUX   Tbxd                  0.569   midi_synth/note1/Madd_s6_cy<15>
+                                                       midi_synth/note1/Madd_s6_cy<15>
+    SLICE_X38Y130.DX     net (fanout=3)        0.811   midi_synth/note1/s6<15>
+    SLICE_X38Y130.COUT   Tdxcy                 0.242   midi_synth/note1/Madd_s7_cy<15>
+                                                       midi_synth/note1/Madd_s7_cy<15>
+    SLICE_X38Y131.CIN    net (fanout=1)        0.000   midi_synth/note1/Madd_s7_cy<15>
+    SLICE_X38Y131.DMUX   Tcind                 0.402   midi_synth/note1/Madd_s7_cy<19>
+                                                       midi_synth/note1/Madd_s7_cy<19>
+    SLICE_X44Y132.D6     net (fanout=3)        0.637   midi_synth/note1/Madd_s8_lut<19>
+    SLICE_X44Y132.COUT   Topcyd                0.384   midi_synth/note1/Madd_s8_cy<19>
+                                                       midi_synth/note1/Madd_s8_lut<19>_rt
+                                                       midi_synth/note1/Madd_s8_cy<19>
+    SLICE_X44Y133.CIN    net (fanout=1)        0.000   midi_synth/note1/Madd_s8_cy<19>
+    SLICE_X44Y133.AMUX   Tcina                 0.274   midi_synth/note1/s8<22>
+                                                       midi_synth/note1/Madd_s8_xor<22>
+    SLICE_X43Y132.A4     net (fanout=20)       0.781   midi_synth/note1/s8<20>
+    SLICE_X43Y132.CLK    Tas                   0.026   midi_synth/note1/st8/q<11>
+                                                       midi_synth/note1/step8<8>1
+                                                       midi_synth/note1/st8/q_8
+    -------------------------------------------------  ---------------------------
+    Total                                      9.884ns (4.532ns logic, 5.352ns route)
+                                                       (45.9% logic, 54.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point midi_synth/note3/dynamics/h1/gain_ff/q_5 (SLICE_X76Y119.B1), 30 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     0.037ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               codec/new_frame_i_ClkIn (FF)
+  Destination:          midi_synth/note3/dynamics/h1/gain_ff/q_5 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.865ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.063ns (1.324 - 1.387)
+  Source Clock:         clk_IBUF rising at 0.000ns
+  Destination Clock:    clk_IBUF rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: codec/new_frame_i_ClkIn to midi_synth/note3/dynamics/h1/gain_ff/q_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X73Y53.AQ      Tcko                  0.450   new_frame
+                                                       codec/new_frame_i_ClkIn
+    SLICE_X87Y123.A3     net (fanout=257)      6.970   new_frame
+    SLICE_X87Y123.A      Tilo                  0.094   midi_synth/note3/dynamics/h1/next_state_and0001
+                                                       midi_synth/note3/dynamics/h1/gain1<7>131
+    SLICE_X76Y117.B4     net (fanout=2)        1.310   midi_synth/note3/dynamics/h1/N28
+    SLICE_X76Y117.B      Tilo                  0.094   midi_synth/note3/dynamics/h1/gain_ff/q<2>
+                                                       midi_synth/note3/dynamics/h1/gain1<0>11
+    SLICE_X76Y119.B1     net (fanout=9)        0.944   midi_synth/note3/dynamics/h1/N7
+    SLICE_X76Y119.CLK    Tas                   0.003   midi_synth/note3/dynamics/h1/gain_ff/q<3>
+                                                       midi_synth/note3/dynamics/h1/gain1<5>1
+                                                       midi_synth/note3/dynamics/h1/gain_ff/q_5
+    -------------------------------------------------  ---------------------------
+    Total                                      9.865ns (0.641ns logic, 9.224ns route)
+                                                       (6.5% logic, 93.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1.795ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               midi_synth/note3/wave/sample1_ff/q_15 (FF)
+  Destination:          midi_synth/note3/dynamics/h1/gain_ff/q_5 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.989ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.181ns (1.324 - 1.505)
+  Source Clock:         clk_IBUF rising at 0.000ns
+  Destination Clock:    clk_IBUF rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: midi_synth/note3/wave/sample1_ff/q_15 to midi_synth/note3/dynamics/h1/gain_ff/q_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y155.CQ     Tcko                  0.450   midi_synth/note3/wave/sample1_ff/q<15>
+                                                       midi_synth/note3/wave/sample1_ff/q_15
+    SLICE_X65Y129.A1     net (fanout=36)       3.159   midi_synth/note3/wave/sample1_ff/q<15>
+    SLICE_X65Y129.A      Tilo                  0.094   midi_synth/note3/dynamics/h1/zero_crossing
+                                                       midi_synth/note3/dynamics/h1/Mxor_zero_crossing_Result1
+    SLICE_X87Y123.B3     net (fanout=7)        1.511   midi_synth/note3/dynamics/h1/zero_crossing
+    SLICE_X87Y123.B      Tilo                  0.094   midi_synth/note3/dynamics/h1/next_state_and0001
+                                                       midi_synth/note3/dynamics/h1/next_state_and000156
+    SLICE_X87Y123.A5     net (fanout=5)        0.236   midi_synth/note3/dynamics/h1/next_state_and0001
+    SLICE_X87Y123.A      Tilo                  0.094   midi_synth/note3/dynamics/h1/next_state_and0001
+                                                       midi_synth/note3/dynamics/h1/gain1<7>131
+    SLICE_X76Y117.B4     net (fanout=2)        1.310   midi_synth/note3/dynamics/h1/N28
+    SLICE_X76Y117.B      Tilo                  0.094   midi_synth/note3/dynamics/h1/gain_ff/q<2>
+                                                       midi_synth/note3/dynamics/h1/gain1<0>11
+    SLICE_X76Y119.B1     net (fanout=9)        0.944   midi_synth/note3/dynamics/h1/N7
+    SLICE_X76Y119.CLK    Tas                   0.003   midi_synth/note3/dynamics/h1/gain_ff/q<3>
+                                                       midi_synth/note3/dynamics/h1/gain1<5>1
+                                                       midi_synth/note3/dynamics/h1/gain_ff/q_5
+    -------------------------------------------------  ---------------------------
+    Total                                      7.989ns (0.829ns logic, 7.160ns route)
+                                                       (10.4% logic, 89.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     2.917ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               midi_synth/conditioner/new_frame_state/q_0 (FF)
+  Destination:          midi_synth/note3/dynamics/h1/gain_ff/q_5 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.046ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.002ns (1.324 - 1.326)
+  Source Clock:         clk_IBUF rising at 0.000ns
+  Destination Clock:    clk_IBUF rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: midi_synth/conditioner/new_frame_state/q_0 to midi_synth/note3/dynamics/h1/gain_ff/q_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X81Y66.DQ      Tcko                  0.450   midi_synth/conditioner/new_frame_state/q<0>
+                                                       midi_synth/conditioner/new_frame_state/q_0
+    SLICE_X87Y123.A1     net (fanout=226)      4.151   midi_synth/conditioner/new_frame_state/q<0>
+    SLICE_X87Y123.A      Tilo                  0.094   midi_synth/note3/dynamics/h1/next_state_and0001
+                                                       midi_synth/note3/dynamics/h1/gain1<7>131
+    SLICE_X76Y117.B4     net (fanout=2)        1.310   midi_synth/note3/dynamics/h1/N28
+    SLICE_X76Y117.B      Tilo                  0.094   midi_synth/note3/dynamics/h1/gain_ff/q<2>
+                                                       midi_synth/note3/dynamics/h1/gain1<0>11
+    SLICE_X76Y119.B1     net (fanout=9)        0.944   midi_synth/note3/dynamics/h1/N7
+    SLICE_X76Y119.CLK    Tas                   0.003   midi_synth/note3/dynamics/h1/gain_ff/q<3>
+                                                       midi_synth/note3/dynamics/h1/gain1<5>1
+                                                       midi_synth/note3/dynamics/h1/gain_ff/q_5
+    -------------------------------------------------  ---------------------------
+    Total                                      7.046ns (0.641ns logic, 6.405ns route)
+                                                       (9.1% logic, 90.9% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_clock = PERIOD TIMEGRP "clock" 10 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point music_player/song_reader/address_value/q_4 (SLICE_X31Y100.D6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.309ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               music_player/song_reader/address_value/q_2 (FF)
+  Destination:          music_player/song_reader/address_value/q_4 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.506ns (Levels of Logic = 1)
+  Clock Path Skew:      0.197ns (1.449 - 1.252)
+  Source Clock:         clk_IBUF rising at 10.000ns
+  Destination Clock:    clk_IBUF rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: music_player/song_reader/address_value/q_2 to music_player/song_reader/address_value/q_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X31Y98.CQ      Tcko                  0.414   music_player/song_reader/address_value/q<3>
+                                                       music_player/song_reader/address_value/q_2
+    SLICE_X31Y100.D6     net (fanout=5)        0.287   music_player/song_reader/address_value/q<2>
+    SLICE_X31Y100.CLK    Tah         (-Th)     0.195   music_player/song_reader/address_value/q<4>
+                                                       music_player/song_reader/next_add<4>1
+                                                       music_player/song_reader/address_value/q_4
+    -------------------------------------------------  ---------------------------
+    Total                                      0.506ns (0.219ns logic, 0.287ns route)
+                                                       (43.3% logic, 56.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point midi_synth/conditioner/current_sample_latch/q_0 (SLICE_X38Y79.AX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.395ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               midi_synth/conditioner/next_sample_latch/q_0 (FF)
+  Destination:          midi_synth/conditioner/current_sample_latch/q_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.504ns (Levels of Logic = 0)
+  Clock Path Skew:      0.109ns (1.323 - 1.214)
+  Source Clock:         clk_IBUF rising at 10.000ns
+  Destination Clock:    clk_IBUF rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: midi_synth/conditioner/next_sample_latch/q_0 to midi_synth/conditioner/current_sample_latch/q_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X37Y80.AQ      Tcko                  0.414   midi_synth/conditioner/next_sample_latch/q<3>
+                                                       midi_synth/conditioner/next_sample_latch/q_0
+    SLICE_X38Y79.AX      net (fanout=3)        0.319   midi_synth/conditioner/next_sample_latch/q<0>
+    SLICE_X38Y79.CLK     Tckdi       (-Th)     0.229   midi_synth/conditioner/current_sample_latch/q<3>
+                                                       midi_synth/conditioner/current_sample_latch/q_0
+    -------------------------------------------------  ---------------------------
+    Total                                      0.504ns (0.185ns logic, 0.319ns route)
+                                                       (36.7% logic, 63.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point music_player/song_reader/address_value/q_4 (SLICE_X31Y100.D5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.402ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               music_player/song_reader/address_value/q_0 (FF)
+  Destination:          music_player/song_reader/address_value/q_4 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.599ns (Levels of Logic = 1)
+  Clock Path Skew:      0.197ns (1.449 - 1.252)
+  Source Clock:         clk_IBUF rising at 10.000ns
+  Destination Clock:    clk_IBUF rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: music_player/song_reader/address_value/q_0 to music_player/song_reader/address_value/q_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X31Y98.AQ      Tcko                  0.414   music_player/song_reader/address_value/q<3>
+                                                       music_player/song_reader/address_value/q_0
+    SLICE_X31Y100.D5     net (fanout=7)        0.380   music_player/song_reader/address_value/q<0>
+    SLICE_X31Y100.CLK    Tah         (-Th)     0.195   music_player/song_reader/address_value/q<4>
+                                                       music_player/song_reader/next_add<4>1
+                                                       music_player/song_reader/address_value/q_4
+    -------------------------------------------------  ---------------------------
+    Total                                      0.599ns (0.219ns logic, 0.380ns route)
+                                                       (36.6% logic, 63.4% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clock = PERIOD TIMEGRP "clock" 10 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 7.778ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.222ns (450.045MHz) (Tdspper_P)
+  Physical resource: midi_synth/mixer/Maddsub_AUX_d_17_mult0000/CLK
+  Logical resource: midi_synth/mixer/Maddsub_AUX_d_17_mult0000/CLK
+  Location pin: DSP48_X0Y34.CLK
+  Clock network: clk_IBUF
+--------------------------------------------------------------------------------
+Slack: 7.778ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.222ns (450.045MHz) (Tdspper_P)
+  Physical resource: midi_synth/note3/dynamics/calc/scaler/Mmult_product1_mult0001/CLK
+  Logical resource: midi_synth/note3/dynamics/calc/scaler/Mmult_product1_mult0001/CLK
+  Location pin: DSP48_X0Y36.CLK
+  Clock network: clk_IBUF
+--------------------------------------------------------------------------------
+Slack: 7.778ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.222ns (450.045MHz) (Tdspper_P)
+  Physical resource: midi_synth/note2/dynamics/calc/scaler/Mmult_product1_mult0001/CLK
+  Logical resource: midi_synth/note2/dynamics/calc/scaler/Mmult_product1_mult0001/CLK
+  Location pin: DSP48_X0Y17.CLK
+  Clock network: clk_IBUF
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    9.970|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 2916390258 paths, 0 nets, and 57290 connections
+
+Design statistics:
+   Minimum period:   9.970ns{1}   (Maximum frequency: 100.301MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Mon Dec 10 06:22:46 2012 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 416 MB
+
+
+

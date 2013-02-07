@@ -1,0 +1,15 @@
+clk 0, addr  x, out   X
+clk 1, addr  x, out   X
+clk 0, addr  0, out   X
+clk 1, addr  0, out   0
+clk 0, addr  0, out   0
+clk 1, addr  0, out   0
+clk 0, addr  1, out   0
+clk 1, addr  1, out 128
+clk 0, addr  1, out 128
+clk 1, addr  1, out 128
+clk 0, addr 31, out 128
+clk 1, addr 31, out 248
+clk 0, addr 31, out 248
+clk 1, addr 31, out 248
+clk 0, addr 31, out 248

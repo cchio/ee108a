@@ -1,0 +1,62 @@
+Release 12.2 - xst M.63c (lin)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /afs/ir.stanford.edu/class/ee108a/groups/18/lab3/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Parameter xsthdpdir set to /afs/ir.stanford.edu/class/ee108a/groups/18/lab3/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Reading design: beat32.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file \"/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/ff_lib.v\" into library work
+Parsing module <dff>.
+Parsing module <dffr>.
+Parsing module <dffre>.
+Analyzing Verilog file \"/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/beat32.v\" into library work
+Parsing module <beat32>.
+ERROR:HDLCompiler:731 - "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/beat32.v" Line 18: Procedural assignment to a non-register <count_en> is not permitted.
+ERROR:HDLCompiler:731 - "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/beat32.v" Line 23: Procedural assignment to a non-register <count_en> is not permitted.
+ERROR:HDLCompiler:598 - "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/beat32.v" Line 6: Module <beat32> ignored due to previous errors.
+Verilog file /afs/ir.stanford.edu/class/ee108a/groups/18/lab3/beat32.v ignored due to errors
+--> 
+
+
+Total memory usage is 129812 kilobytes
+
+Number of errors   :    3 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

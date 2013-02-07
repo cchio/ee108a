@@ -1,0 +1,27 @@
+##-----------------------------------------------------------------
+## Clock
+##-----------------------------------------------------------------
+NET "clk" LOC = "AH15";
+NET "clk" IOSTANDARD = LVTTL;
+NET "clk" TNM_NET = "clk";
+TIMESPEC "TS_clock" = PERIOD "clk" 10 ns HIGH 50 %;
+
+##-----------------------------------------------------------------
+## Push buttons
+##-----------------------------------------------------------------
+NET "up_button"    LOC = "U8";
+NET "down_button"  LOC = "V8";
+NET "left_button"  LOC = "AJ7";
+NET "right_button" LOC = "AK7";
+
+#-----------------------------------------------------------------
+# LEDs
+#-----------------------------------------------------------------
+NET "leds<0>" LOC="H18";
+NET "leds<1>" LOC="L18";
+NET "leds<2>" LOC="G15";
+NET "leds<3>" LOC="AD26";
+NET "leds<4>" LOC="G16";
+NET "leds<5>" LOC="AD25";
+NET "leds<6>" LOC="AD24";
+NET "leds<7>" LOC="AE24";

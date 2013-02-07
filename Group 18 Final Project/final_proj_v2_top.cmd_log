@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_project_v2/final_proj_v2_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_project_v2/final_proj_v2_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_project_v2/final_proj_v2_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_project_v2/final_proj_v2_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc final_proj_v2_top.ucf -p xc5vlx110t-ff1136-1 final_proj_v2_top.ngc final_proj_v2_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o final_proj_v2_top_map.ncd final_proj_v2_top.ngd final_proj_v2_top.pcf 
+par -w -intstyle ise -ol high -mt off final_proj_v2_top_map.ncd final_proj_v2_top.ncd final_proj_v2_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml final_proj_v2_top.twx final_proj_v2_top.ncd -o final_proj_v2_top.twr final_proj_v2_top.pcf -ucf final_proj_v2_top.ucf 
+bitgen -intstyle ise -f final_proj_v2_top.ut final_proj_v2_top.ncd 

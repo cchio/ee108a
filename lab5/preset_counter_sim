@@ -1,0 +1,134 @@
+#! /usr/local/bin/vvp
+:ivl_version "0.9.6 " "(v0_9_6-1-gb8bcb01)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x7f8d3b40fb00 .scope module, "preset_counter_tb" "preset_counter_tb" 2 1;
+ .timescale 0 0;
+v0x7f8d3b420340_0 .net *"_s3", 1 0, C4<00>; 1 drivers
+v0x7f8d3b4203c0_0 .var "beat", 0 0;
+v0x7f8d3b420460_0 .var "clk", 0 0;
+v0x7f8d3b420540_0 .net "count", 7 0, L_0x7f8d3b420730; 1 drivers
+v0x7f8d3b4205c0_0 .var "enable", 0 0;
+v0x7f8d3b420670_0 .var "reset", 0 0;
+L_0x7f8d3b420730 .concat [ 6 2 0 0], v0x7f8d3b41fe40_0, C4<00>;
+S_0x7f8d3b406700 .scope module, "cnt" "preset_counter" 2 6, 3 1, S_0x7f8d3b40fb00;
+ .timescale 0 0;
+P_0x7f8d3b404b68 .param/l "MAX" 3 1, +C4<011111>;
+P_0x7f8d3b404b90 .param/l "WIDTH" 3 1, +C4<0110>;
+v0x7f8d3b41ff70_0 .net "beat", 0 0, v0x7f8d3b4203c0_0; 1 drivers
+v0x7f8d3b420010_0 .net "clk", 0 0, v0x7f8d3b420460_0; 1 drivers
+v0x7f8d3b4200b0_0 .net "count", 5 0, v0x7f8d3b41fe40_0; 1 drivers
+v0x7f8d3b420170_0 .net "enable", 0 0, v0x7f8d3b4205c0_0; 1 drivers
+v0x7f8d3b4201f0_0 .var "next_cnt", 5 0;
+v0x7f8d3b4202a0_0 .net "reset", 0 0, v0x7f8d3b420670_0; 1 drivers
+E_0x7f8d3b409f40 .event edge, v0x7f8d3b41fee0_0, v0x7f8d3b420170_0, v0x7f8d3b41ff70_0, v0x7f8d3b41fe40_0;
+S_0x7f8d3b4048a0 .scope module, "cnt" "dffr" 3 11, 4 16, S_0x7f8d3b406700;
+ .timescale 0 0;
+P_0x7f8d3b40b098 .param/l "WIDTH" 4 16, +C4<0110>;
+v0x7f8d3b404c30_0 .alias "clk", 0 0, v0x7f8d3b420010_0;
+v0x7f8d3b41fdb0_0 .net "d", 5 0, v0x7f8d3b4201f0_0; 1 drivers
+v0x7f8d3b41fe40_0 .var "q", 5 0;
+v0x7f8d3b41fee0_0 .alias "r", 0 0, v0x7f8d3b4202a0_0;
+E_0x7f8d3b409230 .event posedge, v0x7f8d3b404c30_0;
+    .scope S_0x7f8d3b4048a0;
+T_0 ;
+    %wait E_0x7f8d3b409230;
+    %load/v 8, v0x7f8d3b41fee0_0, 1;
+    %jmp/0xz  T_0.0, 8;
+    %ix/load 0, 6, 0;
+    %assign/v0 v0x7f8d3b41fe40_0, 0, 0;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/v 8, v0x7f8d3b41fdb0_0, 6;
+    %ix/load 0, 6, 0;
+    %assign/v0 v0x7f8d3b41fe40_0, 0, 8;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_0x7f8d3b406700;
+T_1 ;
+    %wait E_0x7f8d3b409f40;
+    %load/v 8, v0x7f8d3b4202a0_0, 1;
+    %jmp/0xz  T_1.0, 8;
+    %set/v v0x7f8d3b4201f0_0, 0, 6;
+    %jmp T_1.1;
+T_1.0 ;
+    %load/v 8, v0x7f8d3b420170_0, 1;
+    %load/v 9, v0x7f8d3b41ff70_0, 1;
+    %and 8, 9, 1;
+    %jmp/0xz  T_1.2, 8;
+    %load/v 8, v0x7f8d3b4200b0_0, 6;
+    %mov 14, 0, 1;
+    %cmpi/u 8, 31, 7;
+    %mov 8, 4, 1;
+    %jmp/0  T_1.4, 8;
+    %movi 9, 0, 32;
+    %jmp/1  T_1.6, 8;
+T_1.4 ; End of true expr.
+    %load/v 41, v0x7f8d3b4200b0_0, 6;
+    %mov 47, 0, 26;
+    %addi 41, 1, 32;
+    %jmp/0  T_1.5, 8;
+ ; End of false expr.
+    %blend  9, 41, 32; Condition unknown.
+    %jmp  T_1.6;
+T_1.5 ;
+    %mov 9, 41, 32; Return false value
+T_1.6 ;
+    %set/v v0x7f8d3b4201f0_0, 9, 6;
+    %jmp T_1.3;
+T_1.2 ;
+    %load/v 8, v0x7f8d3b4200b0_0, 6;
+    %set/v v0x7f8d3b4201f0_0, 8, 6;
+T_1.3 ;
+T_1.1 ;
+    %jmp T_1;
+    .thread T_1, $push;
+    .scope S_0x7f8d3b40fb00;
+T_2 ;
+    %set/v v0x7f8d3b420460_0, 0, 1;
+T_2.0 ;
+    %delay 5, 0;
+    %load/v 8, v0x7f8d3b420460_0, 1;
+    %inv 8, 1;
+    %set/v v0x7f8d3b420460_0, 8, 1;
+    %jmp T_2.0;
+    %end;
+    .thread T_2;
+    .scope S_0x7f8d3b40fb00;
+T_3 ;
+    %set/v v0x7f8d3b4203c0_0, 0, 1;
+    %delay 5, 0;
+T_3.0 ;
+    %delay 10, 0;
+    %load/v 8, v0x7f8d3b4203c0_0, 1;
+    %inv 8, 1;
+    %set/v v0x7f8d3b4203c0_0, 8, 1;
+    %jmp T_3.0;
+    %end;
+    .thread T_3;
+    .scope S_0x7f8d3b40fb00;
+T_4 ;
+    %set/v v0x7f8d3b420670_0, 1, 1;
+    %delay 10, 0;
+    %set/v v0x7f8d3b420670_0, 0, 1;
+    %set/v v0x7f8d3b4205c0_0, 1, 1;
+    %vpi_call 2 32 "$monitor", "rst %b, beat %b, count %d, enable %b", v0x7f8d3b420670_0, v0x7f8d3b4203c0_0, v0x7f8d3b420540_0, v0x7f8d3b4205c0_0;
+    %delay 100, 0;
+    %delay 600, 0;
+    %set/v v0x7f8d3b4205c0_0, 0, 1;
+    %delay 55, 0;
+    %set/v v0x7f8d3b4205c0_0, 1, 1;
+    %delay 100, 0;
+    %vpi_call 2 45 "$finish";
+    %end;
+    .thread T_4;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "preset_counter_tb.v";
+    "preset_counter.v";
+    "ff_lib.v";

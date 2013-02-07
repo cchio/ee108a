@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim final_proj_v1_top.ngc final_proj_v1_top_synthesis.v 

@@ -1,0 +1,20 @@
+Release 12.2 - netgen M.63c (lin)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Command Line: netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis
+-ofmt verilog -sim mcu.ngc mcu_synthesis.v  
+
+Reading design 'mcu.ngc' ...
+Flattening design ...
+Processing design ... 
+  Preping design's networks ...
+  Preping design's macros ...
+Writing Verilog netlist file
+'/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/netgen/synthesis/mcu_synth
+esis.v' ...
+INFO:NetListWriters:633 - The generated Verilog netlist contains Xilinx UNISIM
+   simulation primitives and has to be used with UNISIM simulation library for
+   correct compilation and simulation. 
+Number of warnings: 0
+Number of info messages: 1
+Total memory usage is 61404 kilobytes

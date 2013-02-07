@@ -1,0 +1,77 @@
+#! /usr/local/bin/vvp
+:ivl_version "0.9.6 " "(v0_9_6-1-gb8bcb01)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x7fb9d0c0c6e0 .scope module, "exponential_scale_rom_tb" "exponential_scale_rom_tb" 2 1;
+ .timescale 0 0;
+v0x7fb9d0c1c900_0 .var "addr", 3 0;
+v0x7fb9d0c1c9b0_0 .var "clk", 0 0;
+v0x7fb9d0c1ca50_0 .net "dout", 7 0, v0x7fb9d0c1c680_0; 1 drivers
+S_0x7fb9d0c0a660 .scope module, "expo_rom" "exponential_scale_rom" 2 7, 3 1, S_0x7fb9d0c0c6e0;
+ .timescale 0 0;
+v0x7fb9d0c0a980_0 .net "addr", 3 0, v0x7fb9d0c1c900_0; 1 drivers
+v0x7fb9d0c1c5f0_0 .net "clk", 0 0, v0x7fb9d0c1c9b0_0; 1 drivers
+v0x7fb9d0c1c680_0 .var "dout", 7 0;
+v0x7fb9d0c1c700 .array "memory", 0 15;
+v0x7fb9d0c1c700_0 .net v0x7fb9d0c1c700 0, 7 0, C4<10000000>; 1 drivers
+v0x7fb9d0c1c700_1 .net v0x7fb9d0c1c700 1, 7 0, C4<01111111>; 1 drivers
+v0x7fb9d0c1c700_2 .net v0x7fb9d0c1c700 2, 7 0, C4<01111111>; 1 drivers
+v0x7fb9d0c1c700_3 .net v0x7fb9d0c1c700 3, 7 0, C4<01111111>; 1 drivers
+v0x7fb9d0c1c700_4 .net v0x7fb9d0c1c700 4, 7 0, C4<01111111>; 1 drivers
+v0x7fb9d0c1c700_5 .net v0x7fb9d0c1c700 5, 7 0, C4<01111110>; 1 drivers
+v0x7fb9d0c1c700_6 .net v0x7fb9d0c1c700 6, 7 0, C4<01111101>; 1 drivers
+v0x7fb9d0c1c700_7 .net v0x7fb9d0c1c700 7, 7 0, C4<01111010>; 1 drivers
+v0x7fb9d0c1c700_8 .net v0x7fb9d0c1c700 8, 7 0, C4<01110110>; 1 drivers
+v0x7fb9d0c1c700_9 .net v0x7fb9d0c1c700 9, 7 0, C4<01101111>; 1 drivers
+v0x7fb9d0c1c700_10 .net v0x7fb9d0c1c700 10, 7 0, C4<01100111>; 1 drivers
+v0x7fb9d0c1c700_11 .net v0x7fb9d0c1c700 11, 7 0, C4<01011011>; 1 drivers
+v0x7fb9d0c1c700_12 .net v0x7fb9d0c1c700 12, 7 0, C4<01001100>; 1 drivers
+v0x7fb9d0c1c700_13 .net v0x7fb9d0c1c700 13, 7 0, C4<00111000>; 1 drivers
+v0x7fb9d0c1c700_14 .net v0x7fb9d0c1c700 14, 7 0, C4<00011111>; 1 drivers
+v0x7fb9d0c1c700_15 .net v0x7fb9d0c1c700 15, 7 0, C4<00000000>; 1 drivers
+E_0x7fb9d0c07d80 .event posedge, v0x7fb9d0c1c5f0_0;
+    .scope S_0x7fb9d0c0a660;
+T_0 ;
+    %wait E_0x7fb9d0c07d80;
+    %ix/getv 3, v0x7fb9d0c0a980_0;
+    %load/av 8, v0x7fb9d0c1c700, 8;
+    %set/v v0x7fb9d0c1c680_0, 8, 8;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_0x7fb9d0c0c6e0;
+T_1 ;
+    %set/v v0x7fb9d0c1c9b0_0, 0, 1;
+T_1.0 ;
+    %delay 5, 0;
+    %load/v 8, v0x7fb9d0c1c9b0_0, 1;
+    %inv 8, 1;
+    %set/v v0x7fb9d0c1c9b0_0, 8, 1;
+    %jmp T_1.0;
+    %end;
+    .thread T_1;
+    .scope S_0x7fb9d0c0c6e0;
+T_2 ;
+    %set/v v0x7fb9d0c1c900_0, 0, 4;
+    %vpi_call 2 22 "$monitor", "clk %b, addr %d, dout %d", v0x7fb9d0c1c9b0_0, v0x7fb9d0c1c900_0, v0x7fb9d0c1ca50_0;
+    %movi 8, 15, 5;
+T_2.0 %cmp/s 0, 8, 5;
+    %jmp/0xz T_2.1, 5;
+    %add 8, 1, 5;
+    %delay 40, 0;
+    %ix/load 0, 1, 0;
+    %load/vp0 13, v0x7fb9d0c1c900_0, 4;
+    %set/v v0x7fb9d0c1c900_0, 13, 4;
+    %jmp T_2.0;
+T_2.1 ;
+    %delay 40, 0;
+    %vpi_call 2 30 "$finish";
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "exponential_scale_rom_tb.v";
+    "exponential_scale_rom.v";

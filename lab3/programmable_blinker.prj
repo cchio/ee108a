@@ -1,0 +1,4 @@
+verilog work "timer.v"
+verilog work "shifter.v"
+verilog work "blinker.v"
+verilog work "programmable_blinker.v"

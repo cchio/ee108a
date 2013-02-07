@@ -1,0 +1,2 @@
+verilog work "ff_lib.v"
+verilog work "brute_force_synchronizer.v"

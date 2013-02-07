@@ -1,0 +1,69 @@
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim final_proj_v1_top.ngc final_proj_v1_top_synthesis.v 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim final_proj_v1_top.ngc final_proj_v1_top_synthesis.v 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc final_proj_v1_top.ucf -p xc5vlx110t-ff1136-1 final_proj_v1_top.ngc final_proj_v1_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc final_proj_v1_top.ucf -p xc5vlx110t-ff1136-1 final_proj_v1_top.ngc final_proj_v1_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o final_proj_v1_top_map.ncd final_proj_v1_top.ngd final_proj_v1_top.pcf 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim final_proj_v1_top.ngc final_proj_v1_top_synthesis.v 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim final_proj_v1_top.ngc final_proj_v1_top_synthesis.v 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim final_proj_v1_top.ngc final_proj_v1_top_synthesis.v 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim final_proj_v1_top.ngc final_proj_v1_top_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc final_proj_v1_top.ucf -p xc5vlx110t-ff1136-1 final_proj_v1_top.ngc final_proj_v1_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o final_proj_v1_top_map.ncd final_proj_v1_top.ngd final_proj_v1_top.pcf 
+par -w -intstyle ise -ol high -mt off final_proj_v1_top_map.ncd final_proj_v1_top.ncd final_proj_v1_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml final_proj_v1_top.twx final_proj_v1_top.ncd -o final_proj_v1_top.twr final_proj_v1_top.pcf -ucf final_proj_v1_top.ucf 
+bitgen -intstyle ise -f final_proj_v1_top.ut final_proj_v1_top.ncd 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc final_proj_v1_top.ucf -p xc5vlx110t-ff1136-1 final_proj_v1_top.ngc final_proj_v1_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o final_proj_v1_top_map.ncd final_proj_v1_top.ngd final_proj_v1_top.pcf 
+par -w -intstyle ise -ol high -mt off final_proj_v1_top_map.ncd final_proj_v1_top.ncd final_proj_v1_top.pcf 
+bitgen -intstyle ise -f final_proj_v1_top.ut final_proj_v1_top.ncd 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc final_proj_v1_top.ucf -p xc5vlx110t-ff1136-1 final_proj_v1_top.ngc final_proj_v1_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o final_proj_v1_top_map.ncd final_proj_v1_top.ngd final_proj_v1_top.pcf 
+par -w -intstyle ise -ol high -mt off final_proj_v1_top_map.ncd final_proj_v1_top.ncd final_proj_v1_top.pcf 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc final_proj_v1_top.ucf -p xc5vlx110t-ff1136-1 final_proj_v1_top.ngc final_proj_v1_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o final_proj_v1_top_map.ncd final_proj_v1_top.ngd final_proj_v1_top.pcf 
+par -w -intstyle ise -ol high -mt off final_proj_v1_top_map.ncd final_proj_v1_top.ncd final_proj_v1_top.pcf 
+bitgen -intstyle ise -f final_proj_v1_top.ut final_proj_v1_top.ncd 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim final_proj_v1_top.ngc final_proj_v1_top_synthesis.v 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc final_proj_v1_top.ucf -p xc5vlx110t-ff1136-1 final_proj_v1_top.ngc final_proj_v1_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o final_proj_v1_top_map.ncd final_proj_v1_top.ngd final_proj_v1_top.pcf 
+par -w -intstyle ise -ol high -mt off final_proj_v1_top_map.ncd final_proj_v1_top.ncd final_proj_v1_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml final_proj_v1_top.twx final_proj_v1_top.ncd -o final_proj_v1_top.twr final_proj_v1_top.pcf -ucf final_proj_v1_top.ucf 
+bitgen -intstyle ise -f final_proj_v1_top.ut final_proj_v1_top.ncd 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc final_proj_v1_top.ucf -p xc5vlx110t-ff1136-1 final_proj_v1_top.ngc final_proj_v1_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc final_proj_v1_top.ucf -p xc5vlx110t-ff1136-1 final_proj_v1_top.ngc final_proj_v1_top.ngd  
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc final_proj_v1_top.ucf -p xc5vlx110t-ff1136-1 final_proj_v1_top.ngc final_proj_v1_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o final_proj_v1_top_map.ncd final_proj_v1_top.ngd final_proj_v1_top.pcf 
+par -w -intstyle ise -ol high -mt off final_proj_v1_top_map.ncd final_proj_v1_top.ncd final_proj_v1_top.pcf 
+bitgen -intstyle ise -f final_proj_v1_top.ut final_proj_v1_top.ncd 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc final_proj_v1_top.ucf -p xc5vlx110t-ff1136-1 final_proj_v1_top.ngc final_proj_v1_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o final_proj_v1_top_map.ncd final_proj_v1_top.ngd final_proj_v1_top.pcf 

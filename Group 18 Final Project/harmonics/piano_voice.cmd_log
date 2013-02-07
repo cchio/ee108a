@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/piano_voice.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/piano_voice.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/piano_voice.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/piano_voice.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/piano_voice.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/piano_voice.syr" 

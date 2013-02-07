@@ -1,0 +1,5 @@
+set -tmpdir "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/xst/projnav.tmp"
+set -xsthdpdir "/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/xst"
+elaborate
+-ifn midi_dynamics.prj
+-ifmt mixed

@@ -1,0 +1,8 @@
+Release 12.2 Drc M.63c (lin)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Mon Dec 10 07:33:31 2012
+
+drc -z final_proj_v2_top.ncd final_proj_v2_top.pcf
+
+DRC detected 0 errors and 0 warnings.

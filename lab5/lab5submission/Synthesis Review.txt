@@ -1,0 +1,4 @@
+Synthesis Report
+----------------
+
+We did not encounter any timing issues.

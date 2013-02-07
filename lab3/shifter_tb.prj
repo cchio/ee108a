@@ -1,0 +1,3 @@
+verilog work "ff_lib.v"
+verilog work "shifter.v"
+verilog work "shifter_tb.v"

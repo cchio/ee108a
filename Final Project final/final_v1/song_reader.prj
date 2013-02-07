@@ -1,0 +1,4 @@
+verilog work "ff_lib.v"
+verilog work "song_rom.v"
+verilog work "duration_timer2.v"
+verilog work "song_reader.v"

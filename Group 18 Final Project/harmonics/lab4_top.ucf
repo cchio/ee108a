@@ -1,0 +1,31 @@
+# Clock
+NET "clk" LOC = "AH15";
+NET "clk" TNM_NET = "clk";
+TIMESPEC "TS_clock" = PERIOD "clk" 10 ns HIGH 50 %;
+
+# AC97 interface
+NET AC97Clk     LOC = "AF18";
+NET Sync        LOC = "AF19";
+NET SData_In    LOC = "AE18";
+NET SData_Out   LOC = "AG16";
+NET AC97Reset_n LOC = "AG17";
+
+# Push button interface
+NET "left_button"  LOC = "AJ7";
+NET "right_button" LOC = "AK7";
+NET "up_button"    LOC = "U8";
+
+# DIP switches
+NET "sw<0>" LOC = "U25";
+NET "sw<1>" LOC = "AG27";
+NET "sw<2>" LOC = "AF25";
+
+# LED interface
+NET "leds_l<0>" LOC = "AD26";
+NET "leds_l<1>" LOC = "G15";
+NET "leds_l<2>" LOC = "L18";
+NET "leds_l<3>" LOC = "H18";
+NET "leds_r<0>" LOC = "AE24";
+NET "leds_r<1>" LOC = "AD24";
+NET "leds_r<2>" LOC = "AD25";
+NET "leds_r<3>" LOC = "G16";

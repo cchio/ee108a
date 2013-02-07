@@ -1,0 +1,183 @@
+Release 12.2 ngdbuild M.63c (lin)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Command Line: /opt/xilinx/ISE_DS/ISE/bin/lin/unwrapped/ngdbuild -intstyle ise
+-dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1
+button_press_unit.ngc button_press_unit.ngd
+
+Reading NGO file
+"/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/button_press_unit.ngc"
+...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "lab4_top.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+ERROR:ConstraintSystem:59 - Constraint <NET AC97Clk     LOC = "AF18";>
+   [lab4_top.ucf(7)]: NET "AC97Clk" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET AC97Clk     LOC = "AF18";> [lab4_top.ucf(7)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET Sync        LOC = "AF19";>
+   [lab4_top.ucf(8)]: NET "Sync" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET Sync        LOC = "AF19";> [lab4_top.ucf(8)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET SData_In    LOC = "AE18";>
+   [lab4_top.ucf(9)]: NET "SData_In" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET SData_In    LOC = "AE18";> [lab4_top.ucf(9)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET SData_Out   LOC = "AG16";>
+   [lab4_top.ucf(10)]: NET "SData_Out" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET SData_Out   LOC = "AG16";> [lab4_top.ucf(10)]' could not be found and
+   so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET AC97Reset_n LOC = "AG17";>
+   [lab4_top.ucf(11)]: NET "AC97Reset_n" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET AC97Reset_n LOC = "AG17";> [lab4_top.ucf(11)]' could not be found and
+   so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "left_button"  LOC = "AJ7";>
+   [lab4_top.ucf(14)]: NET "left_button" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "left_button"  LOC = "AJ7";> [lab4_top.ucf(14)]' could not be found and
+   so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "right_button" LOC = "AK7";>
+   [lab4_top.ucf(15)]: NET "right_button" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "right_button" LOC = "AK7";> [lab4_top.ucf(15)]' could not be found and
+   so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "up_button"    LOC = "U8";>
+   [lab4_top.ucf(16)]: NET "up_button" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "up_button"    LOC = "U8";> [lab4_top.ucf(16)]' could not be found and
+   so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "leds_l<0>" LOC = "AD26";>
+   [lab4_top.ucf(19)]: NET "leds_l<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "leds_l<0>" LOC = "AD26";> [lab4_top.ucf(19)]' could not be found and
+   so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "leds_l<1>" LOC = "G15";>
+   [lab4_top.ucf(20)]: NET "leds_l<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "leds_l<1>" LOC = "G15";> [lab4_top.ucf(20)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "leds_l<2>" LOC = "L18";>
+   [lab4_top.ucf(21)]: NET "leds_l<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "leds_l<2>" LOC = "L18";> [lab4_top.ucf(21)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "leds_l<3>" LOC = "H18";>
+   [lab4_top.ucf(22)]: NET "leds_l<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "leds_l<3>" LOC = "H18";> [lab4_top.ucf(22)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "leds_r<0>" LOC = "AE24";>
+   [lab4_top.ucf(23)]: NET "leds_r<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "leds_r<0>" LOC = "AE24";> [lab4_top.ucf(23)]' could not be found and
+   so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "leds_r<1>" LOC = "AD24";>
+   [lab4_top.ucf(24)]: NET "leds_r<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "leds_r<1>" LOC = "AD24";> [lab4_top.ucf(24)]' could not be found and
+   so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "leds_r<2>" LOC = "AD25";>
+   [lab4_top.ucf(25)]: NET "leds_r<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "leds_r<2>" LOC = "AD25";> [lab4_top.ucf(25)]' could not be found and
+   so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "leds_r<3>" LOC = "G16";>
+   [lab4_top.ucf(26)]: NET "leds_r<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "leds_r<3>" LOC = "G16";> [lab4_top.ucf(26)]' could not be found and so
+   the Locate constraint will be removed.
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:    16
+  Number of warnings:  16
+
+Total memory usage is 97616 kilobytes
+
+Total REAL time to NGDBUILD completion:  2 sec
+Total CPU time to NGDBUILD completion:   2 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "button_press_unit.bld"...

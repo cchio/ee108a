@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated   -->
+<!--     by the Xilinx ISE software.  Any direct editing or        -->
+<!--     changes made to this file may result in unpredictable     -->
+<!--     behavior or data corruption.  It is strongly advised that -->
+<!--     users do not edit the contents of this file.              -->
+<!--                                                               -->
+<!-- Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.    -->
+
+<messages>
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/ac97_if.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/beat_generator.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/brute_force_synchronizer.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/button_press_unit.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/chip_data_parser.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/codec_conditioner.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/debouncer.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/duration_timer.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/duration_timer2.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/dvi_controller_top.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/dvi_controller_top.v</arg>&quot; Line <arg fmt="%d" index="2">11</arg>. <arg fmt="%s" index="3">Include file found: &apos;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/dvi_defines.v&apos; in file &quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/dvi_controller_top.v&quot; line 11
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/exponential_scale_rom.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/ff_lib.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/flip_conditioner.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/frequency_rom.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/i2c_emulator.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/linear_scale_rom.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/mcu.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/midi_data_len_lookup.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/midi_dynamics.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/midi_msg_capture.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/midi_msg_handler.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/midi_note.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/midi_note_reg.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/midi_player.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/mix_multiplier_rom.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/music_player.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/next_midi_note.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/note_player.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/one_pulse.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/piano_weight.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/pipelined_scaler1_128.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/polyphony32_mixer.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/preset_counter.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/ram_1w2r.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/rs232.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/sine_reader.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/sine_rom.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/song_reader.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/song_rom.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/sustain_variation.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/sync_generators.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/sync_generators.v</arg>&quot; Line <arg fmt="%d" index="2">11</arg>. <arg fmt="%s" index="3">Include file found: &apos;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/dvi_defines.v&apos; in file &quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/sync_generators.v&quot; line 11
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/wave_capture.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/wave_display.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1574" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/wave_display_top.v\&quot; into library work</arg>
+</msg>
+
+</messages>
+

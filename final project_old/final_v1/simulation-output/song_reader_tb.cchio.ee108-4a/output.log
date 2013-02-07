@@ -1,0 +1,7 @@
+LXT2 info: dumpfile dump.lx2 opened for output.
+song: 00 | note: xxxxxx | duration: xxxxxx | song_done: 0
+song: 00 | note: 000100 | duration: 110000 | song_done: 0
+song: 00 | note: 000100 | duration: 110000 | song_done: 1
+song: 00 | note: 000100 | duration: 110000 | song_done: 0
+song: 00 | note: 001000 | duration: 110000 | song_done: 0
+song: 10 | note: 001000 | duration: 110000 | song_done: 0

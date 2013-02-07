@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="1" owner="projectmgr" name="final_v1" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNode>/Automatic `includes</ClosedNode>
+         <ClosedNode>/duration_timer</ClosedNode>
+         <ClosedNode>/duration_timer2</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/ctrl - dvi_controller_top</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/conditioner - codec_conditioner</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/mixer - polyphony32_mixer</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/msg_capture - midi_msg_capture</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/msg_handler - midi_msg_handler</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note0 - midi_note/dynamics - midi_dynamics/calc - dynamics_calc</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note0 - midi_note/dynamics - midi_dynamics/h1 - midi_harmonic_dynamics</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note0 - midi_note/dynamics - midi_dynamics/h2 - midi_harmonic_dynamics</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note0 - midi_note/dynamics - midi_dynamics/h3 - midi_harmonic_dynamics</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note0 - midi_note/dynamics - midi_dynamics/h4 - midi_harmonic_dynamics</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note0 - midi_note/dynamics - midi_dynamics/h5 - midi_harmonic_dynamics</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note0 - midi_note/dynamics - midi_dynamics/h6 - midi_harmonic_dynamics</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note0 - midi_note/dynamics - midi_dynamics/h7 - midi_harmonic_dynamics</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note0 - midi_note/dynamics - midi_dynamics/h8 - midi_harmonic_dynamics</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note0 - midi_note/dynamics - midi_dynamics/sustain - sustain_variation</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note0 - midi_note/sin1 - sine_reader</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note0 - midi_note/sin2 - sine_reader</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note0 - midi_note/sin3 - sine_reader</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note0 - midi_note/sin4 - sine_reader</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note0 - midi_note/sin5 - sine_reader</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note0 - midi_note/sin6 - sine_reader</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note0 - midi_note/sin7 - sine_reader</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note0 - midi_note/sin8 - sine_reader</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note1 - midi_note</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note10 - midi_note</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note11 - midi_note</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note12 - midi_note</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note13 - midi_note</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note14 - midi_note</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note15 - midi_note</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note16 - midi_note</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note17 - midi_note</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note18 - midi_note</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note19 - midi_note</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note2 - midi_note</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note20 - midi_note</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note21 - midi_note</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note22 - midi_note</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note23 - midi_note</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note24 - midi_note</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note25 - midi_note</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note26 - midi_note</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note27 - midi_note</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note28 - midi_note</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note29 - midi_note</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note3 - midi_note</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note30 - midi_note</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note31 - midi_note</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note4 - midi_note</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note5 - midi_note</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note6 - midi_note</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note7 - midi_note</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note8 - midi_note</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/midi_synth - midi_player/note9 - midi_note</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/music_player - music_player</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/next_button_press_unit - button_press_unit</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/play_button_press_unit - button_press_unit</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/rs232_com - rs232</ClosedNode>
+         <ClosedNode>/final_proj_v1_top/wd - wave_display_top</ClosedNode>
+         <ClosedNode>/mcu</ClosedNode>
+         <ClosedNode>/midi_dynamics</ClosedNode>
+         <ClosedNode>/midi_player</ClosedNode>
+         <ClosedNode>/one_pulse</ClosedNode>
+         <ClosedNode>/rs232</ClosedNode>
+         <ClosedNode>/sine_reader</ClosedNode>
+         <ClosedNode>/song_reader</ClosedNode>
+         <ClosedNode>/song_reader/timer - duration_timer2</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>final_proj_v1_top (/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >4</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000184000000020000000000000000000000000000000064ffffffff000000810000000000000002000001840000000100000000000000000000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>final_proj_v1_top (/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/final_proj_v1_top.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes/>
+      <SelectedItems>
+         <SelectedItem>Regenerate All Cores</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000019d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000019d0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Regenerate All Cores</CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes/>
+      <SelectedItems>
+         <SelectedItem>sine_reader.v</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >36</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000029c000000040101000100000000000000000000000064ffffffff000000810000000000000004000000ca0000000100000000000000290000000100000000000000850000000100000000000001240000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>sine_reader.v</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000011e000000010001000100000000000000000000000064ffffffff0000008100000000000000010000011e0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000197000000010000000100000000000000000000000064ffffffff000000810000000000000001000001970000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNode>/midi_dynamics</ClosedNode>
+         <ClosedNode>/midi_dynamics_tb/dynamics - midi_dynamics/calc - dynamics_calc</ClosedNode>
+         <ClosedNode>/midi_dynamics_tb/dynamics - midi_dynamics/h1 - midi_harmonic_dynamics</ClosedNode>
+         <ClosedNode>/midi_dynamics_tb/dynamics - midi_dynamics/h2 - midi_harmonic_dynamics</ClosedNode>
+         <ClosedNode>/midi_dynamics_tb/dynamics - midi_dynamics/h3 - midi_harmonic_dynamics</ClosedNode>
+         <ClosedNode>/midi_dynamics_tb/dynamics - midi_dynamics/h4 - midi_harmonic_dynamics</ClosedNode>
+         <ClosedNode>/midi_dynamics_tb/dynamics - midi_dynamics/h5 - midi_harmonic_dynamics</ClosedNode>
+         <ClosedNode>/midi_dynamics_tb/dynamics - midi_dynamics/h6 - midi_harmonic_dynamics</ClosedNode>
+         <ClosedNode>/midi_dynamics_tb/dynamics - midi_dynamics/h7 - midi_harmonic_dynamics</ClosedNode>
+         <ClosedNode>/midi_dynamics_tb/dynamics - midi_dynamics/h8 - midi_harmonic_dynamics</ClosedNode>
+         <ClosedNode>/midi_dynamics_tb/dynamics - midi_dynamics/sustain - sustain_variation</ClosedNode>
+         <ClosedNode>/midi_dynamics_tb/sine - sine_reader</ClosedNode>
+         <ClosedNode>/sine_reader</ClosedNode>
+         <ClosedNode>/song_reader/timer - duration_timer2</ClosedNode>
+         <ClosedNode>/song_reader_tb</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>h1 - midi_harmonic_dynamics (/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/midi_harmonic_dynamics.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000209000000020000000000000000000000000000000064ffffffff000000810000000000000002000002090000000100000000000000000000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>h1 - midi_harmonic_dynamics (/afs/ir.stanford.edu/class/ee108a/groups/18/final_v1/midi_harmonic_dynamics.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000193000000010000000100000000000000000000000064ffffffff000000810000000000000001000001930000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes/>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000193000000010000000100000000000000000000000064ffffffff000000810000000000000001000001930000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000013c0000011d01000000060100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Add Existing Source</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000019d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000019d0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Add Existing Source</CurrentItem>
+   </ItemView>
+</Project>

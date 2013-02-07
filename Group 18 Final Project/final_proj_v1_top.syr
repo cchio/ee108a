@@ -1,0 +1,231 @@
+Release 12.2 - xst M.63c (lin)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Reading design: final_proj_v1_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "final_proj_v1_top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "final_proj_v1_top"
+Output Format                      : NGC
+Target Device                      : xc5vlx110t-1-ff1136
+
+---- Source Options
+Top Module Name                    : final_proj_v1_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Off
+Reduce Control Sets                : Off
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "ff_lib.v" in library work
+Module <dff> compiled
+Module <dffr> compiled
+Compiling verilog file "pipelined_scaler1_128.v" in library work
+Module <dffre> compiled
+Compiling verilog file "sine_rom.v" in library work
+Module <pipelined_scaler1_128> compiled
+Compiling verilog file "harmonic_dynamics.v" in library work
+Module <sine_rom> compiled
+Compiling verilog file "dynamics_calc.v" in library work
+Module <harmonic_dynamics> compiled
+Compiling verilog file "duration_timer.v" in library work
+Module <dynamics_calc> compiled
+Compiling verilog file "trumpet_weight.v" in library work
+Module <duration_timer> compiled
+Compiling verilog file "sine_reader2.v" in library work
+Module <trumpet_weight> compiled
+Compiling verilog file "piano_weight.v" in library work
+Module <sine_reader2> compiled
+Compiling verilog file "dynamics.v" in library work
+Module <piano_weight> compiled
+Compiling verilog file "trumpet_voice.v" in library work
+Module <dynamics> compiled
+Compiling verilog file "sustain_variation.v" in library work
+Module <trumpet_voice> compiled
+Compiling verilog file "piano_voice.v" in library work
+Module <sustain_variation> compiled
+Compiling verilog file "midi_harmonic_dynamics.v" in library work
+Module <piano_voice> compiled
+Compiling verilog file "frequency_rom.v" in library work
+Module <midi_harmonic_dynamics> compiled
+Compiling verilog file "duration_timer2.v" in library work
+Module <frequency_rom> compiled
+Compiling verilog file "song_rom.v" in library work
+Module <duration_timer2> compiled
+Compiling verilog file "ROM_note_player_ext.v" in library work
+Module <song_rom> compiled
+Compiling verilog file "ram_1w2r.v" in library work
+Module <ROM_note_player_ext> compiled
+Compiling verilog file "next_midi_note.v" in library work
+Compiling verilog include file "num_notes.v"
+Module <ram_1w2r> compiled
+Compiling verilog file "mix_multiplier_rom.v" in library work
+Module <next_midi_note> compiled
+Compiling verilog file "midi_wave_reader.v" in library work
+Module <mix_multiplier_rom> compiled
+Compiling verilog file "midi_dynamics.v" in library work
+Module <midi_wave_reader> compiled
+Compiling verilog file "midi_data_len_lookup.v" in library work
+Module <midi_dynamics> compiled
+Compiling verilog file "sync_generators.v" in library work
+Compiling verilog include file "dvi_defines.v"
+Module <midi_data_len_lookup> compiled
+Compiling verilog file "song_reader.v" in library work
+Module <sync_generators> compiled
+Compiling verilog file "polyphony_mixer.v" in library work
+Compiling verilog include file "num_notes.v"
+Module <song_reader> compiled
+Compiling verilog file "midi_note_reg.v" in library work
+Compiling verilog include file "num_notes.v"
+Module <polyphony_mixer> compiled
+Compiling verilog file "midi_note.v" in library work
+Module <midi_note_reg> compiled
+Compiling verilog file "midi_msg_handler.v" in library work
+Compiling verilog include file "num_notes.v"
+Module <midi_note> compiled
+Compiling verilog file "midi_msg_capture.v" in library work
+Module <midi_msg_handler> compiled
+Compiling verilog file "mcu.v" in library work
+Module <midi_msg_capture> compiled
+Compiling verilog file "codec_conditioner.v" in library work
+Module <mcu> compiled
+Compiling verilog file "chords.v" in library work
+Module <codec_conditioner> compiled
+Compiling verilog file "beat_generator.v" in library work
+Module <chords> compiled
+Compiling verilog file "rs232.v" in library work
+Module <beat_generator> compiled
+Compiling verilog file "music_player_ext.v" in library work
+Module <rs232> compiled
+Compiling verilog file "midi_player.v" in library work
+Compiling verilog include file "num_notes.v"
+Module <music_player> compiled
+Compiling verilog file "i2c_emulator.v" in library work
+Module <midi_player> compiled
+Compiling verilog file "dvi_controller_top.v" in library work
+Compiling verilog include file "dvi_defines.v"
+Module <i2c_emulator> compiled
+Compiling verilog file "button_press_unit.v" in library work
+Module <dvi_controller_top> compiled
+Compiling verilog file "ac97_if.v" in library work
+Module <button_press_unit> compiled
+Compiling verilog file "final_proj_v2_top.v" in library work
+Module <ac97_if> compiled
+Module <final_proj_v1_top> compiled
+No errors in compilation
+Analysis of file <"final_proj_v1_top.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+ERROR:HDLCompilers:87 - "button_press_unit.v" line 17 Could not find module/primitive 'brute_force_synchronizer'
+ERROR:HDLCompilers:87 - "button_press_unit.v" line 25 Could not find module/primitive 'debouncer'
+ERROR:HDLCompilers:87 - "button_press_unit.v" line 33 Could not find module/primitive 'one_pulse'
+ERROR:HDLCompilers:87 - "button_press_unit.v" line 17 Could not find module/primitive 'brute_force_synchronizer'
+ERROR:HDLCompilers:87 - "button_press_unit.v" line 25 Could not find module/primitive 'debouncer'
+ERROR:HDLCompilers:87 - "button_press_unit.v" line 33 Could not find module/primitive 'one_pulse'
+ERROR:HDLCompilers:87 - "dvi_controller_top.v" line 53 Could not find module/primitive 'chip_data_parser'
+--> 
+
+
+Total memory usage is 169480 kilobytes
+
+Number of errors   :    7 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,210 @@
+#! /opt/ee108a/iverilog-0.9.5/bin/vvp
+:ivl_version "0.9.5 " "(v0_9_5)";
+:vpi_time_precision - 9;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x8ccfa50 .scope module, "ee108a_helper" "ee108a_helper" 2 3;
+ .timescale -9 -9;
+S_0x8ccf008 .scope module, "duration_timer2_tb" "duration_timer2_tb" 3 1;
+ .timescale -9 -9;
+v0x8cf9cb0_0 .var "clk", 0 0;
+v0x8cf9d38_0 .net "done", 0 0, L_0x8cf9f20; 1 drivers
+v0x8cf9d88_0 .var "hbeat", 0 0;
+v0x8cf9dd8_0 .var "len", 5 0;
+v0x8cf9e48_0 .var "new_duration", 0 0;
+v0x8cf9ed0_0 .net "new_duration1", 0 0, L_0x8cfa0c0; 1 drivers
+v0x8cf9f58_0 .var "paused", 0 0;
+v0x8cf9fa8_0 .var "rst", 0 0;
+E_0x8c8e9c0 .event negedge, v0x8c8dc48_0;
+S_0x8cf9718 .scope module, "p" "one_pulse" 3 7, 4 7, S_0x8ccf008;
+ .timescale -9 -9;
+L_0x8cf99f8 .functor NOT 1, v0x8cf9948_0, C4<0>, C4<0>, C4<0>;
+L_0x8cfa0c0 .functor AND 1, L_0x8cf99f8, v0x8cf9e48_0, C4<1>, C4<1>;
+v0x8cf9a30_0 .net *"_s0", 0 0, L_0x8cf99f8; 1 drivers
+v0x8cf9a90_0 .net "clk", 0 0, v0x8cf9d88_0; 1 drivers
+v0x8cf9b18_0 .net "in", 0 0, v0x8cf9e48_0; 1 drivers
+v0x8cf9b68_0 .net "last_value", 0 0, v0x8cf9948_0; 1 drivers
+v0x8cf9bd0_0 .alias "out", 0 0, v0x8cf9ed0_0;
+v0x8cf9c40_0 .net "reset", 0 0, v0x8cf9fa8_0; 1 drivers
+S_0x8cf9798 .scope module, "last_value_storage" "dffr" 4 15, 5 16, S_0x8cf9718;
+ .timescale -9 -9;
+P_0x8cf981c .param/l "WIDTH" 5 16, +C4<01>;
+v0x8cf9878_0 .alias "clk", 0 0, v0x8cf9a90_0;
+v0x8cf98f8_0 .alias "d", 0 0, v0x8cf9b18_0;
+v0x8cf9948_0 .var "q", 0 0;
+v0x8cf99a8_0 .alias "r", 0 0, v0x8cf9c40_0;
+E_0x8cf9848 .event posedge, v0x8cf9310_0;
+S_0x8c8c7f8 .scope module, "d" "duration_timer2" 3 9, 6 1, S_0x8ccf008;
+ .timescale -9 -9;
+L_0x8cfa218 .functor NOT 1, L_0x8cfa0c0, C4<0>, C4<0>, C4<0>;
+L_0x8cf9f20 .functor AND 1, L_0x8cfa158, L_0x8cfa218, C4<1>, C4<1>;
+v0x8cf91e0_0 .net *"_s0", 5 0, C4<000000>; 1 drivers
+v0x8cf9250_0 .net *"_s2", 0 0, L_0x8cfa158; 1 drivers
+v0x8cf92b0_0 .net *"_s4", 0 0, L_0x8cfa218; 1 drivers
+v0x8cf9310_0 .alias "beat", 0 0, v0x8cf9a90_0;
+v0x8cf9378_0 .net "clk", 0 0, v0x8cf9cb0_0; 1 drivers
+v0x8cf93e8_0 .net "counter", 5 0, v0x8cf9118_0; 1 drivers
+v0x8cf9478_0 .alias "done", 0 0, v0x8cf9d38_0;
+v0x8cf94c8_0 .net "duration", 5 0, v0x8cf9dd8_0; 1 drivers
+v0x8cf9540_0 .alias "load_new_duration", 0 0, v0x8cf9ed0_0;
+v0x8cf95a0_0 .var "next", 5 0;
+v0x8cf9620_0 .net "pause", 0 0, v0x8cf9f58_0; 1 drivers
+v0x8cf9670_0 .alias "reset", 0 0, v0x8cf9c40_0;
+E_0x8c8eb90/0 .event edge, v0x8cf9178_0, v0x8cf9540_0, v0x8cf94c8_0, v0x8cf9620_0;
+E_0x8c8eb90/1 .event edge, v0x8cf9118_0, v0x8cf9310_0;
+E_0x8c8eb90 .event/or E_0x8c8eb90/0, E_0x8c8eb90/1;
+L_0x8cfa158 .cmp/eq 6, v0x8cf9118_0, C4<000000>;
+S_0x8c8c878 .scope module, "cnt" "dffr" 6 14, 5 16, S_0x8c8c7f8;
+ .timescale -9 -9;
+P_0x8c8eaac .param/l "WIDTH" 5 16, +C4<0110>;
+v0x8c8dc48_0 .alias "clk", 0 0, v0x8cf9378_0;
+v0x8cf90b8_0 .net "d", 5 0, v0x8cf95a0_0; 1 drivers
+v0x8cf9118_0 .var "q", 5 0;
+v0x8cf9178_0 .alias "r", 0 0, v0x8cf9c40_0;
+E_0x8ccab90 .event posedge, v0x8c8dc48_0;
+    .scope S_0x8ccfa50;
+T_0 ;
+    %vpi_call 2 4 "$dumpvars";
+    %end;
+    .thread T_0;
+    .scope S_0x8cf9798;
+T_1 ;
+    %wait E_0x8cf9848;
+    %load/v 8, v0x8cf99a8_0, 1;
+    %jmp/0xz  T_1.0, 8;
+    %ix/load 0, 1, 0;
+    %assign/v0 v0x8cf9948_0, 0, 0;
+    %jmp T_1.1;
+T_1.0 ;
+    %load/v 8, v0x8cf98f8_0, 1;
+    %ix/load 0, 1, 0;
+    %assign/v0 v0x8cf9948_0, 0, 8;
+T_1.1 ;
+    %jmp T_1;
+    .thread T_1;
+    .scope S_0x8c8c878;
+T_2 ;
+    %wait E_0x8ccab90;
+    %load/v 8, v0x8cf9178_0, 1;
+    %jmp/0xz  T_2.0, 8;
+    %ix/load 0, 6, 0;
+    %assign/v0 v0x8cf9118_0, 0, 0;
+    %jmp T_2.1;
+T_2.0 ;
+    %load/v 8, v0x8cf90b8_0, 6;
+    %ix/load 0, 6, 0;
+    %assign/v0 v0x8cf9118_0, 0, 8;
+T_2.1 ;
+    %jmp T_2;
+    .thread T_2;
+    .scope S_0x8c8c7f8;
+T_3 ;
+    %wait E_0x8c8eb90;
+    %load/v 8, v0x8cf9670_0, 1;
+    %jmp/0xz  T_3.0, 8;
+    %set/v v0x8cf95a0_0, 0, 6;
+    %jmp T_3.1;
+T_3.0 ;
+    %load/v 8, v0x8cf9540_0, 1;
+    %jmp/0xz  T_3.2, 8;
+    %load/v 8, v0x8cf94c8_0, 6;
+    %set/v v0x8cf95a0_0, 8, 6;
+    %jmp T_3.3;
+T_3.2 ;
+    %load/v 8, v0x8cf9620_0, 1;
+    %jmp/0xz  T_3.4, 8;
+    %load/v 8, v0x8cf93e8_0, 6;
+    %set/v v0x8cf95a0_0, 8, 6;
+    %jmp T_3.5;
+T_3.4 ;
+    %load/v 8, v0x8cf9310_0, 1;
+    %jmp/0xz  T_3.6, 8;
+    %load/v 8, v0x8cf93e8_0, 6;
+    %cmpi/u 8, 0, 6;
+    %mov 8, 4, 1;
+    %jmp/0  T_3.8, 8;
+    %mov 9, 0, 6;
+    %jmp/1  T_3.10, 8;
+T_3.8 ; End of true expr.
+    %load/v 15, v0x8cf93e8_0, 6;
+    %subi 15, 1, 6;
+    %jmp/0  T_3.9, 8;
+ ; End of false expr.
+    %blend  9, 15, 6; Condition unknown.
+    %jmp  T_3.10;
+T_3.9 ;
+    %mov 9, 15, 6; Return false value
+T_3.10 ;
+    %set/v v0x8cf95a0_0, 9, 6;
+    %jmp T_3.7;
+T_3.6 ;
+    %load/v 8, v0x8cf93e8_0, 6;
+    %set/v v0x8cf95a0_0, 8, 6;
+T_3.7 ;
+T_3.5 ;
+T_3.3 ;
+T_3.1 ;
+    %jmp T_3;
+    .thread T_3, $push;
+    .scope S_0x8ccf008;
+T_4 ;
+    %set/v v0x8cf9d88_0, 0, 1;
+T_4.0 ;
+    %delay 10, 0;
+    %load/v 8, v0x8cf9d88_0, 1;
+    %inv 8, 1;
+    %set/v v0x8cf9d88_0, 8, 1;
+    %jmp T_4.0;
+    %end;
+    .thread T_4;
+    .scope S_0x8ccf008;
+T_5 ;
+    %set/v v0x8cf9cb0_0, 0, 1;
+T_5.0 ;
+    %delay 5, 0;
+    %load/v 8, v0x8cf9cb0_0, 1;
+    %inv 8, 1;
+    %set/v v0x8cf9cb0_0, 8, 1;
+    %jmp T_5.0;
+    %end;
+    .thread T_5;
+    .scope S_0x8ccf008;
+T_6 ;
+    %set/v v0x8cf9f58_0, 0, 1;
+    %movi 8, 16, 6;
+    %set/v v0x8cf9dd8_0, 8, 6;
+    %set/v v0x8cf9e48_0, 0, 1;
+    %vpi_call 3 30 "$monitor", "rst %b, beat %b, clk %b, pause %b, count %d, done %b", v0x8cf9fa8_0, v0x8cf9d88_0, v0x8cf9cb0_0, v0x8cf9f58_0, v0x8cf93e8_0, v0x8cf9d38_0;
+    %set/v v0x8cf9fa8_0, 1, 1;
+    %delay 40, 0;
+    %set/v v0x8cf9fa8_0, 0, 1;
+    %delay 20, 0;
+    %wait E_0x8c8e9c0;
+    %set/v v0x8cf9e48_0, 1, 1;
+    %wait E_0x8c8e9c0;
+    %set/v v0x8cf9e48_0, 0, 1;
+    %delay 400, 0;
+    %movi 8, 30, 6;
+    %set/v v0x8cf9dd8_0, 8, 6;
+    %wait E_0x8c8e9c0;
+    %set/v v0x8cf9e48_0, 1, 1;
+    %wait E_0x8c8e9c0;
+    %set/v v0x8cf9e48_0, 0, 1;
+    %delay 200, 0;
+    %set/v v0x8cf9f58_0, 1, 1;
+    %delay 100, 0;
+    %set/v v0x8cf9f58_0, 0, 1;
+    %delay 450, 0;
+    %vpi_call 3 53 "$finish";
+    %end;
+    .thread T_6;
+# The file index is used to find the file name in the following table.
+:file_names 7;
+    "N/A";
+    "<interactive>";
+    "/dev/stdin";
+    "duration_timer2_tb.v";
+    "one_pulse.v";
+    "ff_lib.v";
+    "duration_timer2.v";

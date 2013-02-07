@@ -1,0 +1,42 @@
+Audio out: sound file midi_dynamics_tb_audio.snd opened for output.
+update 1, update_all 0, note_val 7f1d, control_val 0040, on 0, note  0
+update 1, update_all 0, note_val 7f1d, control_val 0040, on 1, note  1
+update 0, update_all 0, note_val 7f1d, control_val 0040, on 1, note  1
+[144479955] Audio out: generated 1 seconds.
+[288959955] Audio out: generated 2 seconds.
+[433439955] Audio out: generated 3 seconds.
+[577919955] Audio out: generated 4 seconds.
+[722399955] Audio out: generated 5 seconds.
+[866879955] Audio out: generated 6 seconds.
+[1011359955] Audio out: generated 7 seconds.
+[1155839955] Audio out: generated 8 seconds.
+[1300319955] Audio out: generated 9 seconds.
+[1444799955] Audio out: generated 10 seconds.
+[1589279955] Audio out: generated 11 seconds.
+[1733759955] Audio out: generated 12 seconds.
+update 0, update_all 0, note_val 001d, control_val 0040, on 1, note  1
+update 1, update_all 0, note_val 001d, control_val 0040, on 1, note  1
+update 0, update_all 0, note_val 001d, control_val 0040, on 1, note  1
+update 1, update_all 0, note_val 405b, control_val 0040, on 1, note  1
+update 1, update_all 0, note_val 405b, control_val 0040, on 1, note 63
+update 0, update_all 0, note_val 405b, control_val 0040, on 1, note 63
+[1878239955] Audio out: generated 13 seconds.
+[2022719955] Audio out: generated 14 seconds.
+update 0, update_all 0, note_val 005b, control_val 7f40, on 1, note 63
+update 1, update_all 1, note_val 005b, control_val 7f40, on 1, note 63
+update 0, update_all 0, note_val 005b, control_val 7f40, on 1, note 63
+[2167199955] Audio out: generated 15 seconds.
+[2311679955] Audio out: generated 16 seconds.
+update 0, update_all 0, note_val 005b, control_val 7f40, on 1, note  1
+[2456159955] Audio out: generated 17 seconds.
+[2600639955] Audio out: generated 18 seconds.
+update 0, update_all 0, note_val 7f5b, control_val 0040, on 1, note  1
+update 1, update_all 1, note_val 7f5b, control_val 0040, on 1, note  1
+update 1, update_all 1, note_val 7f5b, control_val 0040, on 1, note 63
+update 0, update_all 0, note_val 7f5b, control_val 0040, on 1, note 63
+[2745119955] Audio out: generated 19 seconds.
+[2889599955] Audio out: generated 20 seconds.
+update 1, update_all 0, note_val 005b, control_val 0040, on 1, note 63
+update 0, update_all 0, note_val 005b, control_val 0040, on 1, note 63
+update 0, update_all 0, note_val 005b, control_val 0040, on 1, note  1
+[3034079955] Audio out: generated 21 seconds.

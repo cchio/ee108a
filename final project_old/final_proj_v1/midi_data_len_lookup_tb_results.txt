@@ -1,0 +1,21 @@
+len should equal 0
+clk 0, command 00, data_len x
+clk 1, command 00, data_len 0
+clk 0, command 00, data_len 0
+clk 1, command 00, data_len 0
+len should equal 2
+clk 0, command 80, data_len 0
+clk 1, command 80, data_len 2
+clk 0, command 80, data_len 2
+clk 1, command 80, data_len 2
+len should equal 1
+clk 0, command c1, data_len 2
+clk 1, command c1, data_len 1
+clk 0, command c1, data_len 1
+clk 1, command c1, data_len 1
+len should equal 0
+clk 0, command fe, data_len 1
+clk 1, command fe, data_len 0
+clk 0, command fe, data_len 0
+clk 1, command fe, data_len 0
+clk 0, command fe, data_len 0

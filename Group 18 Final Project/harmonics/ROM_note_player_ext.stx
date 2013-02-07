@@ -1,0 +1,67 @@
+Release 12.2 - xst M.63c (lin)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Parameter xsthdpdir set to /afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "ff_lib.v" in library work
+Module <dff> compiled
+Module <dffr> compiled
+Compiling verilog file "pipelined_scaler1_128.v" in library work
+Module <dffre> compiled
+Compiling verilog file "sine_rom.v" in library work
+Module <pipelined_scaler1_128> compiled
+Compiling verilog file "harmonic_dynamics.v" in library work
+Module <sine_rom> compiled
+Compiling verilog file "dynamics_calc2.v" in library work
+Module <harmonic_dynamics> compiled
+Compiling verilog file "duration_timer.v" in library work
+Module <dynamics_calc2> compiled
+Compiling verilog file "sine_reader2.v" in library work
+Module <duration_timer> compiled
+Compiling verilog file "piano_weight.v" in library work
+Module <sine_reader2> compiled
+Compiling verilog file "dynamics.v" in library work
+Module <piano_weight> compiled
+Compiling verilog file "piano_voice.v" in library work
+Module <dynamics> compiled
+Compiling verilog file "frequency_rom.v" in library work
+Module <piano_voice> compiled
+Compiling verilog file "duration_timer2.v" in library work
+Module <frequency_rom> compiled
+Compiling verilog file "ROM_note_player_ext.v" in library work
+Module <duration_timer2> compiled
+Module <ROM_note_player_ext> compiled
+No errors in compilation
+Analysis of file <"ROM_note_player_ext.prj"> succeeded.
+ 
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> 
+
+
+Total memory usage is 135900 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

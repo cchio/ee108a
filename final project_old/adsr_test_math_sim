@@ -1,0 +1,205 @@
+#! /usr/local/bin/vvp
+:ivl_version "0.9.6 " "(v0_9_6-1-gb8bcb01)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x7ff878c0b490 .scope module, "adsr_test_math" "adsr_test_math" 2 1;
+ .timescale 0 0;
+v0x7ff878c047e0_0 .var "factor", 7 0;
+v0x7ff878c1b3c0_0 .var/s "product", 29 0;
+v0x7ff878c1b450_0 .var/s "sample", 15 0;
+v0x7ff878c1b4d0_0 .var/s "sample_in", 15 0;
+v0x7ff878c1b560_0 .var/s "sample_out", 37 0;
+v0x7ff878c1b620_0 .var/s "shift", 22 0;
+v0x7ff878c1b6b0_0 .var/s "usample", 15 0;
+    .scope S_0x7ff878c0b490;
+T_0 ;
+    %movi 8, 128, 8;
+    %set/v v0x7ff878c047e0_0, 8, 8;
+    %set/v v0x7ff878c1b4d0_0, 0, 16;
+    %ix/load 1, 15, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.3, 4;
+    %load/x1p 8, v0x7ff878c1b4d0_0, 1;
+    %jmp T_0.4;
+T_0.3 ;
+    %mov 8, 2, 1;
+T_0.4 ;
+; Save base=8 wid=1 in lookaside.
+    %jmp/0  T_0.0, 8;
+    %load/v 9, v0x7ff878c1b4d0_0, 16;
+    %subi 9, 1, 16;
+    %inv 9, 16;
+    %jmp/1  T_0.2, 8;
+T_0.0 ; End of true expr.
+    %load/v 25, v0x7ff878c1b4d0_0, 16;
+    %jmp/0  T_0.1, 8;
+ ; End of false expr.
+    %blend  9, 25, 16; Condition unknown.
+    %jmp  T_0.2;
+T_0.1 ;
+    %mov 9, 25, 16; Return false value
+T_0.2 ;
+    %set/v v0x7ff878c1b6b0_0, 9, 16;
+    %mov 8, 0, 7;
+    %load/v 15, v0x7ff878c1b6b0_0, 16;
+    %ix/load 0, 7, 0;
+    %mov 4, 0, 1;
+    %shiftr/i0  8, 23;
+    %set/v v0x7ff878c1b620_0, 8, 23;
+    %mov 8, 0, 7;
+    %load/v 15, v0x7ff878c047e0_0, 8;
+    %mov 23, 0, 15;
+    %load/v 38, v0x7ff878c1b620_0, 23;
+    %mov 61, 0, 7;
+    %mul 8, 38, 30;
+    %set/v v0x7ff878c1b3c0_0, 8, 30;
+    %movi 8, 17, 6;
+T_0.5 %cmp/s 0, 8, 6;
+    %jmp/0xz T_0.6, 5;
+    %add 8, 1, 6;
+    %movi 14, 17, 6;
+T_0.7 %cmp/s 0, 14, 6;
+    %jmp/0xz T_0.8, 5;
+    %add 14, 1, 6;
+    %mov 58, 0, 14;
+    %load/v 72, v0x7ff878c1b6b0_0, 16;
+    %mov 20, 58, 30;
+    %mov 50, 0, 8;
+    %load/v 58, v0x7ff878c1b3c0_0, 30;
+    %mov 88, 0, 8;
+    %sub 20, 58, 38;
+    %set/v v0x7ff878c1b560_0, 20, 38;
+    %ix/load 1, 15, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.12, 4;
+    %load/x1p 20, v0x7ff878c1b4d0_0, 1;
+    %jmp T_0.13;
+T_0.12 ;
+    %mov 20, 2, 1;
+T_0.13 ;
+; Save base=20 wid=1 in lookaside.
+    %jmp/0  T_0.9, 20;
+    %ix/load 1, 14, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.14, 4;
+    %load/x1p 37, v0x7ff878c1b560_0, 15;
+    %jmp T_0.15;
+T_0.14 ;
+    %mov 37, 2, 15;
+T_0.15 ;
+    %mov 21, 37, 15; Move signal select into place
+    %mov 36, 0, 1;
+    %inv 21, 16;
+    %addi 21, 1, 16;
+    %jmp/1  T_0.11, 20;
+T_0.9 ; End of true expr.
+    %ix/load 1, 14, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.16, 4;
+    %load/x1p 37, v0x7ff878c1b560_0, 16;
+    %jmp T_0.17;
+T_0.16 ;
+    %mov 37, 2, 16;
+T_0.17 ;
+; Save base=37 wid=16 in lookaside.
+    %jmp/0  T_0.10, 20;
+ ; End of false expr.
+    %blend  21, 37, 16; Condition unknown.
+    %jmp  T_0.11;
+T_0.10 ;
+    %mov 21, 37, 16; Return false value
+T_0.11 ;
+    %set/v v0x7ff878c1b450_0, 21, 16;
+    %vpi_call 2 22 "$display", "in %d, fact %d, out %d", v0x7ff878c1b4d0_0, v0x7ff878c047e0_0, v0x7ff878c1b450_0;
+    %movi 20, 8, 10;
+    %load/v 30, v0x7ff878c047e0_0, 8;
+    %mov 38, 0, 2;
+    %cmp/u 20, 30, 10;
+    %or 5, 4, 1;
+    %jmp/0xz  T_0.18, 5;
+    %load/v 20, v0x7ff878c047e0_0, 8;
+    %mov 28, 0, 24;
+    %subi 20, 8, 32;
+    %set/v v0x7ff878c047e0_0, 20, 8;
+    %jmp T_0.19;
+T_0.18 ;
+    %movi 20, 128, 8;
+    %set/v v0x7ff878c047e0_0, 20, 8;
+T_0.19 ;
+    %mov 20, 0, 7;
+    %load/v 27, v0x7ff878c047e0_0, 8;
+    %mov 35, 0, 15;
+    %load/v 50, v0x7ff878c1b620_0, 23;
+    %mov 73, 0, 7;
+    %mul 20, 50, 30;
+    %set/v v0x7ff878c1b3c0_0, 20, 30;
+    %jmp T_0.7;
+T_0.8 ;
+    %load/v 14, v0x7ff878c1b4d0_0, 16;
+    %mov 30, 29, 1;
+    %mov 31, 29, 1;
+    %mov 32, 29, 1;
+    %mov 33, 29, 1;
+    %mov 34, 29, 1;
+    %mov 35, 29, 1;
+    %mov 36, 29, 1;
+    %mov 37, 29, 1;
+    %mov 38, 29, 1;
+    %mov 39, 29, 1;
+    %mov 40, 29, 1;
+    %mov 41, 29, 1;
+    %mov 42, 29, 1;
+    %mov 43, 29, 1;
+    %mov 44, 29, 1;
+    %mov 45, 29, 1;
+    %addi 14, 4096, 32;
+    %set/v v0x7ff878c1b4d0_0, 14, 16;
+    %ix/load 1, 15, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.23, 4;
+    %load/x1p 14, v0x7ff878c1b4d0_0, 1;
+    %jmp T_0.24;
+T_0.23 ;
+    %mov 14, 2, 1;
+T_0.24 ;
+; Save base=14 wid=1 in lookaside.
+    %jmp/0  T_0.20, 14;
+    %load/v 15, v0x7ff878c1b4d0_0, 16;
+    %subi 15, 1, 16;
+    %inv 15, 16;
+    %jmp/1  T_0.22, 14;
+T_0.20 ; End of true expr.
+    %load/v 31, v0x7ff878c1b4d0_0, 16;
+    %jmp/0  T_0.21, 14;
+ ; End of false expr.
+    %blend  15, 31, 16; Condition unknown.
+    %jmp  T_0.22;
+T_0.21 ;
+    %mov 15, 31, 16; Return false value
+T_0.22 ;
+    %set/v v0x7ff878c1b6b0_0, 15, 16;
+    %mov 14, 0, 7;
+    %load/v 21, v0x7ff878c1b6b0_0, 16;
+    %ix/load 0, 7, 0;
+    %mov 4, 0, 1;
+    %shiftr/i0  14, 23;
+    %set/v v0x7ff878c1b620_0, 14, 23;
+    %mov 14, 0, 7;
+    %load/v 21, v0x7ff878c047e0_0, 8;
+    %mov 29, 0, 15;
+    %load/v 44, v0x7ff878c1b620_0, 23;
+    %mov 67, 0, 7;
+    %mul 14, 44, 30;
+    %set/v v0x7ff878c1b3c0_0, 14, 30;
+    %jmp T_0.5;
+T_0.6 ;
+    %vpi_call 2 35 "$finish";
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "adsr_test_math.v";

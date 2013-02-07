@@ -1,0 +1,30 @@
+should write note1 to 0x403C
+clk 0, wr_en 1, addr  1, value 403c, note0 zzzz, note1 zzzz
+clk 1, wr_en 1, addr  1, value 403c, note0 zzzz, note1 403c
+clk 0, wr_en 0, addr  1, value 403c, note0 zzzz, note1 403c
+clk 1, wr_en 0, addr  1, value 403c, note0 zzzz, note1 403c
+clk 0, wr_en 0, addr  1, value 403c, note0 zzzz, note1 403c
+clk 1, wr_en 0, addr  1, value 403c, note0 zzzz, note1 403c
+clk 0, wr_en 0, addr  1, value 403c, note0 zzzz, note1 403c
+clk 1, wr_en 0, addr  1, value 403c, note0 zzzz, note1 403c
+clk 0, wr_en 0, addr  1, value 403c, note0 zzzz, note1 403c
+clk 1, wr_en 0, addr  1, value 403c, note0 zzzz, note1 403c
+should write note0 to 0x7F40
+clk 0, wr_en 1, addr  0, value 7f40, note0 zzzz, note1 403c
+clk 1, wr_en 1, addr  0, value 7f40, note0 7f40, note1 403c
+clk 0, wr_en 0, addr  0, value 7f40, note0 7f40, note1 403c
+clk 1, wr_en 0, addr  0, value 7f40, note0 7f40, note1 403c
+clk 0, wr_en 0, addr  0, value 7f40, note0 7f40, note1 403c
+clk 1, wr_en 0, addr  0, value 7f40, note0 7f40, note1 403c
+clk 0, wr_en 0, addr  0, value 7f40, note0 7f40, note1 403c
+clk 1, wr_en 0, addr  0, value 7f40, note0 7f40, note1 403c
+clk 0, wr_en 0, addr  0, value 7f40, note0 7f40, note1 403c
+clk 1, wr_en 0, addr  0, value 7f40, note0 7f40, note1 403c
+should write note1 to 0x7F40
+clk 0, wr_en 1, addr  1, value 7f40, note0 7f40, note1 403c
+clk 1, wr_en 1, addr  1, value 7f40, note0 7f40, note1 7f40
+clk 0, wr_en 0, addr  1, value 7f40, note0 7f40, note1 7f40
+clk 1, wr_en 0, addr  1, value 7f40, note0 7f40, note1 7f40
+clk 0, wr_en 0, addr  1, value 7f40, note0 7f40, note1 7f40
+clk 1, wr_en 0, addr  1, value 7f40, note0 7f40, note1 7f40
+clk 0, wr_en 0, addr  1, value 7f40, note0 7f40, note1 7f40

@@ -1,0 +1,339 @@
+Release 12.2 Map M.63c (lin)
+Xilinx Mapping Report File for Design 'lab4_top'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol
+high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr
+off -lc off -power off -o lab4_top_map.ncd lab4_top.ngd lab4_top.pcf 
+Target Device  : xc5vlx110t
+Target Package : ff1136
+Target Speed   : -1
+Mapper Version : virtex5 -- $Revision: 1.52 $
+Mapped Date    : Sun Oct 28 22:21:39 2012
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    0
+Slice Logic Utilization:
+  Number of Slice Registers:                   317 out of  69,120    1%
+    Number used as Flip Flops:                 317
+  Number of Slice LUTs:                        472 out of  69,120    1%
+    Number used as logic:                      460 out of  69,120    1%
+      Number using O6 output only:             331
+      Number using O5 output only:              55
+      Number using O5 and O6:                   74
+    Number used as Memory:                       7 out of  17,920    1%
+      Number used as Shift Register:             7
+        Number using O6 output only:             7
+    Number used as exclusive route-thru:         5
+  Number of route-thrus:                        60
+    Number using O6 output only:                60
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   205 out of  17,280    1%
+  Number of LUT Flip Flop pairs used:          597
+    Number with an unused Flip Flop:           280 out of     597   46%
+    Number with an unused LUT:                 125 out of     597   20%
+    Number of fully used LUT-FF pairs:         192 out of     597   32%
+    Number of unique control sets:              48
+    Number of slice register sites lost
+      to control set restrictions:             112 out of  69,120    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        17 out of     640    2%
+    Number of LOCed IOBs:                       17 out of      17  100%
+
+Specific Feature Utilization:
+  Number of BlockRAM/FIFO:                       3 out of     148    2%
+    Number using BlockRAM only:                  3
+    Total primitives used:
+      Number of 36k BlockRAM used:               1
+      Number of 18k BlockRAM used:               2
+    Total Memory used (KB):                     72 out of   5,328    1%
+  Number of BUFG/BUFGCTRLs:                      2 out of      32    6%
+    Number used as BUFGs:                        2
+
+Average Fanout of Non-Clock Nets:                3.30
+
+Peak Memory Usage:  398 MB
+Total REAL time to MAP completion:  40 secs 
+Total CPU time to MAP completion:   31 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network codec/PCM_Record_Left<15> has no load.
+INFO:LIT:395 - The above info message is repeated 27 more times for the
+   following (max. 5 shown):
+   codec/PCM_Record_Left<14>,
+   codec/PCM_Record_Left<13>,
+   codec/PCM_Record_Left<12>,
+   codec/PCM_Record_Left<11>,
+   codec/PCM_Record_Left<10>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 0.950 Volts. (default - Range: 0.950 to
+   1.050 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  54 block(s) removed
+   5 block(s) optimized away
+  66 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "codec/PCM_Record_Right<15>" is sourceless and has been removed.
+ Sourceless block "codec/ac97_core_I/_n0039<15>1" (ROM) removed.
+  The signal "codec/ac97_core_I/_n0039<15>" is sourceless and has been removed.
+   Sourceless block "codec/ac97_core_I/PCM_Record_Right_0" (FF) removed.
+The signal "codec/PCM_Record_Right<14>" is sourceless and has been removed.
+ Sourceless block "codec/ac97_core_I/_n0039<14>1" (ROM) removed.
+  The signal "codec/ac97_core_I/_n0039<14>" is sourceless and has been removed.
+   Sourceless block "codec/ac97_core_I/PCM_Record_Right_1" (FF) removed.
+The signal "codec/PCM_Record_Right<13>" is sourceless and has been removed.
+ Sourceless block "codec/ac97_core_I/_n0039<13>1" (ROM) removed.
+  The signal "codec/ac97_core_I/_n0039<13>" is sourceless and has been removed.
+   Sourceless block "codec/ac97_core_I/PCM_Record_Right_2" (FF) removed.
+The signal "codec/PCM_Record_Right<12>" is sourceless and has been removed.
+ Sourceless block "codec/ac97_core_I/_n0039<12>1" (ROM) removed.
+  The signal "codec/ac97_core_I/_n0039<12>" is sourceless and has been removed.
+   Sourceless block "codec/ac97_core_I/PCM_Record_Right_3" (FF) removed.
+The signal "codec/PCM_Record_Right<11>" is sourceless and has been removed.
+ Sourceless block "codec/ac97_core_I/_n0039<11>1" (ROM) removed.
+  The signal "codec/ac97_core_I/_n0039<11>" is sourceless and has been removed.
+   Sourceless block "codec/ac97_core_I/PCM_Record_Right_4" (FF) removed.
+The signal "codec/PCM_Record_Right<10>" is sourceless and has been removed.
+ Sourceless block "codec/ac97_core_I/_n0039<10>1" (ROM) removed.
+  The signal "codec/ac97_core_I/_n0039<10>" is sourceless and has been removed.
+   Sourceless block "codec/ac97_core_I/PCM_Record_Right_5" (FF) removed.
+The signal "codec/PCM_Record_Right<9>" is sourceless and has been removed.
+ Sourceless block "codec/ac97_core_I/_n0039<9>1" (ROM) removed.
+  The signal "codec/ac97_core_I/_n0039<9>" is sourceless and has been removed.
+   Sourceless block "codec/ac97_core_I/PCM_Record_Right_6" (FF) removed.
+The signal "codec/PCM_Record_Right<8>" is sourceless and has been removed.
+ Sourceless block "codec/ac97_core_I/_n0039<8>1" (ROM) removed.
+  The signal "codec/ac97_core_I/_n0039<8>" is sourceless and has been removed.
+   Sourceless block "codec/ac97_core_I/PCM_Record_Right_7" (FF) removed.
+The signal "codec/PCM_Record_Right<7>" is sourceless and has been removed.
+ Sourceless block "codec/ac97_core_I/_n0039<7>1" (ROM) removed.
+  The signal "codec/ac97_core_I/_n0039<7>" is sourceless and has been removed.
+   Sourceless block "codec/ac97_core_I/PCM_Record_Right_8" (FF) removed.
+The signal "codec/PCM_Record_Right<6>" is sourceless and has been removed.
+ Sourceless block "codec/ac97_core_I/_n0039<6>1" (ROM) removed.
+  The signal "codec/ac97_core_I/_n0039<6>" is sourceless and has been removed.
+   Sourceless block "codec/ac97_core_I/PCM_Record_Right_9" (FF) removed.
+The signal "codec/PCM_Record_Right<5>" is sourceless and has been removed.
+ Sourceless block "codec/ac97_core_I/_n0039<5>1" (ROM) removed.
+  The signal "codec/ac97_core_I/_n0039<5>" is sourceless and has been removed.
+   Sourceless block "codec/ac97_core_I/PCM_Record_Right_10" (FF) removed.
+The signal "codec/PCM_Record_Right<4>" is sourceless and has been removed.
+ Sourceless block "codec/ac97_core_I/_n0039<4>1" (ROM) removed.
+  The signal "codec/ac97_core_I/_n0039<4>" is sourceless and has been removed.
+   Sourceless block "codec/ac97_core_I/PCM_Record_Right_11" (FF) removed.
+The signal "codec/PCM_Record_Right<3>" is sourceless and has been removed.
+ Sourceless block "codec/ac97_core_I/_n0039<3>1" (ROM) removed.
+  The signal "codec/ac97_core_I/_n0039<3>" is sourceless and has been removed.
+   Sourceless block "codec/ac97_core_I/PCM_Record_Right_12" (FF) removed.
+The signal "codec/PCM_Record_Right<2>" is sourceless and has been removed.
+ Sourceless block "codec/ac97_core_I/_n0039<2>1" (ROM) removed.
+  The signal "codec/ac97_core_I/_n0039<2>" is sourceless and has been removed.
+   Sourceless block "codec/ac97_core_I/PCM_Record_Right_13" (FF) removed.
+The signal "codec/PCM_Record_Right<1>" is sourceless and has been removed.
+ Sourceless block "codec/ac97_core_I/_n0039<1>1" (ROM) removed.
+  The signal "codec/ac97_core_I/_n0039<1>" is sourceless and has been removed.
+   Sourceless block "codec/ac97_core_I/PCM_Record_Right_14" (FF) removed.
+The signal "codec/PCM_Record_Right<0>" is sourceless and has been removed.
+ Sourceless block "codec/ac97_core_I/_n0039<0>1" (ROM) removed.
+  The signal "codec/ac97_core_I/_n0039<0>" is sourceless and has been removed.
+   Sourceless block "codec/ac97_core_I/PCM_Record_Right_15" (FF) removed.
+The signal "codec/PCM_Record_Left<15>" is sourceless and has been removed.
+The signal "codec/PCM_Record_Left<14>" is sourceless and has been removed.
+The signal "codec/PCM_Record_Left<13>" is sourceless and has been removed.
+The signal "codec/PCM_Record_Left<12>" is sourceless and has been removed.
+The signal "codec/PCM_Record_Left<11>" is sourceless and has been removed.
+The signal "codec/PCM_Record_Left<10>" is sourceless and has been removed.
+The signal "codec/PCM_Record_Left<9>" is sourceless and has been removed.
+The signal "codec/PCM_Record_Left<8>" is sourceless and has been removed.
+The signal "codec/PCM_Record_Left<7>" is sourceless and has been removed.
+The signal "codec/PCM_Record_Left<6>" is sourceless and has been removed.
+The signal "codec/PCM_Record_Left<5>" is sourceless and has been removed.
+The signal "codec/PCM_Record_Left<4>" is sourceless and has been removed.
+The signal "codec/PCM_Record_Left<3>" is sourceless and has been removed.
+The signal "codec/PCM_Record_Left<2>" is sourceless and has been removed.
+The signal "codec/PCM_Record_Left<1>" is sourceless and has been removed.
+The signal "codec/PCM_Record_Left<0>" is sourceless and has been removed.
+The signal "codec/ac97_core_I/data_in<16>" is sourceless and has been removed.
+ Sourceless block "codec/ac97_core_I/data_in_17" (FF) removed.
+  The signal "codec/ac97_core_I/data_in<17>" is sourceless and has been removed.
+   Sourceless block "codec/ac97_core_I/data_in_18" (FF) removed.
+    The signal "codec/ac97_core_I/data_in<18>" is sourceless and has been removed.
+     Sourceless block "codec/ac97_core_I/data_in_19" (FF) removed.
+      The signal "codec/ac97_core_I/data_in<19>" is sourceless and has been removed.
+       Sourceless block "codec/ac97_core_I/PCM_Record_Left_0" (FF) removed.
+     Sourceless block "codec/ac97_core_I/PCM_Record_Left_1" (FF) removed.
+   Sourceless block "codec/ac97_core_I/PCM_Record_Left_2" (FF) removed.
+ Sourceless block "codec/ac97_core_I/PCM_Record_Left_3" (FF) removed.
+The signal "codec/ac97_core_I/_n0038" is sourceless and has been removed.
+ Sourceless block "codec/ac97_core_I/PCM_Record_Left_15" (FF) removed.
+ Sourceless block "codec/ac97_core_I/PCM_Record_Left_14" (FF) removed.
+ Sourceless block "codec/ac97_core_I/PCM_Record_Left_13" (FF) removed.
+ Sourceless block "codec/ac97_core_I/PCM_Record_Left_12" (FF) removed.
+ Sourceless block "codec/ac97_core_I/PCM_Record_Left_11" (FF) removed.
+ Sourceless block "codec/ac97_core_I/PCM_Record_Left_10" (FF) removed.
+ Sourceless block "codec/ac97_core_I/PCM_Record_Left_9" (FF) removed.
+ Sourceless block "codec/ac97_core_I/PCM_Record_Left_8" (FF) removed.
+ Sourceless block "codec/ac97_core_I/PCM_Record_Left_7" (FF) removed.
+ Sourceless block "codec/ac97_core_I/PCM_Record_Left_6" (FF) removed.
+ Sourceless block "codec/ac97_core_I/PCM_Record_Left_5" (FF) removed.
+ Sourceless block "codec/ac97_core_I/PCM_Record_Left_4" (FF) removed.
+The signal "codec/ac97_core_I/data_in<15>" is sourceless and has been removed.
+ Sourceless block "codec/ac97_core_I/data_in_16" (FF) removed.
+The signal "codec/command_fifo_I/u1/DO<30>" is sourceless and has been removed.
+The signal "codec/command_fifo_I/u1/DO<29>" is sourceless and has been removed.
+The signal "codec/command_fifo_I/u1/DO<28>" is sourceless and has been removed.
+The signal "codec/command_fifo_I/u1/DO<27>" is sourceless and has been removed.
+The signal "codec/command_fifo_I/u1/DO<26>" is sourceless and has been removed.
+The signal "codec/command_fifo_I/u1/DO<25>" is sourceless and has been removed.
+The signal "codec/command_fifo_I/u1/DO<24>" is sourceless and has been removed.
+The signal "codec/command_fifo_I/u1/DO<23>" is sourceless and has been removed.
+The signal "codec/command_fifo_I/u1/DOP<3>" is sourceless and has been removed.
+The signal "codec/command_fifo_I/u1/DOP<2>" is sourceless and has been removed.
+The signal "codec/command_fifo_I/u1/DOP<1>" is sourceless and has been removed.
+The signal "codec/command_fifo_I/u1/DOP<0>" is sourceless and has been removed.
+Unused block "codec/ac97_core_I/_n00381" (ROM) removed.
+Unused block "codec/ac97_core_I/data_in_15" (FF) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+GND 		codec/XST_GND
+VCC 		codec/XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| AC97Clk                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| AC97Reset_n                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SData_In                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| SData_Out                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| Sync                               | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| clk                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| leds_l<0>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| leds_l<1>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| leds_l<2>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| leds_l<3>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| leds_r<0>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| leds_r<1>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| leds_r<2>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| leds_r<3>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| left_button                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| right_button                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| up_button                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

@@ -1,0 +1,57 @@
+reset 1, up 0, down 0, next 0, l1 0, r1 0, l2 0, r2 0, mux 00
+reset 0, up 0, down 0, next 0, l1 0, r1 0, l2 0, r2 0, mux 00
+Going to next state
+reset 0, up 0, down 0, next 1, l1 0, r1 0, l2 0, r2 0, mux 00
+reset 0, up 0, down 0, next 0, l1 0, r1 0, l2 0, r2 0, mux 01
+Testing incrementing blinking speed in current state
+reset 0, up 1, down 0, next 0, l1 0, r1 0, l2 0, r2 0, mux 01
+reset 0, up 0, down 1, next 0, l1 0, r1 0, l2 0, r2 0, mux 01
+reset 0, up 0, down 0, next 0, l1 0, r1 0, l2 0, r2 0, mux 01
+Going to next state
+reset 0, up 0, down 0, next 1, l1 0, r1 0, l2 0, r2 0, mux 01
+reset 0, up 0, down 0, next 0, l1 0, r1 0, l2 0, r2 0, mux 00
+Testing incrementing blinking speed in current state
+reset 0, up 1, down 0, next 0, l1 0, r1 0, l2 0, r2 0, mux 00
+reset 0, up 0, down 1, next 0, l1 0, r1 0, l2 0, r2 0, mux 00
+reset 0, up 0, down 0, next 0, l1 0, r1 0, l2 0, r2 0, mux 00
+Going to next state
+reset 0, up 0, down 0, next 1, l1 0, r1 0, l2 0, r2 0, mux 00
+reset 0, up 0, down 0, next 0, l1 0, r1 0, l2 0, r2 0, mux 10
+Testing incrementing blinking speed in current state
+reset 0, up 1, down 0, next 0, l1 0, r1 1, l2 0, r2 0, mux 10
+reset 0, up 1, down 0, next 0, l1 0, r1 0, l2 0, r2 0, mux 10
+reset 0, up 0, down 1, next 0, l1 1, r1 0, l2 0, r2 0, mux 10
+reset 0, up 0, down 1, next 0, l1 0, r1 0, l2 0, r2 0, mux 10
+reset 0, up 0, down 0, next 0, l1 0, r1 0, l2 0, r2 0, mux 10
+Going to next state
+reset 0, up 0, down 0, next 1, l1 0, r1 0, l2 0, r2 0, mux 10
+reset 0, up 0, down 0, next 0, l1 0, r1 0, l2 0, r2 0, mux 00
+Testing incrementing blinking speed in current state
+reset 0, up 1, down 0, next 0, l1 0, r1 0, l2 0, r2 0, mux 00
+reset 0, up 0, down 1, next 0, l1 0, r1 0, l2 0, r2 0, mux 00
+reset 0, up 0, down 0, next 0, l1 0, r1 0, l2 0, r2 0, mux 00
+Going to next state
+reset 0, up 0, down 0, next 1, l1 0, r1 0, l2 0, r2 0, mux 00
+reset 0, up 0, down 0, next 0, l1 0, r1 0, l2 0, r2 0, mux 11
+Testing incrementing blinking speed in current state
+reset 0, up 1, down 0, next 0, l1 0, r1 0, l2 0, r2 1, mux 11
+reset 0, up 1, down 0, next 0, l1 0, r1 0, l2 0, r2 0, mux 11
+reset 0, up 0, down 1, next 0, l1 0, r1 0, l2 1, r2 0, mux 11
+reset 0, up 0, down 1, next 0, l1 0, r1 0, l2 0, r2 0, mux 11
+reset 0, up 0, down 0, next 0, l1 0, r1 0, l2 0, r2 0, mux 11
+Going to next state
+reset 0, up 0, down 0, next 1, l1 0, r1 0, l2 0, r2 0, mux 11
+reset 0, up 0, down 0, next 0, l1 0, r1 0, l2 0, r2 0, mux 00
+Testing incrementing blinking speed in current state
+reset 0, up 1, down 0, next 0, l1 0, r1 0, l2 0, r2 0, mux 00
+reset 0, up 0, down 1, next 0, l1 0, r1 0, l2 0, r2 0, mux 00
+reset 0, up 0, down 0, next 0, l1 0, r1 0, l2 0, r2 0, mux 00
+Going to next state
+reset 0, up 0, down 0, next 1, l1 0, r1 0, l2 0, r2 0, mux 00
+reset 0, up 0, down 0, next 0, l1 0, r1 0, l2 0, r2 0, mux 01
+Testing incrementing blinking speed in current state
+reset 0, up 1, down 0, next 0, l1 0, r1 0, l2 0, r2 0, mux 01
+reset 0, up 0, down 1, next 0, l1 0, r1 0, l2 0, r2 0, mux 01
+reset 0, up 0, down 0, next 0, l1 0, r1 0, l2 0, r2 0, mux 01
+Testing reset
+reset 1, up 0, down 0, next 0, l1 0, r1 0, l2 0, r2 0, mux 00

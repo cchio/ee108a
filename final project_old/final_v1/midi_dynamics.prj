@@ -1,0 +1,4 @@
+verilog work "linear_scale_rom.v"
+verilog work "ff_lib.v"
+verilog work "exponential_scale_rom.v"
+verilog work "midi_dynamics.v"

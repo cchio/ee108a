@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/button_press_unit.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/button_press_unit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4_top.ucf -p xc5vlx110t-ff1136-1 button_press_unit.ngc button_press_unit.ngd  

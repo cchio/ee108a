@@ -1,0 +1,5 @@
+verilog work "ff_lib.v"
+verilog work "one_pulse.v"
+verilog work "debouncer.v"
+verilog work "brute_force_synchronizer.v"
+verilog work "button_press_unit.v"

@@ -1,0 +1,3 @@
+verilog work "ff_lib.v"
+verilog work "one_pulse.v"
+verilog work "master_fsm.v"

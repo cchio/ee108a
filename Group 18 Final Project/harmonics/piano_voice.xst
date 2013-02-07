@@ -1,0 +1,5 @@
+set -tmpdir "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/xst/projnav.tmp"
+set -xsthdpdir "/afs/ir.stanford.edu/class/ee108a/groups/18/harmonics/xst"
+elaborate
+-ifn piano_voice.prj
+-ifmt mixed

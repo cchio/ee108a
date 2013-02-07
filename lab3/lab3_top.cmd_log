@@ -1,0 +1,33 @@
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab3_top.ucf -p xc6vlx75tl-ff484-1L lab3_top.ngc lab3_top.ngd  
+map -intstyle ise -p xc6vlx75tl-ff484-1L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o lab3_top_map.ncd lab3_top.ngd lab3_top.pcf 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab3_top.ucf -p xc6vlx75tl-ff484-1L lab3_top.ngc lab3_top.ngd  
+map -intstyle ise -p xc6vlx75tl-ff484-1L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o lab3_top_map.ncd lab3_top.ngd lab3_top.pcf 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab3_top.ucf -p xc6vlx75tl-ff484-1L lab3_top.ngc lab3_top.ngd  
+map -intstyle ise -p xc6vlx75tl-ff484-1L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o lab3_top_map.ncd lab3_top.ngd lab3_top.pcf 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.syr" 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab3_top.ucf -p xc6vlx75tl-ff484-1L lab3_top.ngc lab3_top.ngd  
+map -intstyle ise -p xc6vlx75tl-ff484-1L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o lab3_top_map.ncd lab3_top.ngd lab3_top.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab3_top.ucf -p xc6vlx75tl-ff484-1L lab3_top.ngc lab3_top.ngd  
+map -intstyle ise -p xc6vlx75tl-ff484-1L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o lab3_top_map.ncd lab3_top.ngd lab3_top.pcf 
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/lab3/lab3_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab3_top.ucf -p xc5vlx110t-ff1136-3 lab3_top.ngc lab3_top.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-3 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lab3_top_map.ncd lab3_top.ngd lab3_top.pcf 
+par -w -intstyle ise -ol high -mt off lab3_top_map.ncd lab3_top.ncd lab3_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab3_top.twx lab3_top.ncd -o lab3_top.twr lab3_top.pcf -ucf lab3_top.ucf 
+bitgen -intstyle ise -f lab3_top.ut lab3_top.ncd 

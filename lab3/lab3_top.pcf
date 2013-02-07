@@ -1,0 +1,113 @@
+//! **************************************************************************
+// Written by: Map M.63c on Mon Oct 22 18:10:34 2012
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "AH15" LEVEL 1;
+COMP "leds<0>" LOCATE = SITE "H18" LEVEL 1;
+COMP "up_button" LOCATE = SITE "U8" LEVEL 1;
+COMP "leds<1>" LOCATE = SITE "L18" LEVEL 1;
+COMP "left_button" LOCATE = SITE "AJ7" LEVEL 1;
+COMP "leds<2>" LOCATE = SITE "G15" LEVEL 1;
+COMP "leds<3>" LOCATE = SITE "AD26" LEVEL 1;
+COMP "leds<4>" LOCATE = SITE "G16" LEVEL 1;
+COMP "leds<5>" LOCATE = SITE "AD25" LEVEL 1;
+COMP "down_button" LOCATE = SITE "V8" LEVEL 1;
+COMP "leds<6>" LOCATE = SITE "AD24" LEVEL 1;
+COMP "leds<7>" LOCATE = SITE "AE24" LEVEL 1;
+COMP "right_button" LOCATE = SITE "AK7" LEVEL 1;
+TIMEGRP clk = BEL "bpu_down/one_pulse/last_value_storage/q_0" BEL
+        "bpu_up/one_pulse/last_value_storage/q_0" BEL
+        "bpu_right/one_pulse/last_value_storage/q_0" BEL
+        "bpu_right/debounce/state/q_0" BEL "bpu_right/debounce/counter/q_19"
+        BEL "bpu_right/debounce/counter/q_18" BEL
+        "bpu_right/debounce/counter/q_17" BEL
+        "bpu_right/debounce/counter/q_16" BEL
+        "bpu_right/debounce/counter/q_15" BEL
+        "bpu_right/debounce/counter/q_14" BEL
+        "bpu_right/debounce/counter/q_13" BEL
+        "bpu_right/debounce/counter/q_12" BEL
+        "bpu_right/debounce/counter/q_11" BEL
+        "bpu_right/debounce/counter/q_10" BEL "bpu_right/debounce/counter/q_9"
+        BEL "bpu_right/debounce/counter/q_8" BEL
+        "bpu_right/debounce/counter/q_7" BEL "bpu_right/debounce/counter/q_6"
+        BEL "bpu_right/debounce/counter/q_5" BEL
+        "bpu_right/debounce/counter/q_4" BEL "bpu_right/debounce/counter/q_3"
+        BEL "bpu_right/debounce/counter/q_2" BEL
+        "bpu_right/debounce/counter/q_1" BEL "bpu_right/debounce/counter/q_0"
+        BEL "bpu_up/debounce/state/q_0" BEL "bpu_up/debounce/counter/q_19" BEL
+        "bpu_up/debounce/counter/q_18" BEL "bpu_up/debounce/counter/q_17" BEL
+        "bpu_up/debounce/counter/q_16" BEL "bpu_up/debounce/counter/q_15" BEL
+        "bpu_up/debounce/counter/q_14" BEL "bpu_up/debounce/counter/q_13" BEL
+        "bpu_up/debounce/counter/q_12" BEL "bpu_up/debounce/counter/q_11" BEL
+        "bpu_up/debounce/counter/q_10" BEL "bpu_up/debounce/counter/q_9" BEL
+        "bpu_up/debounce/counter/q_8" BEL "bpu_up/debounce/counter/q_7" BEL
+        "bpu_up/debounce/counter/q_6" BEL "bpu_up/debounce/counter/q_5" BEL
+        "bpu_up/debounce/counter/q_4" BEL "bpu_up/debounce/counter/q_3" BEL
+        "bpu_up/debounce/counter/q_2" BEL "bpu_up/debounce/counter/q_1" BEL
+        "bpu_up/debounce/counter/q_0" BEL "bpu_down/debounce/state/q_0" BEL
+        "bpu_down/debounce/counter/q_19" BEL "bpu_down/debounce/counter/q_18"
+        BEL "bpu_down/debounce/counter/q_17" BEL
+        "bpu_down/debounce/counter/q_16" BEL "bpu_down/debounce/counter/q_15"
+        BEL "bpu_down/debounce/counter/q_14" BEL
+        "bpu_down/debounce/counter/q_13" BEL "bpu_down/debounce/counter/q_12"
+        BEL "bpu_down/debounce/counter/q_11" BEL
+        "bpu_down/debounce/counter/q_10" BEL "bpu_down/debounce/counter/q_9"
+        BEL "bpu_down/debounce/counter/q_8" BEL
+        "bpu_down/debounce/counter/q_7" BEL "bpu_down/debounce/counter/q_6"
+        BEL "bpu_down/debounce/counter/q_5" BEL
+        "bpu_down/debounce/counter/q_4" BEL "bpu_down/debounce/counter/q_3"
+        BEL "bpu_down/debounce/counter/q_2" BEL
+        "bpu_down/debounce/counter/q_1" BEL "bpu_down/debounce/counter/q_0"
+        BEL "bicycle_fsm/fsm/flop/q_2" BEL "bicycle_fsm/fsm/flop/q_1" BEL
+        "bicycle_fsm/fsm/flop/q_0" BEL
+        "bicycle_fsm/fsm/rightpulse/last_value_storage/q_0" BEL
+        "bicycle_fsm/fsm/leftpulse/last_value_storage/q_0" BEL
+        "bicycle_fsm/fastBlink/timer_instance/timer_ff/q_8" BEL
+        "bicycle_fsm/fastBlink/timer_instance/timer_ff/q_7" BEL
+        "bicycle_fsm/fastBlink/timer_instance/timer_ff/q_6" BEL
+        "bicycle_fsm/fastBlink/timer_instance/timer_ff/q_5" BEL
+        "bicycle_fsm/fastBlink/timer_instance/timer_ff/q_4" BEL
+        "bicycle_fsm/fastBlink/timer_instance/timer_ff/q_2" BEL
+        "bicycle_fsm/fastBlink/timer_instance/timer_ff/q_1" BEL
+        "bicycle_fsm/fastBlink/timer_instance/timer_ff/q_0" BEL
+        "bicycle_fsm/slowBlink/timer_instance/timer_ff/q_8" BEL
+        "bicycle_fsm/slowBlink/timer_instance/timer_ff/q_7" BEL
+        "bicycle_fsm/slowBlink/timer_instance/timer_ff/q_6" BEL
+        "bicycle_fsm/slowBlink/timer_instance/timer_ff/q_5" BEL
+        "bicycle_fsm/slowBlink/timer_instance/timer_ff/q_4" BEL
+        "bicycle_fsm/slowBlink/timer_instance/timer_ff/q_2" BEL
+        "bicycle_fsm/slowBlink/timer_instance/timer_ff/q_1" BEL
+        "bicycle_fsm/slowBlink/timer_instance/timer_ff/q_0" BEL
+        "bicycle_fsm/fastBlink/shifter_instance/flipflop/q_2" BEL
+        "bicycle_fsm/fastBlink/shifter_instance/flipflop/q_1" BEL
+        "bicycle_fsm/fastBlink/shifter_instance/flipflop/q_0" BEL
+        "bicycle_fsm/slowBlink/shifter_instance/flipflop/q_2" BEL
+        "bicycle_fsm/slowBlink/shifter_instance/flipflop/q_1" BEL
+        "bicycle_fsm/slowBlink/shifter_instance/flipflop/q_0" BEL
+        "bicycle_fsm/hbeat/flip/q_21" BEL "bicycle_fsm/hbeat/flip/q_20" BEL
+        "bicycle_fsm/hbeat/flip/q_19" BEL "bicycle_fsm/hbeat/flip/q_18" BEL
+        "bicycle_fsm/hbeat/flip/q_17" BEL "bicycle_fsm/hbeat/flip/q_16" BEL
+        "bicycle_fsm/hbeat/flip/q_15" BEL "bicycle_fsm/hbeat/flip/q_14" BEL
+        "bicycle_fsm/hbeat/flip/q_13" BEL "bicycle_fsm/hbeat/flip/q_12" BEL
+        "bicycle_fsm/hbeat/flip/q_11" BEL "bicycle_fsm/hbeat/flip/q_10" BEL
+        "bicycle_fsm/hbeat/flip/q_9" BEL "bicycle_fsm/hbeat/flip/q_8" BEL
+        "bicycle_fsm/hbeat/flip/q_7" BEL "bicycle_fsm/hbeat/flip/q_6" BEL
+        "bicycle_fsm/hbeat/flip/q_5" BEL "bicycle_fsm/hbeat/flip/q_4" BEL
+        "bicycle_fsm/hbeat/flip/q_3" BEL "bicycle_fsm/hbeat/flip/q_2" BEL
+        "bicycle_fsm/hbeat/flip/q_1" BEL "bicycle_fsm/hbeat/flip/q_0" BEL
+        "bicycle_fsm/fastBlink/shifter_instance/flipflop/q_3" BEL
+        "bicycle_fsm/slowBlink/shifter_instance/flipflop/q_3" BEL
+        "bpu_right/debounce/state/q_1" BEL "bpu_up/debounce/state/q_1" BEL
+        "bpu_down/debounce/state/q_1" BEL
+        "bicycle_fsm/fastBlink/timer_instance/timer_ff/q_3" BEL
+        "bicycle_fsm/slowBlink/timer_instance/timer_ff/q_3" BEL
+        "bicycle_fsm/slowBlink/blinker_instance/blinker_ff/q_0" BEL
+        "bicycle_fsm/fastBlink/blinker_instance/blinker_ff/q_0" BEL
+        "clk_BUFGP/BUFG" BEL "bpu_right/sync/ff3/Mshreg_q_0" BEL
+        "bpu_right/sync/ff3/q_0" BEL "bpu_down/sync/ff3/Mshreg_q_0" BEL
+        "bpu_down/sync/ff3/q_0" BEL "bpu_up/sync/ff3/Mshreg_q_0" BEL
+        "bpu_up/sync/ff3/q_0";
+TS_clock = PERIOD TIMEGRP "clk" 10 ns HIGH 50%;
+SCHEMATIC END;
+

@@ -1,0 +1,220 @@
+#! /usr/local/bin/vvp
+:ivl_version "0.9.6 " "(v0_9_6-1-gb8bcb01)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x7ffcb2414f70 .scope module, "duration_timer_tb" "duration_timer_tb" 2 1;
+ .timescale 0 0;
+v0x7ffcb2427020_0 .net "done", 0 0, L_0x7ffcb2427690; 1 drivers
+v0x7ffcb24270c0_0 .var "hbeat", 0 0;
+v0x7ffcb2427140_0 .var "len", 5 0;
+v0x7ffcb24271c0_0 .var "new_duration", 0 0;
+v0x7ffcb2427280_0 .net "new_duration1", 0 0, L_0x7ffcb2427550; 1 drivers
+v0x7ffcb2427370_0 .var "paused", 0 0;
+v0x7ffcb24273f0_0 .var "rst", 0 0;
+S_0x7ffcb24268a0 .scope module, "p" "one_pulse" 2 7, 3 7, S_0x7ffcb2414f70;
+ .timescale 0 0;
+L_0x7ffcb24274b0 .functor NOT 1, v0x7ffcb2426b60_0, C4<0>, C4<0>, C4<0>;
+L_0x7ffcb2427550 .functor AND 1, L_0x7ffcb24274b0, v0x7ffcb24271c0_0, C4<1>, C4<1>;
+v0x7ffcb2426c60_0 .net *"_s0", 0 0, L_0x7ffcb24274b0; 1 drivers
+v0x7ffcb2426ce0_0 .net "clk", 0 0, v0x7ffcb24270c0_0; 1 drivers
+v0x7ffcb2426d60_0 .net "in", 0 0, v0x7ffcb24271c0_0; 1 drivers
+v0x7ffcb2426de0_0 .net "last_value", 0 0, v0x7ffcb2426b60_0; 1 drivers
+v0x7ffcb2426e80_0 .alias "out", 0 0, v0x7ffcb2427280_0;
+v0x7ffcb2426f20_0 .net "reset", 0 0, v0x7ffcb24273f0_0; 1 drivers
+S_0x7ffcb2426980 .scope module, "last_value_storage" "dffr" 3 15, 4 16, S_0x7ffcb24268a0;
+ .timescale 0 0;
+P_0x7ffcb24263c8 .param/l "WIDTH" 4 16, +C4<01>;
+v0x7ffcb2426a60_0 .alias "clk", 0 0, v0x7ffcb2426ce0_0;
+v0x7ffcb2426ae0_0 .alias "d", 0 0, v0x7ffcb2426d60_0;
+v0x7ffcb2426b60_0 .var "q", 0 0;
+v0x7ffcb2426be0_0 .alias "r", 0 0, v0x7ffcb2426f20_0;
+S_0x7ffcb2413cd0 .scope module, "d" "duration_timer" 2 9, 5 1, S_0x7ffcb2414f70;
+ .timescale 0 0;
+L_0x7ffcb24275f0 .functor NOT 1, v0x7ffcb24256e0_0, C4<0>, C4<0>, C4<0>;
+L_0x7ffcb2427690 .functor AND 1, L_0x7ffcb24275f0, L_0x7ffcb2427ac0, C4<1>, C4<1>;
+L_0x7ffcb2427940 .functor NOT 1, v0x7ffcb24273f0_0, C4<0>, C4<0>, C4<0>;
+L_0x7ffcb24279a0 .functor AND 1, C4<1>, L_0x7ffcb2427940, C4<1>, C4<1>;
+v0x7ffcb2425cb0_0 .net *"_s0", 0 0, L_0x7ffcb24275f0; 1 drivers
+v0x7ffcb2425d30_0 .net *"_s10", 0 0, L_0x7ffcb2427940; 1 drivers
+v0x7ffcb2425db0_0 .net *"_s12", 0 0, L_0x7ffcb24279a0; 1 drivers
+v0x7ffcb2425e50_0 .net *"_s14", 0 0, C4<0>; 1 drivers
+v0x7ffcb2425ee0_0 .net *"_s4", 5 0, C4<000000>; 1 drivers
+v0x7ffcb2425fa0_0 .net *"_s6", 0 0, L_0x7ffcb24277f0; 1 drivers
+v0x7ffcb2426030_0 .net *"_s8", 0 0, C4<1>; 1 drivers
+v0x7ffcb24260f0_0 .alias "beat", 0 0, v0x7ffcb2426ce0_0;
+v0x7ffcb2426170_0 .alias "clk", 0 0, v0x7ffcb2426ce0_0;
+v0x7ffcb24262c0_0 .net "counter", 5 0, v0x7ffcb2425b80_0; 1 drivers
+v0x7ffcb2426340_0 .alias "done_playing", 0 0, v0x7ffcb2427020_0;
+v0x7ffcb2426420_0 .net "duration", 5 0, v0x7ffcb2427140_0; 1 drivers
+v0x7ffcb24264a0_0 .net "in_value", 0 0, L_0x7ffcb2427ac0; 1 drivers
+v0x7ffcb2426590_0 .net "last_value", 0 0, v0x7ffcb24256e0_0; 1 drivers
+v0x7ffcb2426610_0 .alias "load_new_duration", 0 0, v0x7ffcb2427280_0;
+v0x7ffcb2426710_0 .var "next", 5 0;
+v0x7ffcb2426790_0 .net "pause", 0 0, v0x7ffcb2427370_0; 1 drivers
+v0x7ffcb2426690_0 .alias "reset", 0 0, v0x7ffcb2426f20_0;
+E_0x7ffcb2413440/0 .event edge, v0x7ffcb2425780_0, v0x7ffcb2426610_0, v0x7ffcb2426420_0, v0x7ffcb2426790_0;
+E_0x7ffcb2413440/1 .event edge, v0x7ffcb2425b80_0;
+E_0x7ffcb2413440 .event/or E_0x7ffcb2413440/0, E_0x7ffcb2413440/1;
+L_0x7ffcb24277f0 .cmp/eq 6, v0x7ffcb2425b80_0, C4<000000>;
+L_0x7ffcb2427ac0 .functor MUXZ 1, C4<0>, L_0x7ffcb24279a0, L_0x7ffcb24277f0, C4<>;
+S_0x7ffcb2425810 .scope module, "cnt" "dffre" 5 14, 4 34, S_0x7ffcb2413cd0;
+ .timescale 0 0;
+P_0x7ffcb24258f8 .param/l "WIDTH" 4 34, +C4<0110>;
+v0x7ffcb2425980_0 .alias "clk", 0 0, v0x7ffcb2426ce0_0;
+v0x7ffcb2425a20_0 .net "d", 5 0, v0x7ffcb2426710_0; 1 drivers
+v0x7ffcb2425aa0_0 .alias "en", 0 0, v0x7ffcb2426ce0_0;
+v0x7ffcb2425b80_0 .var "q", 5 0;
+v0x7ffcb2425c00_0 .alias "r", 0 0, v0x7ffcb2426f20_0;
+S_0x7ffcb240da40 .scope module, "done" "dffr" 5 32, 4 16, S_0x7ffcb2413cd0;
+ .timescale 0 0;
+P_0x7ffcb2412c18 .param/l "WIDTH" 4 16, +C4<01>;
+v0x7ffcb24127b0_0 .alias "clk", 0 0, v0x7ffcb2426ce0_0;
+v0x7ffcb2425650_0 .alias "d", 0 0, v0x7ffcb24264a0_0;
+v0x7ffcb24256e0_0 .var "q", 0 0;
+v0x7ffcb2425780_0 .alias "r", 0 0, v0x7ffcb2426f20_0;
+E_0x7ffcb240ddd0 .event posedge, v0x7ffcb24127b0_0;
+    .scope S_0x7ffcb2426980;
+T_0 ;
+    %wait E_0x7ffcb240ddd0;
+    %load/v 8, v0x7ffcb2426be0_0, 1;
+    %jmp/0xz  T_0.0, 8;
+    %ix/load 0, 1, 0;
+    %assign/v0 v0x7ffcb2426b60_0, 0, 0;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/v 8, v0x7ffcb2426ae0_0, 1;
+    %ix/load 0, 1, 0;
+    %assign/v0 v0x7ffcb2426b60_0, 0, 8;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_0x7ffcb2425810;
+T_1 ;
+    %wait E_0x7ffcb240ddd0;
+    %load/v 8, v0x7ffcb2425c00_0, 1;
+    %jmp/0xz  T_1.0, 8;
+    %ix/load 0, 6, 0;
+    %assign/v0 v0x7ffcb2425b80_0, 0, 0;
+    %jmp T_1.1;
+T_1.0 ;
+    %load/v 8, v0x7ffcb2425aa0_0, 1;
+    %jmp/0xz  T_1.2, 8;
+    %load/v 8, v0x7ffcb2425a20_0, 6;
+    %ix/load 0, 6, 0;
+    %assign/v0 v0x7ffcb2425b80_0, 0, 8;
+    %jmp T_1.3;
+T_1.2 ;
+    %load/v 8, v0x7ffcb2425b80_0, 6;
+    %ix/load 0, 6, 0;
+    %assign/v0 v0x7ffcb2425b80_0, 0, 8;
+T_1.3 ;
+T_1.1 ;
+    %jmp T_1;
+    .thread T_1;
+    .scope S_0x7ffcb240da40;
+T_2 ;
+    %wait E_0x7ffcb240ddd0;
+    %load/v 8, v0x7ffcb2425780_0, 1;
+    %jmp/0xz  T_2.0, 8;
+    %ix/load 0, 1, 0;
+    %assign/v0 v0x7ffcb24256e0_0, 0, 0;
+    %jmp T_2.1;
+T_2.0 ;
+    %load/v 8, v0x7ffcb2425650_0, 1;
+    %ix/load 0, 1, 0;
+    %assign/v0 v0x7ffcb24256e0_0, 0, 8;
+T_2.1 ;
+    %jmp T_2;
+    .thread T_2;
+    .scope S_0x7ffcb2413cd0;
+T_3 ;
+    %wait E_0x7ffcb2413440;
+    %load/v 8, v0x7ffcb2426690_0, 1;
+    %jmp/0xz  T_3.0, 8;
+    %set/v v0x7ffcb2426710_0, 0, 6;
+    %jmp T_3.1;
+T_3.0 ;
+    %load/v 8, v0x7ffcb2426610_0, 1;
+    %jmp/0xz  T_3.2, 8;
+    %load/v 8, v0x7ffcb2426420_0, 6;
+    %set/v v0x7ffcb2426710_0, 8, 6;
+    %jmp T_3.3;
+T_3.2 ;
+    %load/v 8, v0x7ffcb2426790_0, 1;
+    %jmp/0xz  T_3.4, 8;
+    %load/v 8, v0x7ffcb24262c0_0, 6;
+    %set/v v0x7ffcb2426710_0, 8, 6;
+    %jmp T_3.5;
+T_3.4 ;
+    %load/v 8, v0x7ffcb24262c0_0, 6;
+    %cmpi/u 8, 0, 6;
+    %mov 8, 4, 1;
+    %jmp/0  T_3.6, 8;
+    %movi 9, 0, 32;
+    %jmp/1  T_3.8, 8;
+T_3.6 ; End of true expr.
+    %load/v 41, v0x7ffcb24262c0_0, 6;
+    %mov 47, 0, 26;
+    %subi 41, 1, 32;
+    %jmp/0  T_3.7, 8;
+ ; End of false expr.
+    %blend  9, 41, 32; Condition unknown.
+    %jmp  T_3.8;
+T_3.7 ;
+    %mov 9, 41, 32; Return false value
+T_3.8 ;
+    %set/v v0x7ffcb2426710_0, 9, 6;
+T_3.5 ;
+T_3.3 ;
+T_3.1 ;
+    %jmp T_3;
+    .thread T_3, $push;
+    .scope S_0x7ffcb2414f70;
+T_4 ;
+    %set/v v0x7ffcb24270c0_0, 0, 1;
+T_4.0 ;
+    %delay 1, 0;
+    %load/v 8, v0x7ffcb24270c0_0, 1;
+    %inv 8, 1;
+    %set/v v0x7ffcb24270c0_0, 8, 1;
+    %jmp T_4.0;
+    %end;
+    .thread T_4;
+    .scope S_0x7ffcb2414f70;
+T_5 ;
+    %set/v v0x7ffcb2427370_0, 0, 1;
+    %movi 8, 16, 6;
+    %set/v v0x7ffcb2427140_0, 8, 6;
+    %set/v v0x7ffcb24271c0_0, 0, 1;
+    %vpi_call 2 24 "$monitor", "rst %b, clk %b, pause %b, count %d, done %b", v0x7ffcb24273f0_0, v0x7ffcb24270c0_0, v0x7ffcb2427370_0, v0x7ffcb24262c0_0, v0x7ffcb2427020_0;
+    %set/v v0x7ffcb24273f0_0, 1, 1;
+    %delay 10, 0;
+    %set/v v0x7ffcb24273f0_0, 0, 1;
+    %delay 10, 0;
+    %set/v v0x7ffcb24271c0_0, 1, 1;
+    %delay 10, 0;
+    %set/v v0x7ffcb24271c0_0, 0, 1;
+    %delay 30, 0;
+    %movi 8, 30, 6;
+    %set/v v0x7ffcb2427140_0, 8, 6;
+    %set/v v0x7ffcb24271c0_0, 1, 1;
+    %delay 10, 0;
+    %set/v v0x7ffcb24271c0_0, 0, 1;
+    %delay 10, 0;
+    %set/v v0x7ffcb2427370_0, 1, 1;
+    %delay 5, 0;
+    %set/v v0x7ffcb2427370_0, 0, 1;
+    %delay 45, 0;
+    %vpi_call 2 45 "$finish";
+    %end;
+    .thread T_5;
+# The file index is used to find the file name in the following table.
+:file_names 6;
+    "N/A";
+    "<interactive>";
+    "duration_timer_tb.v";
+    "one_pulse.v";
+    "ff_lib.v";
+    "duration_timer.v";

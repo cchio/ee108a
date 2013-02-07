@@ -1,0 +1,13 @@
+EXPLANATION OF TXT TB RESULTS
+------------------------------
+Group 18, Lab 5
+
+wave_capture_tb:
+	The sample input is just being incremented to give us different values, but it is not following a sine wave.
+	We are checking that the addresses are right and the output samples are right.
+	The test bench results are prety self explanatory and are what we have expected.	
+
+preset_counter_tb:
+	What this testbench is doing is counting through its values with each cycle of beat. 
+	With each cycle, the counter increments.
+	The test bench results are prety self explanatory and are what we have expected.

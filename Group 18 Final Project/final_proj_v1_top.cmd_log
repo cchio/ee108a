@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_project_v2/final_proj_v1_top.xst" -ofn "/afs/ir.stanford.edu/class/ee108a/groups/18/final_project_v2/final_proj_v1_top.syr" 

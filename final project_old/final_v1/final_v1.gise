@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="final_v1.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="duration_timer2_tb.fdo"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="final_proj_v1_top.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="final_proj_v1_top.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="final_proj_v1_top.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="final_proj_v1_top.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="final_proj_v1_top.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="final_proj_v1_top.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="final_proj_v1_top.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="final_proj_v1_top_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="final_proj_v1_top_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="final_proj_v1_top_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="mcu.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="mcu.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="mcu.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="mcu.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="mcu.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mcu.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="mcu.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="mcu.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="mcu.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="mcu_envsettings.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mcu_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="mcu_summary.html"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="midi_dynamics.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="midi_dynamics.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="midi_dynamics.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="midi_dynamics_tb.fdo"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
+    <file xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/mcu_synthesis.nlf"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="netgen/synthesis/mcu_synthesis.v"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="song_reader.fdo"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="song_reader.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="song_reader.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="song_reader.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="song_reader_tb.fdo"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="song_rom.fdo"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="song_rom.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="song_rom.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="song_rom.xst"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1354782804" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1354782804">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1354784161" xil_pn:in_ck="2043645597323613672" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1354784161">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="duration_timer.v"/>
+      <outfile xil_pn:name="duration_timer2.v"/>
+      <outfile xil_pn:name="duration_timer2_tb.v"/>
+      <outfile xil_pn:name="exponential_scale_rom.v"/>
+      <outfile xil_pn:name="ff_lib.v"/>
+      <outfile xil_pn:name="frequency_rom.v"/>
+      <outfile xil_pn:name="linear_scale_rom.v"/>
+      <outfile xil_pn:name="midi_dynamics.v"/>
+      <outfile xil_pn:name="midi_dynamics_tb.v"/>
+      <outfile xil_pn:name="one_pulse.v"/>
+      <outfile xil_pn:name="sine_rom.v"/>
+      <outfile xil_pn:name="song_reader.v"/>
+      <outfile xil_pn:name="song_reader_tb.v"/>
+      <outfile xil_pn:name="song_rom.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1354783677" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="8154721421563241205" xil_pn:start_ts="1354783677">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1354783677" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="785941655438081891" xil_pn:start_ts="1354783677">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1354782804" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="7865329702448250758" xil_pn:start_ts="1354782804">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+    </transform>
+    <transform xil_pn:end_ts="1354784161" xil_pn:in_ck="2043645597323613672" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1354784161">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="duration_timer.v"/>
+      <outfile xil_pn:name="duration_timer2.v"/>
+      <outfile xil_pn:name="duration_timer2_tb.v"/>
+      <outfile xil_pn:name="exponential_scale_rom.v"/>
+      <outfile xil_pn:name="ff_lib.v"/>
+      <outfile xil_pn:name="frequency_rom.v"/>
+      <outfile xil_pn:name="linear_scale_rom.v"/>
+      <outfile xil_pn:name="midi_dynamics.v"/>
+      <outfile xil_pn:name="midi_dynamics_tb.v"/>
+      <outfile xil_pn:name="one_pulse.v"/>
+      <outfile xil_pn:name="sine_rom.v"/>
+      <outfile xil_pn:name="song_reader.v"/>
+      <outfile xil_pn:name="song_reader_tb.v"/>
+      <outfile xil_pn:name="song_rom.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1354784161" xil_pn:in_ck="2043645597323613672" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="-6309039778665167184" xil_pn:start_ts="1354784161">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="song_reader_tb.fdo"/>
+    </transform>
+    <transform xil_pn:end_ts="1354789738" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1354789738">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1354792154" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-3605128768617025919" xil_pn:start_ts="1354792154">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1354792154" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="6060054701956779880" xil_pn:start_ts="1354792154">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1354792154" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1354792154">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1354792154" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="3900426223286345747" xil_pn:start_ts="1354792154">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1354792154" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-8458126479482839362" xil_pn:start_ts="1354792154">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1354792154" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="8261001473357988082" xil_pn:start_ts="1354792154">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1354844770" xil_pn:in_ck="6576866104017395121" xil_pn:name="TRANEXT_xstsynthesize_virtex5" xil_pn:prop_ck="3058393661517997902" xil_pn:start_ts="1354843959">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name=".lso"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="final_proj_v1_top.lso"/>
+      <outfile xil_pn:name="final_proj_v1_top.ngr"/>
+      <outfile xil_pn:name="final_proj_v1_top.prj"/>
+      <outfile xil_pn:name="final_proj_v1_top.syr"/>
+      <outfile xil_pn:name="final_proj_v1_top.xst"/>
+      <outfile xil_pn:name="final_proj_v1_top_xst.xrpt"/>
+      <outfile xil_pn:name="mcu.ngr"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1354793530" xil_pn:in_ck="689926892539375816" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-758088412301425090" xil_pn:start_ts="1354793530">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1354790093" xil_pn:in_ck="144784941675" xil_pn:name="TRAN_postSynthesisSimModel" xil_pn:prop_ck="-6153738886378183869" xil_pn:start_ts="1354790091">
+      <status xil_pn:value="AbortedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <outfile xil_pn:name="netgen"/>
+      <outfile xil_pn:name="netgen/synthesis/mcu_synthesis.nlf"/>
+      <outfile xil_pn:name="netgen/synthesis/mcu_synthesis.v"/>
+    </transform>
+  </transforms>
+
+</generated_project>

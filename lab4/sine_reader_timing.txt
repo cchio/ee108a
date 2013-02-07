@@ -1,0 +1,13 @@
+This table show the timin of the sine_reader module. It is assumed that the moudle has been reset before cycle 0. Also, a step input of 1 is assumed. The output states for other quartrs of the sine wave are not shown.
+
+Cycle | generate_next | Address | Out | ready
+0 | 0 | 0 | rom[0] | 0
+1 | 1 | 1 | rom[0] |  0
+2 | 0 | 1 | rom[1] | 0
+3 | 0 | 1 | rom[1] | 1
+4 | 0 | 1 | rom[1] | 0
+... wait for next cycle of generate_next and continue
+x | 1 | 2 | rom[1] | 0
+x+1 | 0 | 2 | rom[2] | 0
+x+2 | 0 | 2 | rom[2] | 1
+x+3 | 0 | 2 | rom[2] | 0

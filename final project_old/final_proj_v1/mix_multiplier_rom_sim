@@ -1,0 +1,94 @@
+#! /usr/local/bin/vvp
+:ivl_version "0.9.6 " "(v0_9_6-1-gb8bcb01)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x7fe621c11b60 .scope module, "mix_multiplier_rom_tb" "mix_multiplier_rom_tb" 2 1;
+ .timescale 0 0;
+v0x7fe621c20710_0 .var "addr", 5 0;
+v0x7fe621c207c0_0 .var "clk", 0 0;
+v0x7fe621c20860_0 .net "dout", 7 0, v0x7fe621c20310_0; 1 drivers
+E_0x7fe621c12b50 .event negedge, v0x7fe621c20280_0;
+S_0x7fe621c11880 .scope module, "m" "mix_multiplier_rom" 2 7, 3 1, S_0x7fe621c11b60;
+ .timescale 0 0;
+v0x7fe621c124b0_0 .net "addr", 5 0, v0x7fe621c20710_0; 1 drivers
+v0x7fe621c20280_0 .net "clk", 0 0, v0x7fe621c207c0_0; 1 drivers
+v0x7fe621c20310_0 .var "dout", 7 0;
+v0x7fe621c20390 .array "memory", 0 31;
+v0x7fe621c20390_0 .net v0x7fe621c20390 0, 7 0, C4<00000000>; 1 drivers
+v0x7fe621c20390_1 .net v0x7fe621c20390 1, 7 0, C4<10000000>; 1 drivers
+v0x7fe621c20390_2 .net v0x7fe621c20390 2, 7 0, C4<10101011>; 1 drivers
+v0x7fe621c20390_3 .net v0x7fe621c20390 3, 7 0, C4<11000000>; 1 drivers
+v0x7fe621c20390_4 .net v0x7fe621c20390 4, 7 0, C4<11001101>; 1 drivers
+v0x7fe621c20390_5 .net v0x7fe621c20390 5, 7 0, C4<11010110>; 1 drivers
+v0x7fe621c20390_6 .net v0x7fe621c20390 6, 7 0, C4<11011100>; 1 drivers
+v0x7fe621c20390_7 .net v0x7fe621c20390 7, 7 0, C4<11100000>; 1 drivers
+v0x7fe621c20390_8 .net v0x7fe621c20390 8, 7 0, C4<11100100>; 1 drivers
+v0x7fe621c20390_9 .net v0x7fe621c20390 9, 7 0, C4<11100111>; 1 drivers
+v0x7fe621c20390_10 .net v0x7fe621c20390 10, 7 0, C4<11101001>; 1 drivers
+v0x7fe621c20390_11 .net v0x7fe621c20390 11, 7 0, C4<11101011>; 1 drivers
+v0x7fe621c20390_12 .net v0x7fe621c20390 12, 7 0, C4<11101101>; 1 drivers
+v0x7fe621c20390_13 .net v0x7fe621c20390 13, 7 0, C4<11101110>; 1 drivers
+v0x7fe621c20390_14 .net v0x7fe621c20390 14, 7 0, C4<11101111>; 1 drivers
+v0x7fe621c20390_15 .net v0x7fe621c20390 15, 7 0, C4<11110000>; 1 drivers
+v0x7fe621c20390_16 .net v0x7fe621c20390 16, 7 0, C4<11110001>; 1 drivers
+v0x7fe621c20390_17 .net v0x7fe621c20390 17, 7 0, C4<11110010>; 1 drivers
+v0x7fe621c20390_18 .net v0x7fe621c20390 18, 7 0, C4<11110011>; 1 drivers
+v0x7fe621c20390_19 .net v0x7fe621c20390 19, 7 0, C4<11110100>; 1 drivers
+v0x7fe621c20390_20 .net v0x7fe621c20390 20, 7 0, C4<11110100>; 1 drivers
+v0x7fe621c20390_21 .net v0x7fe621c20390 21, 7 0, C4<11110101>; 1 drivers
+v0x7fe621c20390_22 .net v0x7fe621c20390 22, 7 0, C4<11110101>; 1 drivers
+v0x7fe621c20390_23 .net v0x7fe621c20390 23, 7 0, C4<11110110>; 1 drivers
+v0x7fe621c20390_24 .net v0x7fe621c20390 24, 7 0, C4<11110110>; 1 drivers
+v0x7fe621c20390_25 .net v0x7fe621c20390 25, 7 0, C4<11110111>; 1 drivers
+v0x7fe621c20390_26 .net v0x7fe621c20390 26, 7 0, C4<11110111>; 1 drivers
+v0x7fe621c20390_27 .net v0x7fe621c20390 27, 7 0, C4<11110111>; 1 drivers
+v0x7fe621c20390_28 .net v0x7fe621c20390 28, 7 0, C4<11111000>; 1 drivers
+v0x7fe621c20390_29 .net v0x7fe621c20390 29, 7 0, C4<11111000>; 1 drivers
+v0x7fe621c20390_30 .net v0x7fe621c20390 30, 7 0, C4<11111000>; 1 drivers
+v0x7fe621c20390_31 .net v0x7fe621c20390 31, 7 0, C4<11111000>; 1 drivers
+E_0x7fe621c09eb0 .event posedge, v0x7fe621c20280_0;
+    .scope S_0x7fe621c11880;
+T_0 ;
+    %wait E_0x7fe621c09eb0;
+    %ix/getv 3, v0x7fe621c124b0_0;
+    %load/av 8, v0x7fe621c20390, 8;
+    %set/v v0x7fe621c20310_0, 8, 8;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_0x7fe621c11b60;
+T_1 ;
+    %set/v v0x7fe621c207c0_0, 0, 1;
+T_1.0 ;
+    %delay 5, 0;
+    %load/v 8, v0x7fe621c207c0_0, 1;
+    %inv 8, 1;
+    %set/v v0x7fe621c207c0_0, 8, 1;
+    %jmp T_1.0;
+    %end;
+    .thread T_1;
+    .scope S_0x7fe621c11b60;
+T_2 ;
+    %vpi_call 2 19 "$monitor", "clk %b, addr %d, out %d", v0x7fe621c207c0_0, v0x7fe621c20710_0, v0x7fe621c20860_0;
+    %wait E_0x7fe621c12b50;
+    %set/v v0x7fe621c20710_0, 0, 6;
+    %delay 20, 0;
+    %wait E_0x7fe621c12b50;
+    %movi 8, 1, 6;
+    %set/v v0x7fe621c20710_0, 8, 6;
+    %delay 20, 0;
+    %wait E_0x7fe621c12b50;
+    %movi 8, 31, 6;
+    %set/v v0x7fe621c20710_0, 8, 6;
+    %delay 20, 0;
+    %wait E_0x7fe621c12b50;
+    %vpi_call 2 32 "$finish";
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "mix_multiplier_rom_tb.v";
+    "mix_multiplier_rom.v";

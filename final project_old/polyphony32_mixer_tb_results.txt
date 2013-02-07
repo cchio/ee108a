@@ -1,0 +1,51 @@
+clk 0, sample1 12000, sample2     0, sample3     0, mult   0, ready_in 0, out     0, ready_out 0
+clk 1, sample1 12000, sample2     0, sample3     0, mult   0, ready_in 0, out     0, ready_out 0
+clk 0, sample1 12000, sample2     0, sample3     0, mult   0, ready_in 0, out     0, ready_out 0
+clk 1, sample1 12000, sample2     0, sample3     0, mult   0, ready_in 0, out     0, ready_out 0
+clk 0, sample1 12000, sample2     0, sample3     0, mult   0, ready_in 0, out     0, ready_out 0
+clk 1, sample1 12000, sample2     0, sample3     0, mult   0, ready_in 0, out     0, ready_out 0
+clk 0, sample1 12000, sample2     0, sample3     0, mult   0, ready_in 0, out     0, ready_out 0
+clk 1, sample1 12000, sample2     0, sample3     0, mult   0, ready_in 0, out     0, ready_out 0
+out should equal 12000
+clk 0, sample1 12000, sample2     0, sample3     0, mult   0, ready_in 1, out     0, ready_out 0
+clk 1, sample1 12000, sample2     0, sample3     0, mult   0, ready_in 1, out 12000, ready_out 0
+clk 0, sample1 12000, sample2     0, sample3     0, mult   0, ready_in 0, out 12000, ready_out 0
+clk 1, sample1 12000, sample2     0, sample3     0, mult   0, ready_in 0, out 12000, ready_out 0
+clk 0, sample1 12000, sample2     0, sample3     0, mult   0, ready_in 0, out 12000, ready_out 0
+clk 1, sample1 12000, sample2     0, sample3     0, mult   0, ready_in 0, out 12000, ready_out 1
+clk 0, sample1 12000, sample2     0, sample3     0, mult   0, ready_in 0, out 12000, ready_out 1
+clk 1, sample1 12000, sample2     0, sample3     0, mult   0, ready_in 0, out 12000, ready_out 0
+out should equal 18568
+clk 0, sample1 12000, sample2 25000, sample3     0, mult 128, ready_in 0, out 12000, ready_out 0
+clk 1, sample1 12000, sample2 25000, sample3     0, mult 128, ready_in 0, out 12000, ready_out 0
+clk 0, sample1 12000, sample2 25000, sample3     0, mult 128, ready_in 1, out 12000, ready_out 0
+clk 1, sample1 12000, sample2 25000, sample3     0, mult 128, ready_in 1, out 18568, ready_out 0
+clk 0, sample1 12000, sample2 25000, sample3     0, mult 128, ready_in 0, out 18568, ready_out 0
+clk 1, sample1 12000, sample2 25000, sample3     0, mult 128, ready_in 0, out 18568, ready_out 0
+clk 0, sample1 12000, sample2 25000, sample3     0, mult 128, ready_in 0, out 18568, ready_out 0
+clk 1, sample1 12000, sample2 25000, sample3     0, mult 128, ready_in 0, out 18568, ready_out 1
+clk 0, sample1 12000, sample2 25000, sample3     0, mult 128, ready_in 0, out 18568, ready_out 1
+clk 1, sample1 12000, sample2 25000, sample3     0, mult 128, ready_in 0, out 18568, ready_out 0
+out should equal 5520
+clk 0, sample1 12000, sample2 25000, sample3 45000, mult 171, ready_in 0, out 18568, ready_out 0
+clk 1, sample1 12000, sample2 25000, sample3 45000, mult 171, ready_in 0, out 18568, ready_out 0
+clk 0, sample1 12000, sample2 25000, sample3 45000, mult 171, ready_in 1, out 18568, ready_out 0
+clk 1, sample1 12000, sample2 25000, sample3 45000, mult 171, ready_in 1, out  5520, ready_out 0
+clk 0, sample1 12000, sample2 25000, sample3 45000, mult 171, ready_in 0, out  5520, ready_out 0
+clk 1, sample1 12000, sample2 25000, sample3 45000, mult 171, ready_in 0, out  5520, ready_out 0
+clk 0, sample1 12000, sample2 25000, sample3 45000, mult 171, ready_in 0, out  5520, ready_out 0
+clk 1, sample1 12000, sample2 25000, sample3 45000, mult 171, ready_in 0, out  5520, ready_out 1
+clk 0, sample1 12000, sample2 25000, sample3 45000, mult 171, ready_in 0, out  5520, ready_out 1
+clk 1, sample1 12000, sample2 25000, sample3 45000, mult 171, ready_in 0, out  5520, ready_out 0
+out should equal 42504
+clk 0, sample1 45000, sample2 40000, sample3     0, mult 128, ready_in 0, out  5520, ready_out 0
+clk 1, sample1 45000, sample2 40000, sample3     0, mult 128, ready_in 0, out  5520, ready_out 0
+clk 0, sample1 45000, sample2 40000, sample3     0, mult 128, ready_in 1, out  5520, ready_out 0
+clk 1, sample1 45000, sample2 40000, sample3     0, mult 128, ready_in 1, out 42504, ready_out 0
+clk 0, sample1 45000, sample2 40000, sample3     0, mult 128, ready_in 0, out 42504, ready_out 0
+clk 1, sample1 45000, sample2 40000, sample3     0, mult 128, ready_in 0, out 42504, ready_out 0
+clk 0, sample1 45000, sample2 40000, sample3     0, mult 128, ready_in 0, out 42504, ready_out 0
+clk 1, sample1 45000, sample2 40000, sample3     0, mult 128, ready_in 0, out 42504, ready_out 1
+clk 0, sample1 45000, sample2 40000, sample3     0, mult 128, ready_in 0, out 42504, ready_out 1
+clk 1, sample1 45000, sample2 40000, sample3     0, mult 128, ready_in 0, out 42504, ready_out 0
+clk 0, sample1 45000, sample2 40000, sample3     0, mult 128, ready_in 0, out 42504, ready_out 0

@@ -1,0 +1,192 @@
+the controller value should be written with 0x4040
+new_msg 1, msg 4040b0, playing 00000000000000000000000000000000
+ready 0, update_all 0, control 0000, addr  0, value 0040, wr_en 0, mult   0
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 4040b0, playing 00000000000000000000000000000000
+ready 0, update_all 0, control 0000, addr  0, value 0040, wr_en 0, mult   0
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 4040b0, playing 00000000000000000000000000000000
+ready 0, update_all 0, control 4040, addr  0, value 0040, wr_en 0, mult   0
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 4040b0, playing 00000000000000000000000000000000
+ready 1, update_all 0, control 4040, addr  0, value 0040, wr_en 0, mult   0
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 4040b0, playing 00000000000000000000000000000000
+ready 1, update_all 1, control 4040, addr  0, value 0040, wr_en 0, mult   0
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 4040b0, playing 00000000000000000000000000000000
+ready 0, update_all 1, control 4040, addr  0, value 0040, wr_en 0, mult   0
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 4040b0, playing 00000000000000000000000000000000
+ready 0, update_all 0, control 4040, addr  0, value 0040, wr_en 0, mult   0
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 4040b0, playing 00000000000000000000000000000001
+ready 0, update_all 0, control 4040, addr  0, value 0040, wr_en 0, mult   0
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 4040b0, playing 00000000000000000000000000000001
+ready 0, update_all 0, control 4040, addr  1, value 0040, wr_en 0, mult   0
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 4040b0, playing 00000000000000000000000000000001
+ready 1, update_all 0, control 4040, addr  1, value 0040, wr_en 0, mult   0
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 4040b0, playing 00000000000000000000000000000001
+ready 0, update_all 0, control 4040, addr  1, value 0040, wr_en 0, mult   0
+update_note 00000000000000000000000000000000
+
+should write to note 1
+new_msg 1, msg 403c90, playing 00000000000000000000000000000001
+ready 0, update_all 0, control 4040, addr  1, value 403c, wr_en 0, mult   0
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 403c90, playing 00000000000000000000000000000001
+ready 0, update_all 0, control 4040, addr  1, value 403c, wr_en 0, mult   0
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 403c90, playing 00000000000000000000000000000001
+ready 0, update_all 0, control 4040, addr  1, value 403c, wr_en 1, mult   0
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 403c90, playing 00000000000000000000000000000001
+ready 0, update_all 0, control 4040, addr  1, value 403c, wr_en 0, mult   0
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 403c90, playing 00000000000000000000000000000001
+ready 1, update_all 0, control 4040, addr  1, value 403c, wr_en 0, mult   0
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 403c90, playing 00000000000000000000000000000001
+ready 1, update_all 0, control 4040, addr  1, value 403c, wr_en 0, mult   0
+update_note 00000000000000000000000000000010
+
+new_msg 0, msg 403c90, playing 00000000000000000000000000000001
+ready 0, update_all 0, control 4040, addr  1, value 403c, wr_en 0, mult   0
+update_note 00000000000000000000000000000010
+
+new_msg 0, msg 403c90, playing 00000000000000000000000000000001
+ready 0, update_all 0, control 4040, addr  1, value 403c, wr_en 0, mult   0
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 403c90, playing 00000000000000000000000000000011
+ready 0, update_all 0, control 4040, addr  1, value 403c, wr_en 0, mult   0
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 403c90, playing 00000000000000000000000000000011
+ready 0, update_all 0, control 4040, addr  2, value 403c, wr_en 0, mult   0
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 403c90, playing 00000000000000000000000000000011
+ready 1, update_all 0, control 4040, addr  2, value 403c, wr_en 0, mult 128
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 403c90, playing 00000000000000000000000000000011
+ready 0, update_all 0, control 4040, addr  2, value 403c, wr_en 0, mult 128
+update_note 00000000000000000000000000000000
+
+should write to note 2
+new_msg 1, msg 7f4090, playing 00000000000000000000000000000011
+ready 0, update_all 0, control 4040, addr  2, value 7f40, wr_en 0, mult 128
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 7f4090, playing 00000000000000000000000000000011
+ready 0, update_all 0, control 4040, addr  2, value 7f40, wr_en 0, mult 128
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 7f4090, playing 00000000000000000000000000000011
+ready 0, update_all 0, control 4040, addr  2, value 7f40, wr_en 1, mult 128
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 7f4090, playing 00000000000000000000000000000011
+ready 0, update_all 0, control 4040, addr  2, value 7f40, wr_en 0, mult 128
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 7f4090, playing 00000000000000000000000000000011
+ready 1, update_all 0, control 4040, addr  2, value 7f40, wr_en 0, mult 128
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 7f4090, playing 00000000000000000000000000000011
+ready 1, update_all 0, control 4040, addr  2, value 7f40, wr_en 0, mult 128
+update_note 00000000000000000000000000000100
+
+new_msg 0, msg 7f4090, playing 00000000000000000000000000000011
+ready 0, update_all 0, control 4040, addr  2, value 7f40, wr_en 0, mult 128
+update_note 00000000000000000000000000000100
+
+new_msg 0, msg 7f4090, playing 00000000000000000000000000000011
+ready 0, update_all 0, control 4040, addr  2, value 7f40, wr_en 0, mult 128
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 7f4090, playing 00000000000000000000000000000111
+ready 0, update_all 0, control 4040, addr  2, value 7f40, wr_en 0, mult 128
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 7f4090, playing 00000000000000000000000000000111
+ready 0, update_all 0, control 4040, addr  3, value 7f40, wr_en 0, mult 128
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 7f4090, playing 00000000000000000000000000000111
+ready 1, update_all 0, control 4040, addr  3, value 7f40, wr_en 0, mult 171
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 7f4090, playing 00000000000000000000000000000111
+ready 0, update_all 0, control 4040, addr  3, value 7f40, wr_en 0, mult 171
+update_note 00000000000000000000000000000000
+
+note 1 should be written with 003C
+new_msg 1, msg 003c90, playing 00000000000000000000000000000111
+ready 0, update_all 0, control 4040, addr  2, value 003c, wr_en 0, mult 171
+update_note 00000000000000000000000000000000
+
+new_msg 1, msg 003c90, playing 00000000000000000000000000000111
+ready 0, update_all 0, control 4040, addr  1, value 003c, wr_en 0, mult 171
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 003c90, playing 00000000000000000000000000000111
+ready 0, update_all 0, control 4040, addr  1, value 003c, wr_en 0, mult 171
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 003c90, playing 00000000000000000000000000000111
+ready 0, update_all 0, control 4040, addr  1, value 003c, wr_en 1, mult 171
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 003c90, playing 00000000000000000000000000000111
+ready 0, update_all 0, control 4040, addr  1, value 003c, wr_en 0, mult 171
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 003c90, playing 00000000000000000000000000000111
+ready 1, update_all 0, control 4040, addr  1, value 003c, wr_en 0, mult 171
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 003c90, playing 00000000000000000000000000000111
+ready 1, update_all 0, control 4040, addr  1, value 003c, wr_en 0, mult 171
+update_note 00000000000000000000000000000010
+
+new_msg 0, msg 003c90, playing 00000000000000000000000000000111
+ready 0, update_all 0, control 4040, addr  1, value 003c, wr_en 0, mult 171
+update_note 00000000000000000000000000000010
+
+new_msg 0, msg 003c90, playing 00000000000000000000000000000111
+ready 0, update_all 0, control 4040, addr  1, value 003c, wr_en 0, mult 171
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 003c90, playing 00000000000000000000000000000101
+ready 0, update_all 0, control 4040, addr  1, value 003c, wr_en 0, mult 171
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 003c90, playing 00000000000000000000000000000101
+ready 1, update_all 0, control 4040, addr  1, value 003c, wr_en 0, mult 128
+update_note 00000000000000000000000000000000
+
+new_msg 0, msg 003c90, playing 00000000000000000000000000000101
+ready 0, update_all 0, control 4040, addr  1, value 003c, wr_en 0, mult 128
+update_note 00000000000000000000000000000000
+
